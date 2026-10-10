@@ -1,0 +1,1 @@
+Proof audit: stronger matching-independent signed-Gram stability bound C-N > C^2/1630, conditional on the specified F3 deep-contact incidence. Full derivation retained separately. No Type E exclusion is claimed.
