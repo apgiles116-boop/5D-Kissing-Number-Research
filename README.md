@@ -25,3 +25,9 @@ This repository starts with a *provenance-conscious mathematical audit*, not a c
 **Historical caution:** do not regress to superseded claims M(F₃)≤94 or M(P)≥S/2−343/32.
 
 This ledger is deliberately conservative. A passing arithmetic script does not prove its geometric assumptions.
+
+## New exact F3 all-singleton matching lemma (2026-10-10)
+
+**PROVED for a specific matching, not a Type-E elimination:** For the perfect matching `04|17|23|56` of the ten-edge F3, oriented as `(0,4),(7,1),(2,3),(5,6)`, the six remaining deep contacts each link different matched pairs with matching endpoint signs. For its four midpoints, let `C=Σ||m_i||²` and `N=Σ_{i<j}(-m_i·m_j)_+`. The analytic signed-Gram and Cauchy–Schwarz argument proves `C−N > 1/[24(4−C)] ≥ 1/96`. An optional improvement `C−N>125/11802` depends on a separate, not independently recertified `C>33/500` lemma.
+
+**Crucial limitation:** the F3 Delsarte-mass theorem chooses some perfect matching, which need not be this all-singleton matching. **No** transfer to the mass-selected 20-edge bound or Type-E exclusion is claimed. See [the full proof](research/tau5_typeE_F3_singleton_signed_gram_stability_2026-10-10.md) and [the rational checker](research/tau5_typeE_F3_singleton_signed_gram_stability_2026-10-10.py). The global proved range is still `40≤τ₅≤44`.
