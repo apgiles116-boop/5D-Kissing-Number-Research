@@ -64,7 +64,17 @@ assert root>2-sp.sqrt(9+4*sp.sqrt(3))/2
 assert F(1732051,1000000)**2>3
 assert F(13246,100000)**2>F(3,171)
 assert 4-2*F(1732051,1000000)-F(1,171)-4*F(13246,100000)==F(17959,85500000)>0
+K=4-2*sp.sqrt(3)
+newroot=(48-18*sp.sqrt(3)-4*sp.sqrt(175-91*sp.sqrt(3)))/17
+assert sp.simplify(17*newroot**2-(18*K+24)*newroot+K**2)==0
+assert newroot>sp.Rational(1,117)
+assert newroot>root
+assert F(1732050,1000000)**2<3<F(1732051,1000000)**2
+Klo=F(267949,500000)
+Khi=F(5359,10000)
+c=F(1,117)
+assert (Klo-c)**2-8*c*(2*(Khi-c)+3)==F(2923336101089,3422250000000000)>0
 print("PASS: 3 matchings, doubled quotient signs and spectra")
 print("PASS: 400 exact-rational two-triangle identities")
-print("PASS: algebraic and rational C>1/171 certificates")
-print("C floor =",sp.N(root,16))
+print("PASS: exact quadratic root and rational C>1/117 certificate")
+print("C floor =",sp.N(newroot,16))
