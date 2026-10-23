@@ -7,13 +7,13 @@
 Let $w_{ab}^{\pm}=(e_a\pm e_b)/\sqrt2$, $1\le a<b\le5$, be the 20 D5 projective representatives. For $v\in\mathbb R^5$ set $Q(v)=vv^T-(\|v\|^2/5)I$.
 
 Suppose 20 vectors $z_{ab}^{\pm}\in\mathbb R^5$ satisfy
-$
+$$
 \operatorname{tr}(Q(z_i)Q(z_j))=\operatorname{tr}(Q(w_i)Q(w_j))\quad\text{for every }i,j.
-$
+$$
 Then there exist a **single** $U\in O(5)$, signs $s_i\in\{\pm1\}$, and a permutation \(\pi\) that preserves each two-element support block \(\{(ab,+),(ab,-)\}\), such that
-$
+$$
 z_i=s_i U w_{\pi(i)}.
-$
+$$
 In particular, the *unlabeled projective set* is physically congruent to D5. A permutation within each support is indispensable: independently interchanging the two signs on a support does not alter the Q-Gram.
 
 ### Proof
@@ -31,9 +31,9 @@ In particular, the *unlabeled projective set* is physically congruent to D5. A p
 ## New corollary: positive Q-Gram gap from an isolated center
 
 For any unit \(u\) and 20 vectors \(z_i\) with \(\|z_i\|\le1\) and \(|u\cdot z_i|\le1/2\), let \(G_Q(z)\) be their 20-by-20 Q-Gram and \(G_{D5}\) the fixed D5 Q-Gram. There is a **universal but presently non-explicit** \(\delta_{D5}>0\) with
-$
+$$
 \boxed{\|G_Q(z)-G_{D5}\|_F\ge\delta_{D5}>0.}
-$
+$$
 Proof: the center-banded vector domain is compact. If its Q-Gram distance infimum were zero, a limit would have the exact D5 Q-Gram, hence by the theorem its 20 projective lines would be a physical D5 image. But D5's exact covering constant gives \(\max_i|u\cdot z_i|\ge\sqrt{2/5}>1/2\), contradiction. Finite label permutations can also be minimized over without affecting strict positivity.
 
 **Scope:** This is the missing *qualitative* rank-one-preserving Q-Gram reconstruction, not a numerical stability constant. It does not prove proximity of arbitrary Type-E candidates, force \(A>383/504\), or eliminate Type E. Global range remains \(40\le\tau_5\le44\). Retain \(M(F_3)\le89\), matching \(S/2-28/3\), and \(A\le383/504\); Types C, D, generic \(e\ge27\), and non-isolated branches remain open.
