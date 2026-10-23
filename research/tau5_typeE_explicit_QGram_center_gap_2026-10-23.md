@@ -81,3 +81,12 @@ The left side of (*) is increasing for `d>=0`, so `d>2/7`. Solving (*) as a quad
 **[RETAINED]** `M(F3)<=89`, selected matching mass `>=S/2-28/3`, `A<=383/504`; C, D, generic `e>=27`, and non-isolated branches remain open. Sparse `e=23/24` classification still assumes `delta(G)>=1`.
 
 Verifier: `tau5_typeE_explicit_QGram_center_gap_2026-10-23_verify.py` (SymPy exact rational spectrum and squared comparison).
+
+
+## Exact six-exception tradeoff (conditional on a chosen D5 labeling)
+
+If `G-G0=R+E` and `E` has nonzero entries only on the six off-diagonal core-core pairs among four indices, put `eta=max_core |E_ij|`. Every row of the symmetric `E` has absolute row sum at most `3 eta`, hence `||E||_op<=3 eta`. The theorem therefore implies
+
+    BOXED: ||R||_op + 3 eta > 2/7.
+
+For example, if `||R||_op<=1/7`, then `eta>1/21`. This is a necessary safe-versus-exceptional perturbation tradeoff, not a bound on `R` from the retained scalar positive-defect estimate; establishing such a bound remains open.
