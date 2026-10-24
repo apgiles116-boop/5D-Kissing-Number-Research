@@ -1,3 +1,7 @@
+> **2026-10-24 ISOLATED-CENTER AUDIT (superseding Type-E interpretation):** Because the center has no deep neighbors, every endpoint satisfies -1/2 < u·x <= 1/2. Hence |u·m_i|+|u·z_i| <= 1/2 and b_i=|u·z_i| <= 1/2. Any positive hinge (b_i^2-1/4)_+ vanishes, and cap thresholds above 1/2 are automatic. Moreover exact normalized D5 directions are incompatible with a_i<=1/4: D5 covering forces some (u·v_i)^2>=2/5 whereas isolation forces every (u·v_i)^2<=1/3. The standalone algebraic theorems below may remain valid, but the associated positive center-hinge and balanced-D5 energy improvements do not establish nonvacuous progress in actual isolated-center Type E. See [two-sided audit](tau5_typeE_isolated_center_two_sided_audit_2026-10-24.md).
+
+---
+
 # Type E: exact isolated-center / D5 midpoint-energy dual theorem (2026-10-24)
 
 **Proof status:** [PROVED EXACTLY] universal center-to-normalized-line inequality, quartic dual minorant, sharp D5-template center-only energy theorem, and a second-order stability identity. [CONDITIONAL] D5-template application. [OPEN] Type E elimination.
