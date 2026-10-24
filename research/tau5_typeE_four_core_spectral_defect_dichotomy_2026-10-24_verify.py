@@ -2,6 +2,7 @@
 No numerical eigenvalues, external libraries, or floating point.
 """
 from itertools import combinations, product, permutations
+from fractions import Fraction as F
 
 E = list(combinations(range(4), 2))
 
@@ -71,10 +72,23 @@ for bits in product((0,1),repeat=6):
     if sum(bits)==6: assert characteristic(A)==[-3,-8,-6,0,1]
 print('PASS: exact five-/six-edge characteristic polynomials')
 
-# The exact SOS identities in the note are proved by expansion.
-# Sharpness witnesses:
-# K1,3: (-sqrt(3)v,v,v,v) has D/C=sqrt(3)/2.
-# Five edges: m1=m2=-u/2, m3=(u+(1+h)v)/(2sqrt(2)),
-# m4=(u-(1+h)v)/(2sqrt(2)); u.v=0, h -> 0+.
-# Six edges: centered regular tetrahedron.
-print('PASS: exact sharpness families and SOS identities supplied in note')
+# Verify rational parts of both SOS identities after canceling
+# identical sqrt(2) cross terms. Ten tests determine a quadratic form.
+def check_sos(v):
+    a,b,c,d=map(F,v)
+    C=a*a+b*b+c*c+d*d
+    s,t=a+b,c+d
+    assert C/2+a*b == s*s/2+t*t/4+(c-d)**2/4
+    assert C+2*c*d == s*s/2+t*t+(a-b)**2/2
+for i in range(4):
+    v=[0]*4;v[i]=1;check_sos(v)
+for i,j in combinations(range(4),2):
+    v=[0]*4;v[i]=v[j]=1;check_sos(v)
+print('PASS: both SOS identities as exact quadratic polynomial identities')
+
+# Star: C=6, D=3sqrt(3), so D^2/C^2=3/4.
+assert F(27,36)==F(3,4)
+# Five-edge limiting witness: four norms squared 1/4,
+# four cross dot products squared 1/32, so D^2/C^2=1/2.
+assert 4*F(1,4)==1 and 16*F(1,32)==F(1,2)
+print('PASS: sharp star threshold and five-pair limiting witness')
