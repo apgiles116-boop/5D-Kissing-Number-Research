@@ -34,6 +34,14 @@ assert s.simplify((s.sqrt(1-a)/2+s.sqrt(3*a)/2)**2-q0)==0
 for r in [s.Rational(0),s.Rational(1,10),s.Rational(1,4),s.Rational(3,10),q0,s.Rational(1,2),s.Rational(3,4),s.Rational(9,10)]:
     gr=0 if r<=s.Rational(1,4) else g.subs(q,r)
     assert float(s.N(gr-p.subs(q,r),30))>-1e-13
+# Exact counterexample to an unqualified center-projective cap.
+uc=s.Matrix([1,0]); mc=s.Matrix([-s.Rational(1,4),s.sqrt(3)/4]); zc=s.Matrix([s.Rational(3,4),s.sqrt(3)/4])
+assert s.simplify(mc.dot(zc))==0
+assert s.simplify((mc+zc).dot(mc+zc))==1
+assert s.simplify((mc-zc).dot(mc-zc))==1
+assert s.simplify(uc.dot(mc+zc))==s.Rational(1,2)
+assert s.simplify(uc.dot(mc-zc))==-1
+assert uc.dot(zc)==s.Rational(3,4)
 print('PASS: exact dual tangency, curvature and D5 moment identities')
 print('PASS: exact balanced-center equality')
 print('Sharp center-only energy:',s.Rational(9,2)-3*r2)
