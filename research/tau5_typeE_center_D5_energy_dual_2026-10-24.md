@@ -20,7 +20,7 @@ Define g(q) = 0 for 0 <= q <= 1/4, and
 
 Then a_i >= g(q_i). This is sharp for an individual center/endpoint-pair subsystem. In particular, ((q_i-1/4)_+)^2 <= a_i, sharply, since (q_i-1/4)_+ <= sqrt(a_i)*(sqrt(a_i)+sqrt(3(1-a_i)))/2 <= sqrt(a_i).
 
-**Proof-status audit:** The actual isolated-center constraints imply u dot m_i + |u dot z_i| <= 1/2, NOT automatically |u dot z_i| <= 1/2. Earlier Type-E applications assuming the latter raw cap need an additional proof.
+**Proof-status audit:** The actual isolated-center constraints imply u dot m_i + |u dot z_i| <= 1/2, NOT automatically |u dot z_i| <= 1/2. Earlier Type-E applications assuming the latter raw cap need an additional proof. An exact counterexample to the inference (embedded in R^5) is u=(1,0), m=(-1/4,sqrt(3)/4), z=(3/4,sqrt(3)/4): m dot z=0, both m+z and m-z are unit, u dot (m+z)=1/2 and u dot (m-z)=-1, yet |u dot z|=3/4 > 1/2.
 
 ## Exact quadratic dual certificate
 
