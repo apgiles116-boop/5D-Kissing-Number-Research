@@ -65,6 +65,13 @@ Thus **[CONDITIONAL ON THE RETAINED FOUR-CORE MODEL]**:
 
 These are local necessary conditions, not an upper bound on the full 20x20 Q-Gram perturbation or a Type-E contradiction.
 
+**New six-positive-defect branch ceiling.** Since the selected core energy C is part of A=sum_i||m_i||^2<=383/504, the all-six-positive branch satisfies the sharper exact global raw-positive-defect ceiling
+
+sum_core delta_ij <= C/2 <= A/2 <= **383/1008 = 0.37996031746...**,
+
+improving the retained unconditional bound 1780062775/4032758016 < 0.441401 **in this branch only**. The five-positive branch gives C/sqrt(2), which alone does not improve that unconditional numerical ceiling.
+
+
 ## Proof-status ledger
 
 **[PROVED EXACTLY]:** sharp four-vertex spectral threshold, within-part margin, five/six-negative-pair bounds and sharpness constructions.
