@@ -53,3 +53,48 @@ plus the retained nonnegative frame-variance remainder. This improves the previo
 **[OPEN]** Type E, C, D, generic e>=27, non-isolated 41-code branches; no global D5 labeling and no six-exception/Q-kernel identification.
 
 Companion exact verifier: tau5_typeE_singleton_contact_defect_2026-10-24_verify.py.
+
+
+---
+
+## Addendum: stronger exact Q < 77/1000 certificate (supersedes 79/1000)
+
+**[PROVED EXACTLY, under the same retained Type-E inputs]**
+
+The preceding Q<79/1000 is valid but not optimal. Capped-simplex concentration across the **four** singleton-contact defects adjacent to a possible double-contact defect sharpens it to
+
+**Q=sum_(six core) delta_ij² < 77/1000 = 0.077.**
+
+Case A (all six defects <=alpha) is unchanged: the three exact endpoint bounds in the preceding proof are all <77/1000, not merely <79/1000.
+
+In Case B, the double-contact defect x>alpha has opposite defect zero. The four remaining defects y_j satisfy P(x,y_j)<=0, so y_j<=c(x), where c(x) is the nonnegative root of P(x,c)=0, and sum y_j<=D0-x. Partition [alpha,1/4] into thirteen rational intervals [l,h] (starting at l=207/1000<alpha). On each interval, use the rational cap C listed below. Each satisfies P(l,C)>0, and P increases in x and in nonnegative c throughout the region. Hence y_j<C for x in [l,h].
+
+Let R=D0-l, k=min(4,floor(R/C)). The exact capped-simplex maximum for the four squares is Phi(C,R)=k*C²+(R-k*C)² when k<4 and Phi=4*C² when k=4. Thus Q<h²+Phi(C,D0-l). The following C numerators have denominator 10^6:
+
+| Interval [l,h] | C numerator |
+|---|---:|
+| 207/1000, 631/3000 | 154180 |
+| 631/3000, 641/3000 | 149194 |
+| 641/3000, 217/1000 | 143883 |
+| 217/1000, 661/3000 | 138204 |
+| 661/3000, 671/3000 | 132102 |
+| 671/3000, 227/1000 | 125506 |
+| 227/1000, 691/3000 | 118321 |
+| 691/3000, 701/3000 | 110417 |
+| 701/3000, 237/1000 | 101606 |
+| 237/1000, 721/3000 | 91599 |
+| 721/3000, 731/3000 | 79902 |
+| 731/3000, 247/1000 | 65535 |
+| 247/1000, 1/4 | 45863 |
+
+All 13 exact rational inequalities h²+Phi(C,D0-l)<77/1000 pass. The largest rational upper bound is 305420404476709867702417033/3970492484280336000000000000 = 0.07692254945... . No numerical optimizer is used; the companion `tau5_typeE_F3_singleton_77_1000_2026-10-24_verify.py` uses only Python Fraction arithmetic.
+
+**Updated strongest safe-mass floor:**
+
+S_184-safe > L-3/2-D0-77/1000
+= 12937988020021/504094752000
+= 25.6657859830705...,
+
+with the previously retained nonnegative raw Q-frame variance and concentration remainders. This improves the previously best Q<40949/500000=0.081898 and its safe-mass floor by **exactly 0.004898**.
+
+**[OPEN]** No Type-E elimination follows; global 40<=tau_5<=44 and all retained F3 mass and midpoint bounds remain unchanged.
