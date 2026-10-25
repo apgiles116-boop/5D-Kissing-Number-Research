@@ -106,7 +106,35 @@ $$
 $$
 The second bound is weighted, so it complements rather than supersedes (5).
 
-## 5. Status
+## 5. Sharper global squared-correlation floor [PROVED UNDER RETAINED ENERGY CAP]
+
+The retained frame-operator identity is
+
+$
+\sum_{i<j}(z_i\cdot z_j)^2=30-3A+\frac{A^2}{10}-\frac12\sum_i a_i^2+\frac V2,
+\qquad V=\left\|\sum_i Q_i\right\|_F^2\ge0.
+$
+
+Convex concentration with `0<=a_i<=1/4` and `A<=383/504` gives
+
+$
+\sum_i a_i^2\le3(1/4)^2+(383/504-3/4)^2=47653/254016.
+$
+
+Since `30-3A+A^2/10` decreases on this interval,
+
+$
+\boxed{\sum_{i<j}(z_i\cdot z_j)^2\ge8790283/317520\approx27.6841868228773.}
+$
+
+This improves the older `17456771/635040≈27.4892` floor. With `L=sum_safe h(1-h)` and `P=sum_positive(d+d^2)`, the exact signed-defect translation is
+
+$
+\boxed{L-P\le6291917/317520\approx19.8158131771227.}
+$
+
+This is an **upper** bound on the linear safe-defect mass minus the positive exceptional mass; it is not an upper bound on squared safe slack and does not exclude Type E.
+## 6. Status
 
 - **[PROVED EXACTLY]** The projector theorem (1)–(2); the implication from the explicit scalar budget to (3); exact rational constants and four-subset combinatorics.
 - **[CONDITIONAL ON RETAINED TYPE-E INPUTS]** (4)–(7), relying on the Type-E selected-edge model, 184 raw-safe pairings, (A\le383/504), and (\sum d^2<819/10000).
