@@ -57,3 +57,15 @@ K17=Matrix(17,17,lambda i,j:Rational(sum(W[i][k]*W[j][k] for k in range(5)),2)**
 H17=sum((Rational(1,2)-abs(Rational(sum(W[i][k]*W[j][k] for k in range(5)),2)))**2 for i in range(17) for j in range(i+1,17))
 assert K17.rank()<=14 and H17>Rational(1275,7168)
 print("PASS: exact n=15..19 extension; Type-E n=17 bound 1275/7168.")
+
+
+# Exact full n=20 comparison and core-defect arithmetic.
+c20=F(5,16)-F(3,77)*F(7,16)
+assert c20==F(13,44)
+assert F(30,7)*c20*c20==F(2535,6776)
+u=F(27,2000)
+assert F(117,1000)**2>u
+core_bound=F(25,256)+u+u*u+2*u*F(117,1000)
+assert core_bound==F(45799,400000)
+assert F(2535,6776)-core_bound==F(87958247,338800000)
+print("PASS: n=20 13/44 gap; six-core tradeoff 87958247/338800000.")
