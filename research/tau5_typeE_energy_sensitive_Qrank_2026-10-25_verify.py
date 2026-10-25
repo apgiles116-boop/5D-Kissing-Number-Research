@@ -17,6 +17,11 @@ def quartic_floor(n):
 assert quartic_floor(20) == F(2820005, 2667168)
 assert quartic_floor(19) == F(1500259, 2222640)
 assert quartic_floor(20) > F(375, 896)
+cap_sq=3*F(1,16)+(Amax-F(3,4))**2
+assert cap_sq==F(47653,254016)
+corr_floor=30-3*Amax+Amax*Amax/10-cap_sq/2
+assert corr_floor==F(8790283,317520)
+assert F(95,2)-corr_floor==F(6291917,317520)
 
 # Exact radical comparison (3-2 sqrt(2))/2 > 819/10000.
 r = F(3,2)-F(819,10000)
