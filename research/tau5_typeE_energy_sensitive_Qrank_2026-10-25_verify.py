@@ -27,6 +27,7 @@ assert core_cap == F(105,256)
 safe_floor = quartic_floor(20)-core_cap
 assert safe_floor == F(13808395,21337344)
 assert safe_floor > F(1275,7168)
+assert quartic_floor(20)-F(47653,802816)==F(1362784807,1365590016)
 assert safe_floor > 10*F(1,16)  # >=11 strictly subthreshold safe pairs
 
 # Four 19-subsets count OO four times, OC three, CC twice.
