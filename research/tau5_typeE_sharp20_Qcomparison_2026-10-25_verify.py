@@ -58,3 +58,27 @@ assert K0*x==s.Rational(5,16)*x
 print('PASS: exact decomposition, SOS identity, threshold, quartic rank arithmetic, D5 rank, sharpness.')
 print('Improved universal quartic floor:',F(375,896))
 print('Improved Type-E joint safe/core slack:',F(206963523,700000000))
+
+
+# Exact frame-variance / homogeneous-defect identity at the D5 template.
+from itertools import combinations
+def defect_bridge(vectors):
+    n=len(vectors)
+    norms=[s.Rational(v.dot(v),2) for v in vectors]  # vectors / sqrt(2)
+    aa=[1-bi for bi in norms]
+    A=sum(aa)
+    L=P=s.Rational(0)
+    for i,j in combinations(range(n),2):
+        r=s.Rational(abs(vectors[i].dot(vectors[j])),2)
+        if r<=s.Rational(1,2):
+            h=s.Rational(1,2)-r;L+=h*(1-h)
+        else:
+            d=r-s.Rational(1,2);P+=d+d*d
+    W=s.zeros(5,5)
+    for v,bi in zip(vectors,norms):
+        W+=v*v.T/2-bi*s.eye(5)/5
+    V=s.trace(W*W)
+    assert s.simplify(L+V/2-(s.Rational(35,2)+3*A-A*A/10+sum(ai*ai for ai in aa)/2+P))==0
+    return L,P,V
+assert defect_bridge(vecs)==(s.Rational(35,2),0,0)
+print('PASS: exact frame-variance bridge in D5 template')
