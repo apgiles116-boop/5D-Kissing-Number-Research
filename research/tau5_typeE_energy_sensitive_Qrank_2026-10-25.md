@@ -80,6 +80,14 @@ $$
 $$
 This is stronger than the previous (H_{184}>1275/7168\approx0.177874), and crucially has **no uncontrolled safe-core term**. It does not eliminate Type E. Because each safe quartic contributes at most (1/16), at least 11 of the 184 safe pairings have strict correlation (<1/2).
 
+**All-six-positive core subbranch [CONDITIONAL].** If all six core correlations exceed 1/2, the previously retained endpoint-Gram argument gives the sharper cap `T_C^+ <= 47653/802816`. There are no raw-safe core pairs, so (5) improves to
+
+$
+\boxed{H_{184}\ge\frac{2820005}{2667168}-\frac{47653}{802816}
+=\frac{1362784807}{1365590016}\approx0.997945789755979.}
+$
+
+This remains a necessary condition, not a contradiction.
 ## 4. Weighted 19-subset refinement [PROVED UNDER RETAINED TYPE-E MODEL]
 
 Let (O) be the 16 outside indices, (C) the four core indices, and (A_C=\sum_{j\in C}a_j). Applying (1) to the four 19-element sets (O\cup(C\setminus\{j\})) and averaging gives
