@@ -36,3 +36,24 @@ assert (E*E).trace()==2*sum(E[i,j]**2 for i in range(16) for j in range(i+1,16))
 assert H>Rational(25,224)
 print("PASS: exact SOS identity, constants, sharp K0 eigenvalue, and D5 test.")
 print("D5 sample Q rank =",K.rank(),"squared outside slack =",H)
+
+
+# Same-day exact n=15..19 extension.
+for n in range(15,20):
+    k=n-14
+    assert F(1)-F(4*n,77)>0
+    assert F(25*n*k,7168)==F(k*n,28)*F(5,16)**2
+assert F(25*17*3,7168)==F(1275,7168)
+
+# Exact 17-line D5 test, all pairings raw-safe.
+W=[]
+for i,j in combinations(range(5),2):
+    for sign in (1,-1):
+        v=[0]*5
+        v[i],v[j]=1,sign
+        W.append(v)
+W=W[:17]
+K17=Matrix(17,17,lambda i,j:Rational(sum(W[i][k]*W[j][k] for k in range(5)),2)**2-Rational(1,5))
+H17=sum((Rational(1,2)-abs(Rational(sum(W[i][k]*W[j][k] for k in range(5)),2)))**2 for i in range(17) for j in range(i+1,17))
+assert K17.rank()<=14 and H17>Rational(1275,7168)
+print("PASS: exact n=15..19 extension; Type-E n=17 bound 1275/7168.")
