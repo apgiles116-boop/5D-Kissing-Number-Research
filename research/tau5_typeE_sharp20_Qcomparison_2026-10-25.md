@@ -75,3 +75,26 @@ No contradiction with \(A\le383/504\) is obtained.
 **[OPEN]** Type E, Types C and D, generic \(e\ge27\), and non-isolated branches. **[UNCHANGED]** \(40\le\tau_5\le44\); \(M(F_3)\le89\); \(M(P)\ge S/2-28/3\); \(A\le383/504\); sparse \(e=23/24\) classification conditional on \(\delta(G)\ge1\).
 
 Exact verifier: `tau5_typeE_sharp20_Qcomparison_2026-10-25_verify.py`.
+
+
+## 4. Exact frame-variance / homogeneous-defect bridge [PROVED EXACTLY]
+
+Write \(a_i=1-\|z_i\|^2\), \(A=\sum a_i\), and
+\[
+V=\left\|\sum_{i=1}^{20}\left(z_i z_i^T-\frac{\|z_i\|^2}{5}I\right)\right\|_F^2\ge0.
+\]
+Across all 190 pairings, let \(h_{ij}=1/2-r_{ij}\) when \(r_{ij}\le1/2\), and \(d_{ij}=r_{ij}-1/2\) when \(r_{ij}>1/2\). Set
+\[
+L=\sum_{r_{ij}\le1/2}h_{ij}(1-h_{ij}),\qquad
+P=\sum_{r_{ij}>1/2}(d_{ij}+d_{ij}^2).
+\]
+The two exact evaluations
+\[
+\sum_{i<j}r_{ij}^2=\frac{95}{2}-L+P
+=30-3A+\frac{A^2}{10}-\frac12\sum_i a_i^2+\frac V2
+\]
+give the **exact identity**
+\[
+\boxed{L+\frac V2=\frac{35}{2}+3A-\frac{A^2}{10}+\frac12\sum_i a_i^2+P.}\tag{6}
+\]
+Under Type E, \(P\) is supported on at most six core pairings, while \(L\) covers all safe pairings, including raw-safe core pairs. This translates the global squared-correlation/frame-variance relation into the six-exception language. Retaining the positive frame variance \(V/2\) may help a future second-order stability argument. At exact \(D_5\), \(A=P=V=0\) and \(L=35/2\) (70 zero-correlation pairings). **[OPEN]** No contradiction with \(A\le383/504\) follows from this identity alone.
