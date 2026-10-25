@@ -28,6 +28,12 @@ det Z_{O\{k}} > (1/65)⁴(15−B−4/65) = 464489/584786475000.
 
 Cauchy–Binet expresses each determinant as the sum of the five-column Gram determinants. There are binom(16,5)=4368 and binom(15,5)=3003 summands, so one exceeds the respective average. QED.
 
+**Quantitative conditioning corollary [PROVED UNDER RETAINED FRAME GAPS].** The certified five-vector basis Gram matrix also satisfies
+
+λ_min(G_I) > (4/5)⁴η₁₆ = 83231/5672788273152 ≈ 1.467197364×10⁻⁸.
+
+Indeed tr G_I≤5 since each ||z_i||²≤1. By AM–GM the product of the four largest eigenvalues is at most (5/4)⁴; combine this with det G_I>η₁₆. This supplies a conservative explicit conditioning guarantee for interval/KKT calculations.
+
 ## Theorem 2: exact rank-five polynomial coordinates
 
 **[PROVED ALGEBRAICALLY]** Choose a certified five-vector outside basis V=[z_{i₁} ... z_{i₅}], with G=VᵀV and d=det G>η₁₆. For any midpoint or projected vector u, set y_u=Vᵀu. Then
