@@ -1,6 +1,6 @@
 # Type E: sharp 20-vector Q-comparison and strengthened six-core tradeoff
 
-**25 October 2026.** **[PROVED EXACTLY — universal theorem]** Sharp comparison spectral floor \`5/16\` for twenty vectors, improving \`13/44\`. **[CONDITIONAL ON RETAINED TYPE-E INPUTS]** Improved safe/core slack tradeoff. **[OPEN]** Type E and the global problem.
+**25 October 2026.** **[PROVED EXACTLY — universal theorem]** Sharp comparison spectral floor `5/16` for twenty vectors, improving `13/44`. **[CONDITIONAL ON RETAINED TYPE-E INPUTS]** Improved safe/core slack tradeoff. **[OPEN]** Type E and the global problem.
 
 ## 1. Sharp 20-vector comparison lemma [PROVED EXACTLY]
 
@@ -61,7 +61,7 @@ For each safe pair, \((1/4-r^2)^2=(1/2-r)^2(1/2+r)^2\le(1/2-r)^2\). Thus (3) imp
 \boxed{H_{184}+H_C^-+T_C^+\ge375/896.}\tag{4}
 \]
 
-The exact six-defect square budget \(\sum d_{ij}^2<819/10000\), individual cap \(d_{ij}\le1/4\), and convex concentration estimate \(T_C^+<12286461/100000000\) were established in \`tau5_typeE_lifted_triangle_defect_budget_2026-10-24.md\` and \`tau5_typeE_leave_one_core_out_Qrank_2026-10-25.md\`. Consequently
+The exact six-defect square budget \(\sum d_{ij}^2<819/10000\), individual cap \(d_{ij}\le1/4\), and convex concentration estimate \(T_C^+<12286461/100000000\) were established in `tau5_typeE_lifted_triangle_defect_budget_2026-10-24.md` and `tau5_typeE_leave_one_core_out_Qrank_2026-10-25.md`. Consequently
 \[
 \boxed{H_{184}+H_C^->206963523/700000000\approx0.295662175714286.}\tag{5}
 \]
@@ -74,4 +74,4 @@ No contradiction with \(A\le383/504\) is obtained.
 
 **[OPEN]** Type E, Types C and D, generic \(e\ge27\), and non-isolated branches. **[UNCHANGED]** \(40\le\tau_5\le44\); \(M(F_3)\le89\); \(M(P)\ge S/2-28/3\); \(A\le383/504\); sparse \(e=23/24\) classification conditional on \(\delta(G)\ge1\).
 
-Exact verifier: \`tau5_typeE_sharp20_Qcomparison_2026-10-25_verify.py\`.
+Exact verifier: `tau5_typeE_sharp20_Qcomparison_2026-10-25_verify.py`.
