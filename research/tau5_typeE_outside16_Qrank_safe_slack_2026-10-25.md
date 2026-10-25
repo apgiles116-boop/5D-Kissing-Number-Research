@@ -68,3 +68,29 @@ This is a new **uniform** positive second-order slack floor, complementary to th
 **[RETAINED, NOT REPROVED]** M(F3)<=89; matching mass >=S/2-28/3; twenty-edge mass >=2137/6; A<=383/504; six possible exceptional core pairings; audited Musin--Boyvalenkov zero-midpoint exclusion. **[OPEN]** Type E, Types C/D, generic e>=27, non-isolated branches; e=23/24 graph classification conditional on delta(G)>=1. Global proved range: 40<=tau_5<=44.
 
 Verifier: research/tau5_typeE_outside16_Qrank_safe_slack_2026-10-25_verify.py.
+
+
+## Same-day stronger 17-line theorem and general n=15..19 extension
+
+**[PROVED EXACTLY]** The comparison-matrix argument applies to any n in {15,16,17,18,19} pairwise raw-safe vectors in R5 with b_i=||z_i||^2 in [3/4,1]. The sharper pointwise estimate t_i/(3/2+t_i)<=1/7 for t_i=b_i-3/4 in [0,1/4] gives T^2<=(n/7)D. Therefore
+
+    x^T(K0-(5/16)I_n)x
+       >= (1-4n/77)D+(11/80)(S-(12/11)T)^2 >=0
+
+for n<=19, since 1-4n/77>=1/77>0.
+
+The Q-Gram rank remains <=14, so the trace-zero slack matrix E has at least k=n-14 eigenvalues >=c=5/16. Its other fourteen eigenvalues sum to at most -kc. Cauchy and the strict off-diagonal comparison imply the **general exact bound**
+
+    SUM_{i<j}(1/2-|z_i.z_j|)^2
+      > (n(n-14)/28)*(5/16)^2
+      = 25*n*(n-14)/7168.
+
+For n=15,16,17,18,19 the rational constants are respectively 375/7168, 25/224, 1275/7168, 225/896, 2375/7168.
+
+**[CONDITIONAL TYPE-E IMPROVEMENT]** The sixteen outside-core vectors together with **any one** of the four F3-core vectors form a pairwise raw-safe 17-vector set: exceptional pairings are only core-core. Therefore
+
+    H_184 > 1275/7168 = 0.177873883928571...
+
+This strictly improves the preceding 16-vector application H_184>25/224. It does not eliminate Type E or imply A>383/504; no D5 labeling is assumed. The 16-vector theorem remains useful for outside-only estimates.
+
+Verifier updated with exact n=15..19 rational constants and a 17-line D5 test.
