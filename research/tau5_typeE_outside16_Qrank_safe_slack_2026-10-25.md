@@ -94,3 +94,36 @@ For n=15,16,17,18,19 the rational constants are respectively 375/7168, 25/224, 1
 This strictly improves the preceding 16-vector application H_184>25/224. It does not eliminate Type E or imply A>383/504; no D5 labeling is assumed. The 16-vector theorem remains useful for outside-only estimates.
 
 Verifier updated with exact n=15..19 rational constants and a 17-line D5 test.
+
+
+## Full twenty-vector six-core tradeoff (same-day second addendum)
+
+**[PROVED EXACTLY]** The same comparison-matrix argument works for n=20 with a slightly smaller spectral constant. From T^2<=(20/7)D, the SOS identity gives
+
+    x^T(K0-(5/16)I)x >= -(3/77)D,
+    D=sum_i [(3/2)t_i+t_i^2]x_i^2 <= (7/16)||x||^2.
+
+Thus **K0 >= (13/44)I_20** exactly, without pairwise-safety assumptions. For the Q-Gram K of all twenty projected vectors, rank K<=14. The zero-trace matrix E=K0-K therefore has at least six eigenvalues >=c=13/44; the other fourteen sum to at most -6c. Consequently
+
+    sum_{i<j} [1/4-(z_i.z_j)^2]^2
+      = tr(E^2)/2
+      >= (30/7)*(13/44)^2 = 2535/6776.
+
+Split into the 184 raw-safe pairs and six core pairs. On a safe pair, [1/4-r^2]^2=h^2(1-h)^2<=h^2. Therefore the exact degree-four **six-core/safe-slack tradeoff** is
+
+    H_184 + sum_{i<j in C}[1/4-(z_i.z_j)^2]^2 >= 2535/6776.
+
+**[CONDITIONAL ON RETAINED EXACT SIX-DEFECT CERTIFICATE]** On core positive-defect pairs write d=r-1/2>0; retain d<=1/4 and Q=sum_core d^2<19/250. With u=d^2, f(u)=u+2u^(3/2)+u^2 is increasing and convex. Capped-simplex concentration at u=1/16 and u=27/2000=19/250-1/16, together with sqrt(27/2000)<117/1000, gives
+
+    sum_{core:d>0}(d+d^2)^2
+      < 25/256 + 27/2000 + (27/2000)^2
+         + 2*(27/2000)*(117/1000)
+      = 45799/400000.
+
+For the raw-safe core pairs put H_C^- = sum_{core:r<=1/2}(1/2-r)^2; their [1/4-r^2]^2 terms are <=H_C^-. Hence
+
+    **H_184 + H_C^- > 2535/6776 - 45799/400000
+                         = 87958247/338800000
+                         = 0.25961702184179... .**
+
+**Caution:** this does NOT prove H_184>0.2596, because some of the six core pairs can be raw-safe with nonzero slack. The unconditional uniform Type-E bound remains H_184>1275/7168 from the n=17 theorem. This is a joint second-order constraint for the four-core polynomial/KKT route, not a Type-E contradiction or an improvement to the global range.
