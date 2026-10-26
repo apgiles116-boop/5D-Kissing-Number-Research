@@ -23,6 +23,18 @@ For any orthogonal image, permutation, and independent sign choices of the 20 D5
 
 In particular max_i ||z_i-v_i|| >= sqrt(2/5)-1/2 = 0.1324555320... . Thus actual Type E cannot be uniformly close to a D5 20-line template; this does NOT exclude Type E.
 
+## [CONDITIONAL ON a_i<=1/4] Normalized angular separation
+Writing u_i=z_i/sqrt(1-a_i), the center constraints imply
+
+    |x_0.u_i| <= (1/2-|x_0.m_i|)/sqrt(1-a_i) <= 1/sqrt(3).
+
+The D5 covering theorem gives, for every rotated, signed and permuted D5 labeling v_i, an index with |x_0.v_i|>=sqrt(2/5). Therefore
+
+    max_i ||u_i-v_i|| >= sqrt(2/5)-1/sqrt(3)
+                       = 0.055105262844... .
+
+Thus not even the normalized Type-E directions can equal the D5 template. The individual midpoint cap a_i<=1/4 is essential. In particular, a D5 perturbation theorem only valid at Euclidean distance <=0.001 would not apply to actual Type E.
+
 ## [PROVED EXACTLY] Weighted mixing operator
 Fix a D5 representative v_i. For any set T of at most three other representatives define
 
