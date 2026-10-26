@@ -18,6 +18,9 @@ for i, j in combinations(range(5), 2):
         roots.append(v)
         labels.append((i, j, sign))
 assert len(roots) == 20
+# Squared D5 covering constant exceeds squared normalized center cap.
+assert R(2,5) > R(1,3)
+assert R(3,10) > R(1,4)
 u = roots[0]
 contacts = [j for j in range(1, 20) if sp.simplify(u.dot(roots[j])**2) == R(1, 4)]
 assert len(contacts) == 12
