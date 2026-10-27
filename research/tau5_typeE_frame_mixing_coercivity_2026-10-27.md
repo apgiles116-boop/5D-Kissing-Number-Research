@@ -53,7 +53,7 @@ Since `B` is PSD with trace `U`, `||B0||²=tr(B²)-U²/5<=4U²/5`. From (1), usi
  >= U*(1/4-A/10-U/100).                              (2)
 ```
 
-Under the retained Type-E bounds `A<=383/504` and `0<=a_i<=1/4`, we have `U<=A/4). Thus
+Under the retained Type-E bounds `A<=383/504` and `0<=a_i<=1/4`, we have `U<=A/4`. Thus
 
 ```
 (5/24)W+(1/4)T_R >= (34697/201600)*U
