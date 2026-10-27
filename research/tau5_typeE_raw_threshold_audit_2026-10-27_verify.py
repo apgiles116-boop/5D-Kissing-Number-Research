@@ -32,9 +32,16 @@ assert simplify(sum(v*v for v in dots)-4*(B*B+X*X+Y*Y+Z*Z))==0
 
 Acap=R(383,504)
 Phi=3*R(1,16)+(Acap-R(3,4))**2
-Pcap=R(5792292955405,4129544208384)
-Rcap=R(1780062775,4032758016)
-Tcap=19*Acap/16-(Acap**2-Phi)/32+R(7,64)*Pcap
-assert simplify(Tcap-R(39403364934925,37755832762368))==0
-assert simplify(Rcap+Tcap-R(392481748566875,264290829336576))==0
-print('PASS: exact safe-pair counterexample, threshold identity, 20-line energy identity, Walsh identity, rational envelope')
+D0=R(1780062775,4032758016)
+assert R(1,4)<D0<R(1,2)
+d=symbols('d', nonnegative=True)
+f=lambda v: (R(1,2)+v)**2*(v+v**2)
+g=lambda v: v+v**2
+Pcap=simplify(f(R(1,4))+f(D0-R(1,4)))
+Gcap=simplify(g(R(1,4))+g(D0-R(1,4)))
+Tcap=simplify(19*Acap/16-(Acap**2-Phi)/32+R(7,64)*Gcap)
+assert Pcap==R(75324014718277804048726143481729154977,264489632093832371229515191803011137536)
+assert Gcap==R(8790796847324459857,16263137215612256256)
+assert 1 < Pcap+Tcap < R(5,4)
+print('PASS: exact safe-pair counterexample, threshold identity, 20-line energy identity, Walsh identity, capped convex six-exception envelope')
+print('P_fixed cap:',Pcap, 'correction cap:',Tcap,'corrected D_weighted cap:',Pcap+Tcap)
