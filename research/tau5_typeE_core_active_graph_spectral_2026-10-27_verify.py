@@ -40,6 +40,13 @@ flexd=S.simplify(flexcorr-S.Rational(1,2))
 assert flexd==S.Rational(40128,410881)
 assert 12*flexd>Amax
 
+# If the four normalized core directions of the flex are uniformly
+# scaled, the spectral charge gives a noncontradictory midpoint floor.
+a_uniform=S.factor((6*flexcorr-3)/(6*flexcorr+2))
+assert a_uniform==S.Rational(240768,2295173)
+assert 4*a_uniform==S.Rational(963072,2295173)
+assert 4*a_uniform<Amax
+
 # Six-active convex fixed quartic cap versus the earlier all-pattern cap.
 f=lambda d:(S.Rational(1,2)+d)**2*(d+d*d)
 P6=S.factor(f(S.Rational(1,4))+f(Amax/2-S.Rational(1,4)))
