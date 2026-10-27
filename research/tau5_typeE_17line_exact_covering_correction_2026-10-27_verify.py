@@ -109,6 +109,26 @@ assert norms=={
 R2=sp.Rational(31,8)-3*S/4
 assert all(sp.simplify(R2-n).is_nonnegative for n in norms)
 assert sum(norms.values())==114
+# Verify unit-line coherence and an explicit equality witness symbolically.
+e=sp.eye(5)
+lines=[]
+for j,k in combinations(range(1,5),2):
+    for sign in (-1,1):
+        lines.append((e[:,j]+sign*e[:,k])/S)
+for j in range(1,5):
+    lines.append((e[:,0]+e[:,j])/S)
+center=sp.Matrix([8,-3,-3,-3,-3])/10
+lines.append(center)
+assert len(lines)==17
+assert all(sp.simplify(v.dot(v))==1 for v in lines)
+assert all(sp.simplify(sp.Rational(1,4)-v.dot(w)**2).is_nonnegative
+           for v,w in combinations(lines,2))
+a=(10+9*S)/20
+b0=(11*S-10)/20
+witness=sp.Matrix([-a,a,-b0,-b0,-b0])
+assert sp.simplify(witness.dot(witness)-R2)==0
+assert all(sp.simplify(1-v.dot(witness)**2).is_nonnegative for v in lines)
+
 rho2=sp.simplify(1/R2)
 assert sp.simplify(rho2-sp.Rational(1,3)).is_positive
 b_star=sp.simplify(1-1/(3*rho2))
