@@ -15,7 +15,7 @@ P_fixed = sum_{i<j} [w_ij*(w_ij-1/4)]_+,
 E_fixed = sum_{i<j} [w_ij*(1/4-w_ij)]_+.
 ```
 
-Here `[t]_+=max(t,0)`. The six-exception bound `P_fixed <= 1780062775/4032758016` uses the **fixed raw threshold 1/4**. It is not an upper bound on `D_weighted`. The exact identity is
+Here `[t]_+=max(t,0)`. The **retained convex six-exception certificate** is actually the linear correlation-excess bound `sum_K d_ij <= D0 = 1780062775/4032758016`, where `d_ij=(|z_i.z_j|-1/2)_+` and `0<=d_ij<=1/4`. On a core pair, `w_ij=(1/2+d_ij)^2` whenever `d_ij>0`. Consequently `P_fixed<=sum_K f(d_ij)<=D0`, where `f(d)=(1/2+d)^2*(d+d^2)`; the last inequality is deliberately loose. This fixed-threshold positive defect is **not** an upper bound on `D_weighted`. The exact identity is
 
 ```
 D_weighted = P_fixed-E_fixed + (1/4)*sum_{i<j} h_ij*w_ij.  (1)
@@ -87,23 +87,25 @@ Here `R2=sum r_i^2`, `S4=sum r_i^4`, `W` is the weighted frame variance, and `h0
 
 The earlier equation that omitted the midpoint correction is **withdrawn**.
 
-For a coarse label-free numerical envelope, `h_ij<=7/16` (as `0<=a_i<=1/4`), `sum_K delta_ij<=5792292955405/4129544208384`, and `U<=Phi(A)=k/16+(A-k/4)^2` with `k=floor(4A)`. The function `19A/16-(A^2-Phi(A))/32` increases on `0<=A<=383/504`. Therefore
+For a coarse label-free numerical envelope, `h_ij<=7/16` (as `0<=a_i<=1/4`), and `U<=Phi(A)=k/16+(A-k/4)^2` with `k=floor(4A)`. The function `19A/16-(A^2-Phi(A))/32` increases on `0<=A<=383/504`.
+
+The retained `D0=sum d_ij` cap can be converted **without confusing defect definitions**. The increasing convex functions `f(d)=(1/2+d)^2*(d+d^2)` and `g(d)=d+d^2` are maximized on the capped simplex `0<=d<=1/4`, `sum d<=D0` at `(1/4,D0-1/4,0,0,0,0)`. Therefore
+
+```
+P_fixed <= f(1/4)+f(D0-1/4) = 0.284790046861...,
+sum_K delta_ij <= D0+1/16+(D0-1/4)^2 = 0.540535121285...,
+```
+
+where `delta_ij=[w_ij-1/4]_+=d_ij+d_ij^2`. It follows that
 
 ```
 (1/4)*sum h_ij*w_ij
- <= 19*A/16 - (A^2-U)/32 + (7/64)*P_hom
- <= 39403364934925/37755832762368
- ~= 1.043636494073.
+ <= 19*A/16 - (A^2-U)/32 + (7/64)*sum_K delta_ij
+ <= 0.949343003097...,
+D_weighted <= 1.234133049959... .                    (6)
 ```
 
-Thus a valid but weak scalar replacement for the withdrawn `D_weighted<=0.44140084` is
-
-```
-D_weighted <= 392481748566875/264290829336576
-           ~= 1.485037333880.                       (6)
-```
-
-This scalar bound is deliberately not called sharp. Equation (5), with the *negative* safe mixing term, is the useful research object.
+The displayed decimals are evaluations of exact algebraic expressions in the rational numbers `D0=1780062775/4032758016` and `Amax=383/504`, not numerical optimizations. Equation (6) is a weak but valid scalar replacement for the withdrawn `D_weighted<=0.44140084`. Equation (5), with its *negative* safe mixing term, is the useful research object. No claim is made that the capped-simplex extremizer satisfies the full core Gram/adjacency constraints.
 
 ## 4. Proof ledger
 
