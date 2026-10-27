@@ -1,6 +1,6 @@
 # Type E: corrected exact 17-line covering radius and weighted-covering obstruction
 
-Date: 2026-10-27. Proof-status labels are strict. Companion exact verifier: \`research/tau5_typeE_17line_exact_covering_correction_2026-10-27_verify.py\`.
+Date: 2026-10-27. Proof-status labels are strict. Companion exact verifier: `research/tau5_typeE_17line_exact_covering_correction_2026-10-27_verify.py`.
 
 ## [PROVED EXACTLY — FINITE 17-LINE TEMPLATE]
 
