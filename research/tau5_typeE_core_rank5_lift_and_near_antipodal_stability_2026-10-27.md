@@ -62,7 +62,7 @@ Proof: among the four endpoint inequalities, those with sign product s imply
 
 m_i.m_j+|z_i.z_j|+|m_i.z_j+s z_i.m_j|<=1/2.
 
-Hence B=m_i.m_j<=-d and |mix|<=-B-d<=1/4-d=epsilon, since -B<=sqrt(a_i a_j)<=1/4. Also a_i+a_j>=2sqrt(a_i a_j)>=2d is not generally true in that direction; the required inequality follows instead from -B<= (a_i+a_j)/2, giving a_i+a_j>=2d. Therefore
+Hence B=m_i.m_j<=-d and |mix|<=-B-d<=1/4-d=epsilon, since -B<=sqrt(a_i a_j)<=1/4. Since -B<=sqrt(a_i a_j)<=(a_i+a_j)/2 and -B>=d, we have a_i+a_j>=2d. Therefore
 
 ||m_i+m_j||^2=a_i+a_j+2B <=1/2-2d=2epsilon,
 
