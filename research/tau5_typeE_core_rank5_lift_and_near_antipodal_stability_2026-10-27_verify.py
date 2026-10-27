@@ -26,6 +26,8 @@ assert all(dot(mi,zj)==0 for mi in m for zj in z)
 assert all(dot(m[i],m[i])+dot(z[i],z[i])==1 for i in range(4))
 V=[m[i]+sgn*z[i] for i in range(4) for sgn in (1,-1)]
 assert all(dot(V[i],V[j])<=sp.Rational(1,2) for i,j in combinations(range(8),2))
+deep={(i,j) for i,j in combinations(range(8),2) if dot(V[i],V[j])<=-sp.Rational(1,2)}
+assert deep=={(i,j) for i in range(0,8,2) for j in range(1,8,2)}
 x=(e[0]+e[1])/sp.sqrt(2)
 assert dot(x,x)==1
 assert all(abs(dot(x,v))<sp.Rational(1,2) for v in V)
