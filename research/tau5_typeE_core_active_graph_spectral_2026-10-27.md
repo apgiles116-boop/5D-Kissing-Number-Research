@@ -1,3 +1,5 @@
+> **2026-10-27 proof-ledger correction:** The later [F3 signed-triangle theorem](tau5_typeE_F3_signed_triangle_caps_2026-10-27.md) shows that every actual F3 matching has at most four active exceptional core pairings. The six-active spectral inequalities in this note remain valid as abstract conditional algebra, but their hypotheses cannot occur in the actual Type-E F3 graph. They should not be treated as an attainable branch. The relaxed four-core Gram sharpness constructions remain relaxations only.
+
 # Type E: exact four-core active-graph spectral midpoint obstruction
 
 Date: 2026-10-27. **[PROVED EXACTLY — conditional on retained Type-E endpoint hypotheses]**. **[OPEN]** No general Type-E exclusion.
