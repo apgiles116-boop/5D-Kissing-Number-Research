@@ -1,5 +1,7 @@
 # Type E: complete center-adapted O(4) fourth-harmonic decomposition
 
+> **ERRATUM (2026-10-27, exact threshold audit):** The former inference `D_raw <= P_raw <= 1780062775/4032758016` was invalid because `D_raw` uses the moving threshold `r_i*r_j/4`, while `P_raw` uses the fixed threshold `1/4`. The universal harmonic identities and D5 test below remain correct. The former six-exception budget (4) is withdrawn and replaced by the mixing-corrected bound in [the threshold audit](tau5_typeE_raw_threshold_audit_2026-10-27.md). No Type-E exclusion is claimed.
+
 Date: 2026-10-27. **[PROVED EXACTLY — universal algebra]** for all identities. **[PROVED EXACTLY — conditional on retained Type-E certificates]** for the defect-budget corollary. **[OPEN]** Type E remains unresolved.
 
 ## Notation
@@ -71,19 +73,19 @@ therefore yields the **exact complete sum-of-squares identity**
           +(5/24)||C+(d/4)P||_F^2
           +(1/24)||B||^2+2||T3||^2+(1/2)||T4||^2.   (3)
 
-## [PROVED EXACTLY — conditional Type E] Defect budget
+## [CORRECTED — conditional Type E] Defect-budget interface
 
-The retained exact six-exception positive raw-defect certificate gives
+The retained six-exception certificate bounds the fixed-threshold positive defect
+`P_fixed = sum [w_ij*(w_ij-1/4)]_+`, where `w_ij=(z_i.z_j)^2`. It does **not** bound
+`D_raw = sum w_ij*(w_ij-r_i*r_j/4)` from above without a midpoint correction.
 
-    D_raw <= P_raw <= 1780062775/4032758016.
+The exact relation is
+```
+D_raw = P_fixed-E_fixed + (1/4)*sum_{i<j}(1-r_i*r_j)*w_ij,
+```
+where `E_fixed=sum [w_ij*(1/4-w_ij)]_+`. The earlier equation (4), which asserted `D_raw<=P_raw`, is **withdrawn**. In particular the previous scalar right-hand side in (4) is not a valid necessary constraint.
 
-Thus (2) gives the necessary, denominator-free semialgebraic constraint
-
-    (5/24)W+(21/16)h^2+(1/3)||L||^2+(1/24)||B||^2
-      +2||T3||^2+(1/2)||T4||^2
-      <= 1780062775/4032758016 - R2^2/56 + (3/8)S4.  (4)
-
-Here r_i=1-a_i, 0<=a_i<=1/4, sum a_i=A<=383/504. The six individual exceptional correlations have NOT yet been inserted in (4). Their incorporation, together with endpoint-mixing constraints, is the next finite polynomial/KKT task.
+The corrected 184-safe/six-core inequality, including the negative safe-pair mixing term, is derived and checked in [the exact threshold audit](tau5_typeE_raw_threshold_audit_2026-10-27.md), equation (5). All universal harmonic equalities (1)–(3) above are unaffected.
 
 ## [PROVED EXACTLY] D5 sanity check
 
