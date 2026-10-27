@@ -35,7 +35,7 @@ The additional unit center x=(e1+e2)/sqrt(2) obeys |x.v_i^+/-| in {1/(2sqrt(2)),
 
 For 0<b<1/4, the m_i span <e1,e2> and the z_i span <e3,e4,e5>. Hence the joint 8-by-8 Gram matrix has rank exactly five. Adding x does not change the rank.
 
-The raw positive correlation excesses d_ij=(|z_i.z_j|-1/2)_+ are
+**Graph caveat (exact):** At the deep threshold inner product <= -1/2, the eight constructed endpoints have all 16 deep contacts between the four plus endpoints and the four minus endpoints, and none within either sign class. Their induced deep graph is K4,4, whereas the retained F3 core has exactly ten deep edges. This explicit construction therefore violates the prescribed Type-E core adjacency, even though it satisfies every kissing inequality and the isolated-center row.\n\nThe raw positive correlation excesses d_ij=(|z_i.z_j|-1/2)_+ are
 
 d12=1/4, d34=b, and d13=d14=d23=d24=0.
 
