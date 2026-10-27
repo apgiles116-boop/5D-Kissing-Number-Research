@@ -40,7 +40,7 @@ rho_w = min_{||y||=1} max( |x0.y|, max_{j in O}|z_j.y| ).
 For any of the four core edges i, endpoint safety gives |x0.z_i|<=1/2 and |z_j.z_i|<=1/2 for all j in O. Evaluate the maximum at u_i=z_i/sqrt(1-a_i). It follows that
 
 rho_w <= 1/(2*sqrt(1-a_i)),
-a_i >= 1-1/(4*rho_w^2),
+a_i >= 1-1/(4*rho_w^2) when rho_w>0,
 and necessarily rho_w <= 1/sqrt(3).
 
 This is LABEL-FREE. A proof that the actual weighted center-plus-outside configuration has rho_w>1/sqrt(3) would exclude Type E.
