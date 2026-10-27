@@ -65,7 +65,15 @@ A_C >= 12*(40128/410881) = 481536/410881
     = 1.1719597645... > 383/504.                     (6)
 ```
 
-Thus that particular flex cannot extend to Type E even without the isolated-center covering theorem. This is not a general six-exception exclusion.
+This excludes any endpoint realization that **retains these six raw projected correlations**. It does **not** exclude keeping the six *normalized directions* while shortening the projected vectors: then their raw correlations shrink. In fact, if all four projected core vectors are scaled uniformly to squared norm `r=1-a` while retaining their common normalized correlation `c=491137/821762`, the six-active inequality only requires
+
+```
+6*((1-a)*c-1/2) <= 2*a,
+a >= (6*c-3)/(6*c+2) = 240768/2295173 = 0.104901896...,
+A_C=4*a >= 963072/2295173 = 0.419607585... .        (6a)
+```
+
+This is compatible with `A<=383/504`, so **the core spectral inequality alone does not exclude a scaled flex**. The previously established covering argument excludes that particular normalized twenty-line family from the isolated-center branch. Neither argument excludes arbitrary Type E.
 
 For the retained individual defect cap `0<=d_ij<=1/4`, let `f(d)=(1/2+d)^2(d+d²)`. Increasing convexity and (5) give the relaxed six-active quartic positive-defect envelope
 
