@@ -1,3 +1,5 @@
+> **2026-10-27 strengthening / proof-ledger correction:** The later [F3 signed-triangle theorem](tau5_typeE_F3_signed_triangle_caps_2026-10-27.md) proves the sharper one-cross cap d<1/8, the zero-cross equality d=0, and forbids every fully active quotient triangle. Hence at most four core pairings can be exceptional. The bounds below remain valid but are superseded by P2 quartic <=0.18751144325156904 and P1/P3 <=0.25342941200156904. In particular the six-active F3 branches are impossible, so their numerical bounds below are conditional/vacuous for actual F3 configurations.
+
 # Type E: exact F3 cross-contact defect caps from near-antipodal stability
 
 Date: 2026-10-27.
