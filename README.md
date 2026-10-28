@@ -124,3 +124,14 @@ See [the exact proof](research/tau5_typeE_high_center_rank6_exact_atlas_2026-10-
 Under the retained high-center rounding estimate, `||2Ghat-2G||_F^2 < 158205281/3368750000 < 1/16`, the previous rank-six ceiling therefore becomes `rank(Ghat)<=5`. Modulo two, the unsigned support adjacency has **binary rank at most four**, forcing at least one pair of nonadjacent false twins among its 17 vertices. The finite calculation uses exact integer characteristic polynomials, rational sign-variation root counts, integer Schur complements and independently checked clique search.
 
 See [proof](research/tau5_typeE_high_center_rank5_exact_clique_2026-10-28.md) and [exact verifier](research/tau5_typeE_high_center_rank5_exact_clique_2026-10-28_verify.py). **[OPEN]** The rounded matrix is not yet known PSD; the low-center Type-E branch and other graph cases remain open. **Global proved range remains 40<=tau_5<=44.**
+
+
+## High-center PSD rigidity and exact D5 rounded labeling (2026-10-28)
+
+**[NEW — EXACT FINITE CERTIFICATE; APPLICATION CONDITIONAL ON HIGH-CENTER GEOMETRY]** An independent integral star-complement enumeration proves that any symmetric integer matrix of order at least 13 with diagonal 2, off-diagonal 0 or ±1, and rank at most five must be **positive semidefinite of rank exactly five**. Exact maximum sizes for ranks 1–4 are 1, 3, 6, and 12; an **indefinite** rank-five matrix has at most 10 vertices. This uses 24 switching-normalized rank-four signings and 220 rank-five signings (164 nonsingular indefinite bases), with maximum outside-column cliques 8 and 5, respectively.
+
+Combining this universal lemma with the preceding high-center rank-five reduction proves that the **rounded** 17-line Gram is PSD and belongs to the **D5 root system** by the standard ADE classification: rank-five A5 has only 15 root lines, reducible types at most 13, and D5 has 20. This is a justified D5 labeling for the rounded subsystem, **not** for the unrounded vectors and not a uniqueness claim about optimal projective packings.
+
+The 17 rounded D5 lines have **84–87 high-correlation edges**, center degree `k_I in {10,11,12}`, and at least 74/73/72 high isolated-isolated pairings in those respective branches. Their 5D frame operator has the exact spectral gap `F_17 >= I_5`. These give concrete inputs for the next Q-kernel perturbation and second-order stability analysis. **Type E remains open. Global proved range remains 40<=tau_5<=44.**
+
+See [proof and limitations](research/tau5_typeE_high_center_PSD_D5_root_rigidity_2026-10-28.md) and [exact integer verifier](research/tau5_typeE_high_center_PSD_D5_root_rigidity_2026-10-28_verify.py).
