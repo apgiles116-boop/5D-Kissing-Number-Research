@@ -155,3 +155,12 @@ See [derivation](research/tau5_typeE_high_center_D5_Qkernels_2026-10-28.md) and 
 [Full theorem and witnesses](research/tau5_typeE_D5_17line_flex_2026-10-28.md) · [Standalone exact verifier](research/tau5_typeE_D5_17line_flex_2026-10-28_verify.py).
 
 **[OPEN]** Type E high/low center, C, D, generic e>=27, non-isolated branches. **Global proved range unchanged: 40<=tau_5<=44.**
+
+
+## High-center Type E: eight-endpoint D5 extension obstruction (2026-10-28)
+
+**[NEW EXACT DERIVATION; CONDITIONAL BRANCH EXCLUSION]** The Type-E high-center branch `s>=7` is impossible **provided** the previously retained high-center harmonic/mass resource, quantization, rounded-Gram error `<1/9`, and rank-five PSD/D5 finite classification hold. The new proof aligns the true 17-vector frame to the rounded D5 frame with Frobenius error `<2/17<1/8`. Each of the **eight F3 endpoints** then produces a rounded integer correlation column. Exact three-root relations (rank 12 for every 17-line D5 subset) force the column to lie in the D5 frame's column space. A discrete norm-gap theorem restricts each endpoint to a neighborhood of one of the **six signed omitted roots**. Eight endpoints cannot occupy six signed neighborhoods without violating the kissing inequality. The seven-orbit integer verifier passed; it also classifies all 49/51 feasible discrete extension patterns.
+
+**[CONDITIONAL / AUDIT REQUIRED]** This does **not** independently re-prove the upstream mass/harmonic/rounding/D5 certificates and is not a global Type-E elimination. The **low-center branch `s<7` remains open**, as do Types C,D, generic `e>=27`, and non-isolated cases. Retain `M(F3)<=89`, matching `M(P)>=S/2-28/3`, and `A<=383/504`. **Global proved range remains `40<=tau_5<=44`.**
+
+[Full proof](research/tau5_typeE_high_center_core_extension_2026-10-28.md) | [Exact integer verifier](research/tau5_typeE_high_center_core_extension_2026-10-28_verify.py).
