@@ -1,5 +1,7 @@
 # Type E: endpoint-charge SOS excludes all four-active F3 cores
 
+**[PARTIALLY SUPERSEDED — 2026-10-27]** The P1/P3 diagonal-active quartic ceiling 0.253429412... retained in Section 3 has now been tightened to **45/256 = 0.17578125**, and its corrected harmonic-positive contribution to **215/1024**. See [F3 diagonal-interference PSD theorem](tau5_typeE_F3_diagonal_interference_2026-10-27.md). The P2 bounds 225/2048 and 9/64, and the endpoint-charge theorem itself, remain valid.
+
 Date: 2026-10-27.
 
 **[PROVED EXACTLY — conditional on the retained Type-E F3 graph and endpoint kissing inequalities]** Every F3 perfect matching has at most **three** exceptional projected pairings, improving the earlier four-active ceiling. For matching P2, the sum of linear correlation excesses is at most \(1/4\), the fixed-threshold quartic positive defect is at most \(225/2048\), and the sum of fixed squared-correlation excesses is at most \(9/32\). **[OPEN]** This is not a Type-E exclusion and does not improve \(40\le\tau_5\le44\).
