@@ -24,7 +24,7 @@ Let x=A_I be total midpoint energy of 16 isolated K2 edges and y=A_C that of the
 
     sum_I D(a_i)<=S-74<=15.
 
-By concavity and x<1/4, D(x)<=sum_I D(a_i), so x<=r=D^{-1}(15), where
+First D(a)>=84a gives x<=15/84=5/28<1/4. Concavity and D(0)=0 then give the subadditivity D(x)<=sum_I D(a_i). Thus x<=r=D^{-1}(15), where
 
     r=(1-sqrt((7+sqrt(721))/56))/2
      =0.11125520694693414098....
