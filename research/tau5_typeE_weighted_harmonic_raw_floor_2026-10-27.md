@@ -1,3 +1,5 @@
+> **STRENGTHENING (2026-10-27; conditional on retained F3 mass certificates):** The earlier scalar ceiling A<=383/504 can be sharpened to A<=0.65103701309... by the 2026-10-14 mass-concavity argument. Joint control of U=sum a_i^2 then raises the global raw squared-correlation floor from 27.6841868... to **28.01979372338...**, and gives new 184-safe-pair floors. See [joint mass/Q safe-pair bridge](tau5_typeE_mass_concavity_joint_Q_safe_bridge_2026-10-27.md). The exact harmonic identities below remain valid; the old floor is retained only as a weaker bound requiring fewer inherited mass inputs. No Type-E exclusion is claimed.
+
 # Type E: capped-energy correlation floor and raw fourth-harmonic identity
 
 Date: 2026-10-27. Status: **[PROVED EXACTLY — conditional on retained Type-E hypotheses]** for the new raw squared-correlation floor; **[PROVED EXACTLY — universal algebra]** for the harmonic identities. **[OPEN]** Type E is not eliminated; the global range remains 40 <= tau_5 <= 44.
