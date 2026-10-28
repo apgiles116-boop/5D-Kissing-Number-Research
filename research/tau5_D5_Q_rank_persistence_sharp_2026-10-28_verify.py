@@ -64,6 +64,10 @@ lam=(13-sqrt(149))/20
 assert R(489,40)**2>149
 assert R(31,800)==2*R(1,10)**2+R(3,10)*R(1,4)**2
 assert lam>R(31,800)
+assert R(31,800)>R(4,125)  # energy-free epsilon<=1/10
+assert R(179,1000)**2>R(4,125)
+assert R(199,1000)-R(179,1000)==R(1,50)
+assert 2*R(7,50)**2+R(3,10)*R(1,2500)**2<lam
 upper_sqrt149=13-20*R(199,1000)**2
 assert upper_sqrt149>0 and upper_sqrt149**2>149
 assert lam>R(199,1000)**2
@@ -75,5 +79,6 @@ assert R(199,1000)-R(71,500)==R(57,1000)
 print("PASS: exact Q perturbation identity")
 print("PASS: 4845 sixteen-line D5 subsets in 17 exact Weyl orbits")
 print("PASS: ranks 3360/1440/45 and sharp spectral gap")
-print("PASS: epsilon<=1/10, radial deficit<=1/4 forces rank persistence")
+print("PASS: epsilon<=1/10 alone forces rank persistence, no radial deficit needed")
+print("PASS: epsilon<=7/50 with radial deficit<1/2500 also suffices")
 print("PASS: near-seven sigma_r(T_Y)>57/1000 under retained hypotheses")
