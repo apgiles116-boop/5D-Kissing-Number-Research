@@ -13,7 +13,7 @@ import sympy as sp
 def charpoly_int(A):
     n=A.shape[0];B=np.eye(n,dtype=np.int64);I=B.copy();out=[1]
     for k in range(1,n+1):
-        P=A@B;tr=int(np.trace(P));assert tr%k==0
+        P=A@B;assert np.max(np.abs(P))<10**12;tr=int(np.trace(P));assert tr%k==0
         c=-(tr//k);out.append(c);B=P+c*I
     return tuple(out)
 
