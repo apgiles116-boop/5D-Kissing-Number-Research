@@ -144,3 +144,14 @@ See [proof and limitations](research/tau5_typeE_high_center_PSD_D5_root_rigidity
 The 17-line rounded D5 frame has the **sharp spectral bound `F_17>=2I_5`**, since the three missing unit roots have a Gram operator norm at most 2. Combining this with the retained `||G-Ghat||_F<1/9` shows the **true** 17-vector Gram has rank exactly five, nonzero eigenvalues `>17/9`, and its 12-dimensional kernel is close to the rounded kernel: projections of rounded-kernel vectors onto the true range have norm `<||w||/17`; projections of true-kernel vectors onto the rounded range have norm `<||u||/18`. These are quantitative stability bounds, not a Type-E exclusion.
 
 See [derivation](research/tau5_typeE_high_center_D5_Qkernels_2026-10-28.md) and [exact verifier](research/tau5_typeE_high_center_D5_Qkernels_2026-10-28_verify.py). The rounded Q relations have **not** been transferred as exact relations to the true Type-E vectors. **Global proved range remains 40<=tau_5<=44.**
+
+
+## Exact 17-line D5 flexibility theorem (2026-10-28)
+
+**[PROVED EXACTLY — D5 TEMPLATE; CONDITIONAL TYPE-E RELEVANCE]** Every 17-line subset of the standard 20 projective D5 root lines admits a **noncongruent finite deformation preserving coherence <=1/2**. The 1140 omitted triples form seven Weyl orbits (sizes 120,60,160,40,40,480,240). Explicit sparse integer velocities and 952 exact quartic Bernstein positivity certificates prove the claim on the whole parameter interval 0<=t<=1/10; no numerical LP or floating-point eigenvalue decisions enter the final certificate.
+
+**Research consequence:** Full-D5 infinitesimal rigidity does **not** pass automatically to the rounded high-center 17-line subsystem. The remaining four F3 directions and their six exceptional pairings are indispensable for any rigidity-based Type-E contradiction. This is a negative result for a tempting shortcut, **not** an elimination of Type E.
+
+[Full theorem and witnesses](research/tau5_typeE_D5_17line_flex_2026-10-28.md) · [Standalone exact verifier](research/tau5_typeE_D5_17line_flex_2026-10-28_verify.py).
+
+**[OPEN]** Type E high/low center, C, D, generic e>=27, non-isolated branches. **Global proved range unchanged: 40<=tau_5<=44.**
