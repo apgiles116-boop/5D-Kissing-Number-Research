@@ -132,6 +132,15 @@ See [proof](research/tau5_typeE_high_center_rank5_exact_clique_2026-10-28.md) an
 
 Combining this universal lemma with the preceding high-center rank-five reduction proves that the **rounded** 17-line Gram is PSD and belongs to the **D5 root system** by the standard ADE classification: rank-five A5 has only 15 root lines, reducible types at most 13, and D5 has 20. This is a justified D5 labeling for the rounded subsystem, **not** for the unrounded vectors and not a uniqueness claim about optimal projective packings.
 
-The 17 rounded D5 lines have **84–87 high-correlation edges**, center degree `k_I in {10,11,12}`, and at least 74/73/72 high isolated-isolated pairings in those respective branches. Their 5D frame operator has the exact spectral gap `F_17 >= I_5`. These give concrete inputs for the next Q-kernel perturbation and second-order stability analysis. **Type E remains open. Global proved range remains 40<=tau_5<=44.**
+The 17 rounded D5 lines have **84–87 high-correlation edges**, center degree `k_I in {10,11,12}`, and at least 74/73/72 high isolated-isolated pairings in those respective branches. Their 5D frame operator has the sharper exact spectral gap `F_17 >= 2I_5`. These give concrete inputs for the next Q-kernel perturbation and second-order stability analysis. **Type E remains open. Global proved range remains 40<=tau_5<=44.**
 
 See [proof and limitations](research/tau5_typeE_high_center_PSD_D5_root_rigidity_2026-10-28.md) and [exact integer verifier](research/tau5_typeE_high_center_PSD_D5_root_rigidity_2026-10-28_verify.py).
+
+
+## High-center D5 Q-kernels and exact Gram stability (2026-10-28)
+
+**[NEW — EXACT ALGEBRA, TYPE-E APPLICATION CONDITIONAL]** For any 17 of the 20 D5 root lines, the traceless-tensor Q matrix has **rank 14 (nullity 3)** if the three omitted lines belong to distinct coordinate supports, or **rank 13 (nullity 4)** if both signs of one support are omitted. An independent exact/modular enumeration of all 1,140 omitted triples gives 960 and 180 cases respectively. All Q-kernel relations are explicitly weighted-degree relations on the seven or eight coordinate supports retaining both D5 signs.
+
+The 17-line rounded D5 frame has the **sharp spectral bound `F_17>=2I_5`**, since the three missing unit roots have a Gram operator norm at most 2. Combining this with the retained `||G-Ghat||_F<1/9` shows the **true** 17-vector Gram has rank exactly five, nonzero eigenvalues `>17/9`, and its 12-dimensional kernel is close to the rounded kernel: projections of rounded-kernel vectors onto the true range have norm `<||w||/17`; projections of true-kernel vectors onto the rounded range have norm `<||u||/18`. These are quantitative stability bounds, not a Type-E exclusion.
+
+See [derivation](research/tau5_typeE_high_center_D5_Qkernels_2026-10-28.md) and [exact verifier](research/tau5_typeE_high_center_D5_Qkernels_2026-10-28_verify.py). The rounded Q relations have **not** been transferred as exact relations to the true Type-E vectors. **Global proved range remains 40<=tau_5<=44.**
