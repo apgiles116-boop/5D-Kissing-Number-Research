@@ -175,3 +175,10 @@ See [derivation](research/tau5_typeE_high_center_D5_Qkernels_2026-10-28.md) and 
 [Full proof](research/tau5_typeE_low_center_near7_D5_extension_2026-10-28.md) · [Exact algebra/17-orbit verifier](research/tau5_typeE_low_center_near7_2026-10-28_verify.py) · [4096-clique exact atlas verifier](research/tau5_typeE_low_center_16rank6_atlas_2026-10-28_verify.py).
 
 **[OPEN]** The low-center range \(s<209/30\) remains, as do Types C and D, generic \(e\ge27\), non-isolated cases, and sparse classification without \(\delta(G)\ge1\). The global proved range remains **\(40\le\tau_5\le44\)**. Upstream Type-E mass and finite-atlas completeness are retained inputs; this result is not an unconditional \(\tau_5=40\) proof.
+
+
+## Residual Type-E center bracket and Q-floor (2026-10-28)
+
+**[NEW EXACT ALGEBRA; CONDITIONAL TYPE E]** The isolated-center harmonic resource and capped-simplex quantization give an algebraic lower bound s >= sigma=5.827662491235... for the center second moment. This lower bracket does not rely on signed-Gram atlases. Combining it with the **previously conditional** near-seven exclusion s>=209/30 confines the remaining Type-E branch to sigma<=s<209/30. The retained directional-frame/KKT inequality then strengthens the conditional projected squared-correlation floor to Q>=28.395623511729..., with 184-safe floors 26.5479672617 (P1/P3) and 26.6143735117 (P2). All new arithmetic was checked with exact rationals. This does not eliminate Type E or independently certify the upstream finite atlases.
+
+[Derivation](research/tau5_typeE_low_center_bracket_Q_2026-10-28.md) · [Verifier](research/tau5_typeE_low_center_bracket_Q_2026-10-28_verify.py). **Global proved range remains 40<=tau_5<=44.**
