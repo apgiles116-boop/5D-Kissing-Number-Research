@@ -202,3 +202,10 @@ gives `||T_Y-T_X||_op²<=2 epsilon²+(3/10)b²`, where `epsilon=||Y-X||_F` and `
 **[CONDITIONAL Type E]** In the already conditionally excluded near-seven branch, the retained bounds `epsilon<1/10` and `b<1/2500` strengthen this to `sigma_rank(T_X)(T_Y)>57/1000`. For rank-14 rounded templates this gives an explicit fourth-moment coercivity inequality. **No new Type-E interval is excluded**; the residual low-center branch still lacks a uniform rounded-D5 certificate. The global proved range remains **40<=tau_5<=44**.
 
 [Derivation](research/tau5_D5_Q_rank_persistence_sharp_2026-10-28.md) · [Exact 4,845-subset verifier](research/tau5_D5_Q_rank_persistence_sharp_2026-10-28_verify.py).
+
+
+## Sparse-eight D5 Q-kernel incidence bridge (2026-10-28)
+
+**[PROVED EXACTLY — standalone D5 algebra and finite combinatorics]** Every 16-line D5 subset contains at least one Q-kernel relation on exactly eight root lines; every 17-line subset contains at least three. The shortest relations are either alternating four-cycles (15 patterns) or positive triangle-plus-complementary-edge tight frames (10 patterns). Crucially, 240 of the 4,845 sixteen-line subsets have **no** four-cycle but retain a positive eight-line relation. The full 20-line Q-Gram has positive eigenvalues 3/2 (fourfold) and 1 (tenfold), with an explicit minimum-norm right inverse.
+
+**[CONDITIONAL TYPE-E APPLICATION]** If the 16 isolated projected edges admit a rigorously justified D5 labeling, the positive eight-line relation yields an exact squared-correlation identity on 28 pairings, all contained in the 184 **safe** Walsh blocks. This bypasses the six exceptional F3-core pairings but does **not** yet yield an upper-bound contradiction or eliminate Type E. Upstream geometric rounding and alignment certificates were not independently recertified. [Derivation](research/tau5_D5_sparse8_Q_incidence_2026-10-28.md) · [exact verifier](research/tau5_D5_sparse8_Q_incidence_2026-10-28_verify.py). **Global proved range remains 40<=tau_5<=44.**
