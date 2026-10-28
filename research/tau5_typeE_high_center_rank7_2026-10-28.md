@@ -65,3 +65,23 @@ Since \(2B\) is integral, \(\det B\) is an integer multiple of \(2^{-k}\), and m
 **[OPEN]** The high-center branch is not excluded. The low-center branch remains open. The rounded matrix is not known to be PSD or rank five, and no \(D_5\) labeling is justified. The next finite target is a signed-graph classification on 17 vertices with at least 81 nonzero edges and eigenvalue \(-2\) of multiplicity at least 10, plus a nearby rank-five PSD Gram.
 
 **[GLOBAL PROVED RANGE UNCHANGED]** \(40\le\tau_5\le44\). Retain \(M(F_3)\le89\), \(M(P)\ge S/2-28/3\), and \(A\le383/504\); do not replace global claims with conditional Type-E conclusions.
+
+
+## 4. Binary alternating-rank corollary and finite star complement
+
+**[NEW, EXACT — CONDITIONAL ON THE RANK-SEVEN REDUCTION]** Let \(M=2\widehat G=2I+S\). It is integral with diagonal 2 and off-diagonal entries in \(\{-1,0,1\}\), and \(\operatorname{rank}_{\mathbb Q}M\le7\). Reducing modulo 2 gives the **unsigned adjacency matrix** \(A_{\mathrm{bin}}=M\bmod2\) of the 17-vertex support graph: signs disappear and the diagonal is zero. Since reduction modulo a prime cannot increase matrix rank,
+\[
+\operatorname{rank}_{\mathbb F_2}A_{\mathrm{bin}}\le7.
+\]
+A zero-diagonal symmetric matrix in characteristic two is alternating, hence has **even rank**. Therefore
+\[
+\boxed{\operatorname{rank}_{\mathbb F_2}A_{\mathrm{bin}}\le6,\qquad
+\operatorname{nullity}_{\mathbb F_2}A_{\mathrm{bin}}\ge11.}
+\]
+Equivalently, the underlying unsigned support graph has a representation by vectors \(u_1,\ldots,u_{17}\in\mathbb F_2^6\) with adjacency \(A_{ij}=u_i^TJu_j\) for an alternating bilinear form \(J\) (allowing lower rank). This is a necessary condition, not an exclusion.
+
+For an exact finite classification, choose a nonsingular principal block \(T=M_{BB}\) of order \(r=\operatorname{rank}M\le7\), which exists because \(M\) is symmetric. For the remaining vertices, write the block decomposition
+\[
+ M=\begin{pmatrix}T&C\\C^T&D\end{pmatrix}.
+\]
+Rank \(r\) is **equivalent** to the exact Schur complement condition \(D=C^TT^{-1}C\). Each column \(c\) of \(C\) has entries in \(\{-1,0,1\}\), must satisfy \(c^TT^{-1}c=2\), and every distinct pair \(c,d\) must satisfy \(c^TT^{-1}d\in\{-1,0,1\}\). The known high-center degree range \(10\le k_I\le14\), at least 71 isolated-isolated support edges, and the binary rank-six condition provide exact combinatorial pruning. The remaining geometric filter is a PSD rank-five Gram within Frobenius distance \(1/9\). No classification is claimed yet.
