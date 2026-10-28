@@ -70,3 +70,9 @@ assert s.simplify(wtotal-(30-3*A+A*A/10-U/2+Vz/2))==0
 print("PASS: exact mass/Q/F3 bridge regression")
 for label,value in [("Astar",Astar),("Ustar",Ustar),("Lstar",Lstar),("P1/P3 safe floor",Lstar-s.Rational(473,256)),("P2 safe floor",Lstar-s.Rational(57,32))]:
     print(label,s.N(value,20))
+
+cstar=s.Rational(1,4)-Astar/10-Ustar/100
+cr=s.Rational(1,4)-ar/10-Ur/100
+assert cr==s.Rational(917532974747,5000000000000)
+assert float(cstar)>float(cr)>float(s.Rational(34697,201600))
+print("new frame/mixing coefficient",s.N(cstar,20))
