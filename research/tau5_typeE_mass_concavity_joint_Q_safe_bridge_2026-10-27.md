@@ -123,3 +123,28 @@ This explicitly transfers the global Q floor into the six-exception language and
 **[OPEN]** Type E, Types C and D, generic e>=27 and non-isolated branches. Next: derive a nontrivial *upper* bound on the 184-safe squared mass using Walsh mixing, center constraints and rank-five Gram geometry, and compare to (10). Global 40<=tau_5<=44 unchanged.
 
 Companion verifier: tau5_typeE_mass_concavity_joint_Q_safe_bridge_2026-10-27_verify.py.
+
+
+## 5. Additional exact consequence: stronger second-order frame/mixing coefficient
+
+The earlier universal frame/mixing completion (see tau5_typeE_frame_mixing_coercivity_2026-10-27.md) gives, under Type-E assumptions,
+
+    (5/24)W+(1/4)T_R >= U*(1/4-A/10-U/100).
+
+The joint caps (3),(4) sharpen this immediately to
+
+    (5/24)W+(1/4)T_R >= c_new*U,
+    c_new := 1/4-Astar/10-Ustar/100
+           =0.18350669555922809695....
+
+A conservative **exact rational** coefficient is
+
+    c_new > 917532974747/5000000000000
+          =0.1835065949494.
+
+This improves the former rational coefficient 34697/201600=0.1721081349206 by about 6.62%. Keeping the orthogonality penalty J3 and the audited fixed-versus-weighted threshold correction, the previously proved necessary fourth-harmonic inequality remains valid with its coefficient replaced by the new one:
+
+    H4plus+(917532974747/5000000000000)*U
+      <= C_branch-R2^2/56+3*S4/8+19*A/16-(A^2-U)/32,
+
+where C_branch=191/1024 for P1/P3 and 479/3584 for P2, R2=sum_i(1-a_i)^2 and S4=sum_i(1-a_i)^4. This is a **conditional necessary inequality**, not a contradiction; the stronger mass input must be retained whenever this coefficient is used.
