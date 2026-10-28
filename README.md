@@ -70,3 +70,12 @@ See [full proof](research/tau5_typeE_isolated_center_harmonic_gap_2026-10-28.md)
 where L0=28.3885724064515... is an explicitly defined algebraic constant. The proof includes an exact rational derivative certificate; no D5 labeling or new SDP is used. Under retained F3 six-core caps, the 184-safe squared-correlation floors improve to **26.5409161564515** (P1/P3) and **26.6073224064515** (P2), with the same extra penalties.
 
 See [derivation](research/tau5_typeE_center_frame_directional_gap_2026-10-28.md) and [SymPy verifier](research/tau5_typeE_center_frame_directional_gap_2026-10-28_verify.py). **[OPEN]** No Type-E contradiction; global range still **40<=tau_5<=44**.
+
+
+## Center-contact quantization and exact KKT refinement (2026-10-28)
+
+**[PROVED EXACTLY — conditional Type E]** Retaining the isolated-center fourth-harmonic row's nondeep-contact slack produces a new exact two-branch inequality. If the center second moment `s=sum_{w!=v}(v.w)^2` is at least 7, the sixteen isolated-edge midpoint energy obeys `x<=D^{-1}(5/64)=0.000399120052...`, and the total Delsarte slack of all 794 nondeep pairs satisfies `N<=5/64`. Thus **at most five** nondeep scalar products can be at distance at least 1/20 from `{0,+/-1/2}`. This is a necessary near-integrality condition, not a combinatorial classification.
+
+A two-variable rational KKT/resource-exchange argument, combined with the preceding directional frame result for `s<=7`, improves the conditional global projected squared-correlation floor to **28.38917770968655...**. The conditional 184-safe-pair floors are now **26.54152145968655** (P1/P3) and **26.60792770968655** (P2). The gain over 28.3885724 is small but certified without numerical optimization or a generic SDP.
+
+See [derivation](research/tau5_typeE_center_quantized_KKT_2026-10-28.md) and [exact rational verifier](research/tau5_typeE_center_quantized_KKT_2026-10-28_verify.py). **[OPEN]** Type E remains unresolved; global proved range remains **40<=tau_5<=44**.
