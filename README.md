@@ -164,3 +164,14 @@ See [derivation](research/tau5_typeE_high_center_D5_Qkernels_2026-10-28.md) and 
 **[CONDITIONAL / AUDIT REQUIRED]** This does **not** independently re-prove the upstream mass/harmonic/rounding/D5 certificates and is not a global Type-E elimination. The **low-center branch `s<7` remains open**, as do Types C,D, generic `e>=27`, and non-isolated cases. Retain `M(F3)<=89`, matching `M(P)>=S/2-28/3`, and `A<=383/504`. **Global proved range remains `40<=tau_5<=44`.**
 
 [Full proof](research/tau5_typeE_high_center_core_extension_2026-10-28.md) | [Exact integer verifier](research/tau5_typeE_high_center_core_extension_2026-10-28_verify.py).
+
+
+## Low-center near-seven exclusion via sixteen-line D5 rigidity (2026-10-28)
+
+**[NEW EXACT ALGEBRA AND FINITE CERTIFICATES; CONDITIONAL TYPE-E EXCLUSION]** The center-harmonic/quantization polynomial extends the near-integrality resource to the *low-center* strip \(209/30\le s\le7\), with \(s=\sum_{w\ne v}(v\cdot w)^2\). On this strip, the noncenter nondeep slack \(R=N-N_0\) and isolated-edge midpoint energy \(x\) satisfy \(D_I+R+g_-(7-s)\le5/64\), where \(g_-(d)=7d(84d^3+28d^2-151d+5)/16\ge0\). Consequently \(x<1/2500\), \(R\le5/64\), and the sixteen isolated projected directions have a half-integral rounded Gram within Frobenius distance \(1/13\).
+
+**[NEW FINITE CHECK]** Exhaustive exact enumeration of 4,096 maximal rank-six sixteen-vertex Schur extensions gives one nonzero characteristic polynomial, all six roots \(>1/2\), excluding rounded rank six under the geometric proximity bound. Together with the retained seven-basis and PSD atlases, the rounded sixteen lines are a \(D_5\) subsystem. All 4,845 omitted-four-line subsets form 17 Weyl orbits; three-term integer root relations span the eleven-dimensional kernel, and exactly eight signed norm-two extensions are possible. A new separate center rounding estimate brings the isolated center and all eight \(F_3\) endpoints within eight omitted signed-root neighborhoods. Nine unit vectors cannot occupy eight neighborhoods under the kissing constraint. Thus **\(209/30\le s\le7\) is excluded conditionally**. Together with the earlier conditional \(s\ge7\) exclusion, **surviving Type E requires \(s<209/30\)**.
+
+[Full proof](research/tau5_typeE_low_center_near7_D5_extension_2026-10-28.md) · [Exact algebra/17-orbit verifier](research/tau5_typeE_low_center_near7_2026-10-28_verify.py) · [4096-clique exact atlas verifier](research/tau5_typeE_low_center_16rank6_atlas_2026-10-28_verify.py).
+
+**[OPEN]** The low-center range \(s<209/30\) remains, as do Types C and D, generic \(e\ge27\), non-isolated cases, and sparse classification without \(\delta(G)\ge1\). The global proved range remains **\(40\le\tau_5\le44\)**. Upstream Type-E mass and finite-atlas completeness are retained inputs; this result is not an unconditional \(\tau_5=40\) proof.
