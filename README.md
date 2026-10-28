@@ -197,7 +197,7 @@ Every 17-line D5 subset contains **local eight-line Q-kernel relations** from al
 
 **[NEW — PROVED EXACTLY, standalone]** For unit D5 root-line columns x_i and projected columns y_i with ||y_i||²=1-a_i, the exact identity
 `||Q(y_i)-Q(x_i)||_F²=(2-a_i)||y_i-x_i||²-(1/2)||y_i-x_i||⁴+(3/10)a_i²`
-gives `||T_Y-T_X||_op²<=2 epsilon²+(3/10)b²`, where `epsilon=||Y-X||_F` and `b=sum a_i`. The exact 16-line Q spectral atlas has `lambda_min^+=(13-sqrt(149))/20>31/800`. Therefore **epsilon<=1/10 and b<=1/4 force rank(T_Y)>=rank(T_X)** for *every* sixteen-line D5 subset. This corrects the previous overly pessimistic perturbation threshold 0.099589 that came from using `2 epsilon`.
+gives `||T_Y-T_X||_op²<=2 epsilon²+(3/10)b²`, where `epsilon=||Y-X||_F` and `b=sum a_i`. The exact 16-line Q spectral atlas has `lambda_min^+=(13-sqrt(149))/20>31/800`. Moreover the sharp unit-ball Lipschitz bound `||T_Y-T_X||_op <= (4/sqrt(5))*epsilon` proves the **stronger result that epsilon<=1/10 ALONE forces rank(T_Y)>=rank(T_X)** for every sixteen-line D5 subset, with no radial-energy assumption. The previous 0.099589 threshold came from the unnecessarily weak `2 epsilon` estimate. When b<1/2500, the quadratic identity even permits epsilon<=7/50=0.14 for rank persistence.
 
 **[CONDITIONAL Type E]** In the already conditionally excluded near-seven branch, the retained bounds `epsilon<1/10` and `b<1/2500` strengthen this to `sigma_rank(T_X)(T_Y)>57/1000`. For rank-14 rounded templates this gives an explicit fourth-moment coercivity inequality. **No new Type-E interval is excluded**; the residual low-center branch still lacks a uniform rounded-D5 certificate. The global proved range remains **40<=tau_5<=44**.
 
