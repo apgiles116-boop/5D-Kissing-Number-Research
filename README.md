@@ -31,3 +31,13 @@ This ledger is deliberately conservative. A passing arithmetic script does not p
 **PROVED for a specific matching, not a Type-E elimination:** For the perfect matching `04|17|23|56` of the ten-edge F3, oriented as `(0,4),(7,1),(2,3),(5,6)`, the six remaining deep contacts each link different matched pairs with matching endpoint signs. For its four midpoints, let `C=Σ||m_i||²` and `N=Σ_{i<j}(-m_i·m_j)_+`. The analytic signed-Gram and Cauchy–Schwarz argument proves `C−N > 1/[24(4−C)] ≥ 1/96`. An optional improvement `C−N>125/11802` depends on a separate, not independently recertified `C>33/500` lemma.
 
 **Crucial limitation:** the F3 Delsarte-mass theorem chooses some perfect matching, which need not be this all-singleton matching. **No** transfer to the mass-selected 20-edge bound or Type-E exclusion is claimed. See [the full proof](research/tau5_typeE_F3_singleton_signed_gram_stability_2026-10-10.md) and [the rational checker](research/tau5_typeE_F3_singleton_signed_gram_stability_2026-10-10.py). The global proved range is still `40≤τ₅≤44`.
+
+## Current Type-E research checkpoint (2026-10-28)
+
+**PROVED EXACTLY (algebra; Type-E consequences conditional on retained graph/mass/endpoint lemmas):** A full frame/safe-mixing SOS identity now retains the isolated fourth energy `U_I`, the nonnegative midpoint-wedge dispersion `Omega`, the core-orthogonality slack and the 184-safe-pair residual. The scalar mass-concavity inputs give `A <= Astar ≈ 0.6510370131` and `U <= Ustar ≈ 0.1389603132`, with an exact stability inequality showing that near-saturation forces isolated fourth energy and therefore positive frame/mixing cost.
+
+**New effective corrected-harmonic core defect ceilings:** `183/1024` for the P1/P3 matchings and `6173/51200` for P2. These are *after* subtracting a rigorously retained core-orthogonality penalty; they are **not** bounds on the raw quartic defect alone. The earlier 2026-10-09 and 2026-10-27 numerical envelopes are historical and should not be substituted for these conditional caps.
+
+See [the 2026-10-28 derivation](research/tau5_typeE_isolated_wedge_and_separable_defect_2026-10-28.md) and [exact SymPy verifier](research/tau5_typeE_isolated_wedge_defect_2026-10-28_verify.py).
+
+**OPEN:** No Type-E contradiction; Types C, D, generic e>=27 and non-isolated branches also remain open. The sparse e=23/e=24 classification is conditional on delta(G)>=1. **Global proved range: 40<=tau_5<=44.**
