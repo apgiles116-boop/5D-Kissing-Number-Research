@@ -88,3 +88,14 @@ See [derivation](research/tau5_typeE_center_quantized_KKT_2026-10-28.md) and [ex
 The 184 safe Walsh blocks admit a discrete `(1/8)Z` rounding with total coefficient squared error at most `5/1344`. More strongly, the true rank-five Gram matrix of the isolated center plus the sixteen isolated projected vectors is within Frobenius distance **<1/8** of a symmetric half-integral 17-by-17 matrix `Ghat`, with `2Ghat` integral, diagonal 2, off-diagonal 0 or ±1. An exact determinant-integrality argument forces **rank(Ghat)<=8**, equivalently its signed adjacency matrix has eigenvalue -2 with multiplicity >=9. **No PSD or rank-five property is claimed for the rounded matrix.**
 
 This reduces the high-center branch to a finite signed-graph/rank problem; it does not eliminate Type E or resolve the low-center branch. See [the proof](research/tau5_typeE_high_center_binary_rank8_2026-10-28.md) and [exact rational verifier](research/tau5_typeE_high_center_binary_rank8_2026-10-28_verify.py). Global proved range remains **40<=tau_5<=44**.
+
+
+## High-center rank-seven and binary-rank-six upgrade (2026-10-28)
+
+**[NEW, EXACT — conditional on the preceding high-center certificates]** On the two contact intervals already proved for the \(s\ge7\) branch, the nondeep quantization polynomial obeys the sharper inequality \(7t^2(1-4t^2)\ge(539/81)\rho(t)^2\), where \(\rho(t)=\min(|t|,1/2-|t|)\). Consequently, the true rank-five PSD 17-vector Gram \(G\) and its half-integral rounding \(\widehat G\) satisfy the stronger exact bound
+\[
+\|G-\widehat G\|_F^2<158205281/13475000000<1/81.
+\]
+An inertia-sensitive determinant/integrality argument, verified by 50 rational comparisons, upgrades the previous **rank(\(\widehat G\)) \(\le8\)** to **rank(\(\widehat G\)) \(\le7\)**. Thus the signed adjacency \(2\widehat G-2I\) has eigenvalue \(-2\) with multiplicity at least **10**. Modulo two, the unsigned adjacency matrix is alternating, hence has **binary rank at most 6** and binary nullity at least 11. An exact Schur-complement/star-complement formulation reduces the remaining high-center classification to at most seven base vertices and columns from \(\{-1,0,1\}^7\).
+
+See [the exact proof and finite reduction](research/tau5_typeE_high_center_rank7_2026-10-28.md) and [Fraction verifier](research/tau5_typeE_high_center_rank7_2026-10-28_verify.py). The old rank-eight statement is retained above only as historical context. **[OPEN]** Neither high-center nor low-center Type E is excluded; Types C, D, generic \(e\ge27\), and non-isolated branches remain open. **Global proved range unchanged: \(40\le\tau_5\le44\).**
