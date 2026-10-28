@@ -99,3 +99,12 @@ This reduces the high-center branch to a finite signed-graph/rank problem; it do
 An inertia-sensitive determinant/integrality argument, verified by 50 rational comparisons, upgrades the previous **rank(\(\widehat G\)) \(\le8\)** to **rank(\(\widehat G\)) \(\le7\)**. Thus the signed adjacency \(2\widehat G-2I\) has eigenvalue \(-2\) with multiplicity at least **10**. Modulo two, the unsigned adjacency matrix is alternating, hence has **binary rank at most 6** and binary nullity at least 11. An exact Schur-complement/star-complement formulation reduces the remaining high-center classification to at most seven base vertices and columns from \(\{-1,0,1\}^7\).
 
 See [the exact proof and finite reduction](research/tau5_typeE_high_center_rank7_2026-10-28.md) and [Fraction verifier](research/tau5_typeE_high_center_rank7_2026-10-28_verify.py). The old rank-eight statement is retained above only as historical context. **[OPEN]** Neither high-center nor low-center Type E is excluded; Types C, D, generic \(e\ge27\), and non-isolated branches remain open. **Global proved range unchanged: \(40\le\tau_5\le44\).**
+
+
+## High-center 82-support and determinant-four pruning (2026-10-28)
+
+**[NEW, EXACT — conditional on the retained high-center certificates]** The rank-five Welch inequality applied to the isolated center plus sixteen projected isolated-edge vectors, combined with the nondeep slack bound `N<=5/64`, forces **at least 82** high/rounded-nonzero pairings among the 136 possible pairs (previously 81). If the center has exactly ten high isolated-edge neighbors, at least **72** of the 120 isolated-isolated pairings are high (previously 71).
+
+The stronger `||G-Ghat||_F<1/9` estimate also gives a sharp integral restriction on any nonsingular principal seven-by-seven block `T` of `2Ghat`: **det(T) is one of -4,-2,2,4**. Therefore a rank-seven rounded candidate necessarily has binary unsigned-support rank **exactly six**; candidates of binary rank at most four have rounded real rank **at most six**. This reduces the exact star-complement base enumeration, without assuming the rounded matrix is PSD or rank five.
+
+See [proof](research/tau5_typeE_high_center_82_support_det4_2026-10-28.md) and [Fraction verifier](research/tau5_typeE_high_center_82_support_det4_2026-10-28_verify.py). **[OPEN]** Type E remains unresolved, including the low-center branch; global proved range remains **40<=tau_5<=44**.
