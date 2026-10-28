@@ -1,5 +1,7 @@
 # Type E: endpoint-Walsh contact counting and signed-triangle obstruction
 
+**[SUPERSEDED BY STRONGER RESULT — 2026-10-27]** See [the exact F3 endpoint-charge SOS](tau5_typeE_F3_endpoint_charge_2026-10-27.md): all three matchings have at most **three** active exceptions, not merely four; the P2 quartic ceiling improves from 0.187511443... to **225/2048 = 0.10986328125**. The signed-triangle lemma and its earlier upper bounds remain valid, but they are not the strongest ledger entries.
+
 Date: 2026-10-27. **[PROVED EXACTLY — conditional on the retained Type-E graph and endpoint inequalities]** This note strengthens the F3 cross-contact defect caps and proves that at most four of the six core pairings can be exceptional. **[OPEN]** No elimination of Type E or improvement to the global bound `40 <= tau_5 <= 44`.
 
 ## 1. Sharp contact-counting bound (no D5 labels)
