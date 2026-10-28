@@ -108,3 +108,10 @@ See [the exact proof and finite reduction](research/tau5_typeE_high_center_rank7
 The stronger `||G-Ghat||_F<1/9` estimate also gives a sharp integral restriction on any nonsingular principal seven-by-seven block `T` of `2Ghat`: **det(T) is one of -4,-2,2,4**. Therefore a rank-seven rounded candidate necessarily has binary unsigned-support rank **exactly six**; candidates of binary rank at most four have rounded real rank **at most six**. This reduces the exact star-complement base enumeration, without assuming the rounded matrix is PSD or rank five.
 
 See [proof](research/tau5_typeE_high_center_82_support_det4_2026-10-28.md) and [Fraction verifier](research/tau5_typeE_high_center_82_support_det4_2026-10-28_verify.py). **[OPEN]** Type E remains unresolved, including the low-center branch; global proved range remains **40<=tau_5<=44**.
+
+
+## High-center exact finite rank-six reduction (2026-10-28)
+
+**[NEW — EXACT FINITE CERTIFICATE, CONDITIONAL ON RETAINED HIGH-CENTER INPUTS]** An exhaustive switching-normalized signed-graph atlas calculation, using integer characteristic polynomials and exact rational real-root counts (not numerical eigenvalues), improves the rounded 17-vector Gram bound from **rank at most seven to rank at most six**. The 197629 seven-vertex signed representatives reduce to 13812 determinant-eligible cases, 4802 distinct characteristic polynomials, and exactly two bases compatible with the rank-five PSD Frobenius proximity. Each has 112 possible eighth-vertex Schur-complement columns, and all 224 extensions violate an exact rational spectral-gap inequality. Therefore the rounded signed adjacency has eigenvalue **-2 with multiplicity at least eleven**. This is not a Type-E exclusion, and the low-center branch remains open.
+
+See [the exact proof](research/tau5_typeE_high_center_rank6_exact_atlas_2026-10-28.md) and [the executable integer/rational verifier](research/tau5_typeE_high_center_rank6_exact_atlas_2026-10-28_verify.py). The preceding rank-seven result is retained only as historical context. **Global proved range unchanged: 40<=tau_5<=44.**
