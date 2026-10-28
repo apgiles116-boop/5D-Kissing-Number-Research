@@ -50,3 +50,12 @@ See [the 2026-10-28 derivation](research/tau5_typeE_isolated_wedge_and_separable
 The sharp elementary contact-quantization inequality `-F(t)≥(21/4)min(|t|,1/2−|t|)²` yields an explicit second-order stability penalty. The Q-frame identity then strengthens the 184-safe squared-correlation lower bound by `cN*N`, with `cN≈0.02169788199`, plus frame-variance and unused core-cap slack. The center row and 184 safe pairings now enter the mass/Q interface **quantitatively**. This is **not** a Type-E contradiction, and the global proved range remains `40≤τ₅≤44`.
 
 See [derivation](research/tau5_typeE_Delsarte_safe_slack_mass_stability_2026-10-28.md) and [SymPy verifier](research/tau5_typeE_Delsarte_safe_slack_mass_stability_2026-10-28_verify.py).
+
+
+## Isolated-center harmonic gap (2026-10-28)
+
+**[PROVED EXACTLY — isolated-center theorem]** Retaining the positive degree-2/degree-4 harmonic remainder in the 41-point Delsarte mass identity and using the 40 nondeep contacts at the isolated center gives a rational SOS/contact-quantization gap of **2595/256 = 10.13671875**. This strengthens the deep mass lower bound from 410+N to at least 410+2595/256 plus the remaining noncenter nondeep slack.
+
+**[PROVED EXACTLY — conditional Type E]** Combining this gap with the retained F3 broom and matching mass certificates yields **A <= 0.5669250570031576**, **U <= 0.1282700463200052**, and a *joint* projected squared-correlation floor **>=28.2677055569327**. The separate maximum for U occurs at a different scalar endpoint from the joint Q-floor minimum; the proof handles that distinction. Conditional six-core caps give 184-safe squared-mass floors **26.4200493069** (P1/P3) and **26.4864555569** (P2).
+
+See [full proof](research/tau5_typeE_isolated_center_harmonic_gap_2026-10-28.md) and [exact verifier](research/tau5_typeE_isolated_center_harmonic_gap_2026-10-28_verify.py). These supersede the weaker scalar ceilings in the preceding October notes when the isolated-center and F3 mass hypotheses are retained. **[OPEN]** No Type-E exclusion or change to global **40<=tau_5<=44**.
