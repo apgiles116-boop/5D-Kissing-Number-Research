@@ -191,3 +191,14 @@ See [derivation](research/tau5_typeE_high_center_D5_Qkernels_2026-10-28.md) and 
 Every 17-line D5 subset contains **local eight-line Q-kernel relations** from alternating four-cycles of doubly represented supports. A complete exact 165-support-graph check shows these cycles span a kernel subspace of dimension 2 (seven doubled supports) or 3 (eight doubled supports); one additional global equal-degree relation completes the Q-kernel. This replaces a large root-vector rank enumeration with a structural incidence proof. **[CONDITIONAL TYPE-E RELEVANCE]** Application requires the previously conditional rounded D5 labeling. It does not eliminate the residual Type-E branch or change `40<=tau_5<=44`.
 
 [Analytic derivation](research/tau5_D5_17line_Qkernel_sparse_2026-10-28.md) · [Exact verifier](research/tau5_D5_17line_Qkernel_sparse_2026-10-28_verify.py).
+
+
+## Exact 16-line D5 Q-rank persistence under quadratic perturbations (2026-10-28)
+
+**[NEW — PROVED EXACTLY, standalone]** For unit D5 root-line columns x_i and projected columns y_i with ||y_i||²=1-a_i, the exact identity
+`||Q(y_i)-Q(x_i)||_F²=(2-a_i)||y_i-x_i||²-(1/2)||y_i-x_i||⁴+(3/10)a_i²`
+gives `||T_Y-T_X||_op²<=2 epsilon²+(3/10)b²`, where `epsilon=||Y-X||_F` and `b=sum a_i`. The exact 16-line Q spectral atlas has `lambda_min^+=(13-sqrt(149))/20>31/800`. Therefore **epsilon<=1/10 and b<=1/4 force rank(T_Y)>=rank(T_X)** for *every* sixteen-line D5 subset. This corrects the previous overly pessimistic perturbation threshold 0.099589 that came from using `2 epsilon`.
+
+**[CONDITIONAL Type E]** In the already conditionally excluded near-seven branch, the retained bounds `epsilon<1/10` and `b<1/2500` strengthen this to `sigma_rank(T_X)(T_Y)>57/1000`. For rank-14 rounded templates this gives an explicit fourth-moment coercivity inequality. **No new Type-E interval is excluded**; the residual low-center branch still lacks a uniform rounded-D5 certificate. The global proved range remains **40<=tau_5<=44**.
+
+[Derivation](research/tau5_D5_Q_rank_persistence_sharp_2026-10-28.md) · [Exact 4,845-subset verifier](research/tau5_D5_Q_rank_persistence_sharp_2026-10-28_verify.py).
