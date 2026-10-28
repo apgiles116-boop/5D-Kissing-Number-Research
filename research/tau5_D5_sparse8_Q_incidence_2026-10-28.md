@@ -25,6 +25,13 @@ sum_contacts[1/4-(y_p·y_q)²] = N+A_T-B²/10+(1/2)sum c_p²a_p²-(1/2)||R||_F²
 
 **[CONDITIONAL TYPE-E CONSEQUENCE]** If the sixteen isolated deep-edge projected directions admit a justified sixteen-line D5 labeling, all 28 pairings in such an eight-line circuit lie among the 120 isolated-isolated safe Walsh blocks (a subset of the 184 safe pairings), entirely avoiding the six exceptional F3 core pairings. For original endpoints m_p±y_p, the four cross-endpoint kissing constraints imply |y_p·y_q|<=1/2-m_p·m_q. This yields a concrete local eight-line polynomial/KKT test coupling safe contacts, noncontact leakage, midpoint Gram entries and the Q residual; no contradiction has been established.
 
+Writing g_pq=m_p·m_q on the twelve template contact pairs, the same four endpoint inequalities imply C<=3-sum_contacts g_pq+sum_contacts g_pq². Combining with the exact local Q identity gives the **explicit necessary safe-contact polynomial inequality**
+
+(1/2)||R||_F²+B²/10+sum_contacts(g_pq-g_pq²) <= N+A_T+(1/2)sum_p c_p²a_p².
+
+This retains both the nonnegative Q-frame variance and the nonnegative leakage over the sixteen template noncontacts. It is a concrete finite polynomial/KKT target, **not** an exclusion.
+
+
 For an aligned eight-line template with epsilon_R²=sum||y_p-x_p||² and b_R=sum(1-||y_p||²)>=0, the exact Q perturbation identity gives ||R||_F² <= 14(2 epsilon_R²+(3/10)b_R²) for the positive circuit (8 instead of 14 for the signed cycle).
 
 **Proof status:** The D5 algebra, minimum-support classification, exact histograms and local identity are proved independently. Type-E use depends on upstream geometric certificates, not recertified here. Types C/D, generic e>=27 and non-isolated branches remain open; e=23/24 sparse classification retains delta(G)>=1. Do not replace retained F3<=89 or matching S/2-28/3 by obsolete weaker versions.
