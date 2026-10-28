@@ -182,3 +182,12 @@ See [derivation](research/tau5_typeE_high_center_D5_Qkernels_2026-10-28.md) and 
 **[NEW EXACT ALGEBRA; CONDITIONAL TYPE E]** The isolated-center harmonic resource and capped-simplex quantization give an algebraic lower bound s >= sigma=5.827662491235... for the center second moment. This lower bracket does not rely on signed-Gram atlases. Combining it with the **previously conditional** near-seven exclusion s>=209/30 confines the remaining Type-E branch to sigma<=s<209/30. The retained directional-frame/KKT inequality then strengthens the conditional projected squared-correlation floor to Q>=28.395623511729..., with 184-safe floors 26.5479672617 (P1/P3) and 26.6143735117 (P2). All new arithmetic was checked with exact rationals. This does not eliminate Type E or independently certify the upstream finite atlases.
 
 [Derivation](research/tau5_typeE_low_center_bracket_Q_2026-10-28.md) · [Verifier](research/tau5_typeE_low_center_bracket_Q_2026-10-28_verify.py). **Global proved range remains 40<=tau_5<=44.**
+
+
+## Analytic D5 17-line Q-kernel decomposition (2026-10-28)
+
+**[PROVED EXACTLY — STANDALONE D5]** For any subset of D_n projective root lines, if S is the set of represented coordinate supports and D is the set of supports retaining both signs, then `rank(Q)=|S|+rank(P B_D)`, where `B_D` is the unsigned support incidence matrix and `P` projects off the all-ones diagonal. This gives an analytic proof of the 17-line D5 Q-rank dichotomy: rank 14/nullity 3 for 960 omitted-triple patterns and rank 13/nullity 4 for 180 patterns.
+
+Every 17-line D5 subset contains **local eight-line Q-kernel relations** from alternating four-cycles of doubly represented supports. A complete exact 165-support-graph check shows these cycles span a kernel subspace of dimension 2 (seven doubled supports) or 3 (eight doubled supports); one additional global equal-degree relation completes the Q-kernel. This replaces a large root-vector rank enumeration with a structural incidence proof. **[CONDITIONAL TYPE-E RELEVANCE]** Application requires the previously conditional rounded D5 labeling. It does not eliminate the residual Type-E branch or change `40<=tau_5<=44`.
+
+[Analytic derivation](research/tau5_D5_17line_Qkernel_sparse_2026-10-28.md) · [Exact verifier](research/tau5_D5_17line_Qkernel_sparse_2026-10-28_verify.py).
