@@ -59,3 +59,14 @@ See [derivation](research/tau5_typeE_Delsarte_safe_slack_mass_stability_2026-10-
 **[PROVED EXACTLY — conditional Type E]** Combining this gap with the retained F3 broom and matching mass certificates yields **A <= 0.5669250570031576**, **U <= 0.1282700463200052**, and a *joint* projected squared-correlation floor **>=28.2677055569327**. The separate maximum for U occurs at a different scalar endpoint from the joint Q-floor minimum; the proof handles that distinction. Conditional six-core caps give 184-safe squared-mass floors **26.4200493069** (P1/P3) and **26.4864555569** (P2).
 
 See [full proof](research/tau5_typeE_isolated_center_harmonic_gap_2026-10-28.md) and [exact verifier](research/tau5_typeE_isolated_center_harmonic_gap_2026-10-28_verify.py). These supersede the weaker scalar ceilings in the preceding October notes when the isolated-center and F3 mass hypotheses are retained. **[OPEN]** No Type-E exclusion or change to global **40<=tau_5<=44**.
+
+
+## Isolated-center directional Q-frame gap (2026-10-28)
+
+**[PROVED EXACTLY — conditional Type E]** The isolated-center second-moment row forces nonzero directional variance in the 20-vector projected frame. Coupling the harmonic center-row estimate to the mass-concavity scalar envelopes yields the strengthened global squared-correlation bound **>=28.3885724064515**, superseding the earlier conditional 28.2677055569 floor. More precisely, with x the midpoint energy on the 16 isolated selected edges and B_v=sum_i(v.m_i)^2 for the isolated center v, the bound is
+
+    sum_{i<j}(z_i.z_j)^2 >= L0 + (27/56)*x + (9/20)*B_v + (5/8)*B_v^2,
+
+where L0=28.3885724064515... is an explicitly defined algebraic constant. The proof includes an exact rational derivative certificate; no D5 labeling or new SDP is used. Under retained F3 six-core caps, the 184-safe squared-correlation floors improve to **26.5409161564515** (P1/P3) and **26.6073224064515** (P2), with the same extra penalties.
+
+See [derivation](research/tau5_typeE_center_frame_directional_gap_2026-10-28.md) and [SymPy verifier](research/tau5_typeE_center_frame_directional_gap_2026-10-28_verify.py). **[OPEN]** No Type-E contradiction; global range still **40<=tau_5<=44**.
