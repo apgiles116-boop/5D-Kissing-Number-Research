@@ -41,3 +41,12 @@ This ledger is deliberately conservative. A passing arithmetic script does not p
 See [the 2026-10-28 derivation](research/tau5_typeE_isolated_wedge_and_separable_defect_2026-10-28.md) and [exact SymPy verifier](research/tau5_typeE_isolated_wedge_defect_2026-10-28_verify.py).
 
 **OPEN:** No Type-E contradiction; Types C, D, generic e>=27 and non-isolated branches also remain open. The sparse e=23/e=24 classification is conditional on delta(G)>=1. **Global proved range: 40<=tau_5<=44.**
+
+
+## Delsarte nondeep-slack / Q-frame stability bridge (2026-10-28)
+
+**PROVED EXACTLY, conditional on retained Type-E graph/mass inputs:** Instead of discarding negative Delsarte polynomial contributions from the 794 nondeep pairs, define `N=Σ_nondeep[-7t²(4t²−1)]≥0`. This splits into the 40 isolated-center contacts, 736 contacts across the 184 fully safe selected-edge pairings, and 18 other safe F3 core contacts. The exact scalar mass bounds now include `A+(r/15)N≤Astar` and `U+(r²/15)N≤Ustar`, where `r=D^{-1}(15)≈0.11125520695`, `Astar≈0.65103701309`, and `Ustar≈0.13896031317`.
+
+The sharp elementary contact-quantization inequality `-F(t)≥(21/4)min(|t|,1/2−|t|)²` yields an explicit second-order stability penalty. The Q-frame identity then strengthens the 184-safe squared-correlation lower bound by `cN*N`, with `cN≈0.02169788199`, plus frame-variance and unused core-cap slack. The center row and 184 safe pairings now enter the mass/Q interface **quantitatively**. This is **not** a Type-E contradiction, and the global proved range remains `40≤τ₅≤44`.
+
+See [derivation](research/tau5_typeE_Delsarte_safe_slack_mass_stability_2026-10-28.md) and [SymPy verifier](research/tau5_typeE_Delsarte_safe_slack_mass_stability_2026-10-28_verify.py).
