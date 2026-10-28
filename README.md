@@ -79,3 +79,12 @@ See [derivation](research/tau5_typeE_center_frame_directional_gap_2026-10-28.md)
 A two-variable rational KKT/resource-exchange argument, combined with the preceding directional frame result for `s<=7`, improves the conditional global projected squared-correlation floor to **28.38917770968655...**. The conditional 184-safe-pair floors are now **26.54152145968655** (P1/P3) and **26.60792770968655** (P2). The gain over 28.3885724 is small but certified without numerical optimization or a generic SDP.
 
 See [derivation](research/tau5_typeE_center_quantized_KKT_2026-10-28.md) and [exact rational verifier](research/tau5_typeE_center_quantized_KKT_2026-10-28_verify.py). **[OPEN]** Type E remains unresolved; global proved range remains **40<=tau_5<=44**.
+
+
+## High-center binary-contact and signed-Gram reduction (2026-10-28)
+
+**[PROVED EXACTLY — conditional on retained Type-E high-center mass/harmonic certificates]** In the branch where the isolated-center second moment `s>=7`, the global nondeep Delsarte slack is at most `5/64` and the isolated-edge midpoint energy `x<1/2500`. Every nondeep scalar product is either `|t|<1/9` or `|t|>12/25`. Exactly **28 of the 40 center contacts are high**, and **12 low**. Among the 120 pairings of the 16 isolated deep edges, every pairing has either four low or four high contacts with forced alternating signs. The 16 projected vectors consequently have **at least 71 high-correlation pairings** (via the rank-five Welch bound and the tiny low-contact squared-mass budget).
+
+The 184 safe Walsh blocks admit a discrete `(1/8)Z` rounding with total coefficient squared error at most `5/1344`. More strongly, the true rank-five Gram matrix of the isolated center plus the sixteen isolated projected vectors is within Frobenius distance **<1/8** of a symmetric half-integral 17-by-17 matrix `Ghat`, with `2Ghat` integral, diagonal 2, off-diagonal 0 or ±1. An exact determinant-integrality argument forces **rank(Ghat)<=8**, equivalently its signed adjacency matrix has eigenvalue -2 with multiplicity >=9. **No PSD or rank-five property is claimed for the rounded matrix.**
+
+This reduces the high-center branch to a finite signed-graph/rank problem; it does not eliminate Type E or resolve the low-center branch. See [the proof](research/tau5_typeE_high_center_binary_rank8_2026-10-28.md) and [exact rational verifier](research/tau5_typeE_high_center_binary_rank8_2026-10-28_verify.py). Global proved range remains **40<=tau_5<=44**.
