@@ -75,13 +75,13 @@ e_I = 84 + e_miss - k_I >= 84-k_I.
 
 In particular `e_I>=74` if `k_I=10`, `e_I>=73` if `k_I=11`, and `e_I>=72` if `k_I=12`.
 
-The full 20-line D5 unit-vector frame obeys `sum_20 rr^T = 4 I_5`. Removing three unit lines yields the exact frame bound
+The full 20-line D5 unit-vector frame obeys `sum_20 rr^T = 4 I_5`. Removing three unit lines yields the stronger exact frame bound
 
 ```
-F_17 = sum_17 rr^T = 4 I_5 - sum_3 rr^T >= I_5.
+F_17 = sum_17 rr^T = 4 I_5 - sum_3 rr^T >= 2 I_5.
 ```
 
-Hence the five nonzero eigenvalues of the **rounded** 17-by-17 Gram `Ghat` are all at least **1**. This gives a quantitative spectral gap for the next kernel-perturbation and second-order stability step.
+The three removed unit roots have mutual absolute correlations at most 1/2. Their 3-by-3 Gram has diagonal 1 and off-diagonal absolute values at most 1/2, so Gershgorin gives its largest eigenvalue at most 2. The nonzero eigenvalues of their frame operator agree with those of this Gram. Therefore the five nonzero eigenvalues of the **rounded** 17-by-17 Gram `Ghat` are all at least **2**. This bound is sharp when the three removed lines form a positively signed triangle. The stronger gap supplies a quantitative kernel-perturbation input.
 
 ## 4. Proof-status boundaries and next step
 
