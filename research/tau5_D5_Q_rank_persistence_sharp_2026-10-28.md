@@ -31,17 +31,28 @@ The earlier bound 2epsilon on the *unsquared* operator difference is unnecessari
 There are 3360 rank-14, 1440 rank-13, and 45 rank-12 templates. The key *exact* comparison is
 
 \[
-\lambda_{16}>31/800=2(1/10)^2+(3/10)(1/4)^2,
+\lambda_{16}>31/800>4/125=(16/5)(1/10)^2.
 \]
 
-equivalent to sqrt(149)<489/40, proved by rational squaring. Therefore
-
+The first inequality is equivalent to sqrt(149)<489/40, verified by rational squaring. The **sharp global Lipschitz constant** of Q on the unit ball is 4/sqrt(5): differentiating gives
 \[
-\boxed{\epsilon\le1/10,\quad b\le1/4\quad\Longrightarrow\quad
-\operatorname{rank}T_Y\ge\operatorname{rank}T_X.}\tag{3}
+\|DQ_u(h)\|_F^2=2\|u\|^2\|h\|^2+(6/5)(u\cdot h)^2\le(16/5)\|h\|^2.
 \]
+It is sharp in radial directions. Consequently
+\[
+\|T_Y-T_X\|_{\rm op}^2\le(16/5)\epsilon^2\le4/125<\lambda_{16}
+\]
+whenever epsilon<=1/10. Weyl's singular-value inequality proves the **stronger, no-energy-assumption** theorem
+\[
+\boxed{\epsilon\le1/10\ \Longrightarrow\ \operatorname{rank}T_Y\ge\operatorname{rank}T_X.}\tag{3}
+\]
+In 3360 rank-fourteen D5 templates, rank(T_Y)=14 and nullity(T_Y)=2. In the rank-thirteen/twelve templates only the corresponding rank lower bounds are asserted. This eliminates the earlier apparent 0.1 versus 0.099589 alignment gap.
 
-In rank-14 rounded cases, rank(T_Y)=14 and nullity(T_Y)=2. In rank-13/12 cases only the respective lower-rank bounds are asserted. At epsilon=1/10, the exact energy threshold is b<sqrt((10/3)(lambda_16-1/50)) ~0.256074333, so b<=1/4 is a convenient rational criterion.
+**[SHARPER WHEN RADIAL ENERGY IS SMALL]** The quadratic identity (2) gives the more flexible condition
+\[
+2\epsilon^2+(3/10)b^2<\lambda_{16}.\tag{4}
+\]
+For example epsilon<=1/10 and b<=1/4 satisfy (4) since the left side is at most 31/800; this extra energy assumption is **not needed** for epsilon<=1/10. With b<1/2500, condition (4) permits epsilon<=7/50=0.14, a useful tolerance for future geometric rounding arguments. At epsilon=1/10 the exact energy threshold from (4) is b<sqrt((10/3)(lambda_16-1/50)) ~0.256074333.
 
 ## Quantitative near-seven consequence
 
