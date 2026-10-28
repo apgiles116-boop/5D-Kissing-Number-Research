@@ -34,6 +34,8 @@ This retains both the nonnegative Q-frame variance and the nonnegative leakage o
 
 For an aligned eight-line template with epsilon_R²=sum||y_p-x_p||² and b_R=sum(1-||y_p||²)>=0, the exact Q perturbation identity gives ||R||_F² <= 14(2 epsilon_R²+(3/10)b_R²) for the positive circuit (8 instead of 14 for the signed cycle).
 
+**[NEW SECOND-ORDER NONCONTACT LEAKAGE BOUND]** For the positive triangle-plus-edge circuit, define weighted frames X_c=[sqrt(c_p)x_p], Y_c=[sqrt(c_p)y_p]. The tight-frame identity gives ||X_c||_op=sqrt(2), and ||Y_c-X_c||_F<=sqrt(2)epsilon_R. Consequently ||Y_c^T Y_c-X_c^T X_c||_F <= (4+2epsilon_R)epsilon_R. The sixteen rounded-template noncontact entries of the weighted X Gram vanish; counting their symmetric off-diagonal positions proves the exact quadratic estimate **0<=N<=2(2+epsilon_R)²epsilon_R²**. Substitution into the preceding safe-contact polynomial inequality yields a finite second-order necessary condition with no unknown leakage term. This still does not eliminate Type E.
+
 **Proof status:** The D5 algebra, minimum-support classification, exact histograms and local identity are proved independently. Type-E use depends on upstream geometric certificates, not recertified here. Types C/D, generic e>=27 and non-isolated branches remain open; e=23/24 sparse classification retains delta(G)>=1. Do not replace retained F3<=89 or matching S/2-28/3 by obsolete weaker versions.
 
 Verifier: research/tau5_D5_sparse8_Q_incidence_2026-10-28_verify.py
