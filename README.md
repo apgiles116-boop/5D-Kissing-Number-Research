@@ -365,3 +365,14 @@ Hence the twenty-vector projected squared-correlation sum satisfies
          +(5/8)*(lambda_max(S)-(4-A/5))^2.
 
 No D5 labeling, rounding, or core-direction assumption is needed. The coefficient 5/4 is sharp for abstract rank-four PSD completions; the full water-filling formula can be strictly stronger. **[OPEN]** No uniform positive spectral-pinning gap has been established from the 184 safe Walsh blocks, so this is not a Type-E elimination or improved scalar Q floor. [Proof](research/tau5_typeE_label_free_rank4_frame_completion_2026-10-29.md) · [exact verifier](research/tau5_typeE_label_free_rank4_frame_completion_2026-10-29_verify.py). Earlier upstream mass/harmonic/atlas certificates are retained, not independently recertified. **Global proved range unchanged: 40<=tau_5<=44.**
+
+
+## Norm-aware rank-four completion and core-dispersion bridge (2026-10-29)
+
+**[PROVED EXACTLY — standalone matrix algebra; Type-E application conditional on retained 16+4 matching decomposition]** The preceding rank-four PSD frame completion bound is sharpened by retaining the **four individual F3 core column norms** w_j=1-a_j. Schur-Horn yields an exact four-variable convex quadratic completion over eigenvalues lambda majorizing w. A new SOS identity for the four-column core C and the sixteen-column isolated frame S proves
+
+    ||C-(c/4)(I-P)||_F^2
+      = sum_j(w_j-c/4)^2 + 2 sum_{j<k}(q_j.q_k)^2
+        + (c/2)sum_j(p.q_j)^2,
+
+where c=sum w_j, p is a top eigenvector of S, P=pp^T. With mu=(tr S+c)/5, S0=mu P+(mu-c/4)(I-P), sigma=||S-S0||_F and V=||S+C-mu I||_F^2, this implies **sqrt(V)+sigma>=sqrt(sum_j(w_j-c/4)^2)**. A rational abstract cap-boundary example has the old rank-four completion gap V=0 but the new fixed-norm minimum V=14641/338688, yielding an extra Q penalty 14641/677376 (~0.0216143). **This is not a uniform Type-E gap or a code realization.** The remaining objective is to control sigma via the 184 safe Walsh blocks or exploit the retained core-core terms. Full proof: [norm-aware completion](research/tau5_typeE_core_norm_spectral_majorization_2026-10-29.md); [exact Fraction verifier](research/tau5_typeE_core_norm_spectral_majorization_2026-10-29_verify.py). Upstream certificates not recertified. Global proved range remains **40<=tau_5<=44**.
