@@ -396,3 +396,10 @@ See [proof](research/tau5_typeE_cap_stability_outside16_gap_2026-10-29.md) and [
 **[CONDITIONAL TYPE E]** Under the retained isolated-center 16+4 matching and six raw exceptions, the exact raw-quartic bridge is P_raw > 81/15616-(5/4)A-(9/16)A_C. This is weak at the retained Type-E energy ceiling and **does not** eliminate Type E or improve the strongest conditional A bounds. The normalized quartic P and raw/homogeneous defects must not be conflated.
 
 See [proof](research/tau5_21line_quartic_gap_1over61_2026-10-29.md) and [exact verifier](research/tau5_21line_quartic_gap_1over61_2026-10-29_verify.py). **[OPEN]** Type E, C, D, generic e>=27, and non-isolated branches; global proved range remains 40<=tau_5<=44.
+
+
+## Universal 21-line quartic defect strengthened to P > 1/58 (2026-10-29)
+
+**[PROVED EXACTLY — standalone]** For any 21 unit vectors in \(\mathbb R^5\), \(P=\sum_{i<j}[(u_i\cdot u_j)^2((u_i\cdot u_j)^2-1/4)]_+>1/58\), improving the prior exact \(P>1/61\). The improvement uses the frame/Bessel estimate \(\sum_i(u_i^T\Delta u_i)^2\le(21/5+\sqrt{4V/5})V\), where \(\Delta=\sum_i u_iu_i^T-(21/5)I\), \(V=\operatorname{tr}\Delta^2\), together with a **signed Huber dual** retaining the exact signed degree-rounding error. The proof reduces to eight strictly positive rational/surd comparisons, checked with exact Fraction arithmetic and integer-square-root intervals. [Full proof](research/tau5_21line_quartic_gap_1over58_2026-10-29.md) · [exact verifier](research/tau5_21line_quartic_gap_1over58_2026-10-29_verify.py).
+
+**[CONDITIONAL TYPE E]** The previously retained normalization bridge becomes \(P_{\rm raw}>81/14848-(5/4)A-(9/16)A_C\); this remains weak at \(A\le383/504\) and is **not** a Type-E elimination. Upstream graph/mass/harmonic/signed-Gram certificates were not recertified. Type E, C, D, generic \(e\ge27\), and non-isolated branches remain open. **Global proved range unchanged: \(40\le\tau_5\le44\).**
