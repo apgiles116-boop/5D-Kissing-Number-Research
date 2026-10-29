@@ -50,5 +50,5 @@ assert r40==Rational(1761,3205) and d40==Rational(951,3205)<D0
 assert h40<H0
 print('PASS: all 42 four-vertex active graphs with at most three edges')
 print('PASS: exact sharp star witness and centroid identities')
-print('PASS: uniform spectral gap exceeds prior 1/4250 bound')
+print('PASS: raw-excess slack bound exceeds 1/4250 (distinct from negative-Gram slack)')
 print('PASS: flex raw-defect correction t=1/20 -> t=1/40')
