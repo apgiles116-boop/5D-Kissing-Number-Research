@@ -376,3 +376,14 @@ No D5 labeling, rounding, or core-direction assumption is needed. The coefficien
         + (c/2)sum_j(p.q_j)^2,
 
 where c=sum w_j, p is a top eigenvector of S, P=pp^T. With mu=(tr S+c)/5, S0=mu P+(mu-c/4)(I-P), sigma=||S-S0||_F and V=||S+C-mu I||_F^2, this implies **sqrt(V)+sigma>=sqrt(sum_j(w_j-c/4)^2)**. A rational abstract cap-boundary example has the old rank-four completion gap V=0 but the new fixed-norm minimum V=14641/338688, yielding an extra Q penalty 14641/677376 (~0.0216143). **This is not a uniform Type-E gap or a code realization.** The remaining objective is to control sigma via the 184 safe Walsh blocks or exploit the retained core-core terms. Full proof: [norm-aware completion](research/tau5_typeE_core_norm_spectral_majorization_2026-10-29.md); [exact Fraction verifier](research/tau5_typeE_core_norm_spectral_majorization_2026-10-29_verify.py). Upstream certificates not recertified. Global proved range remains **40<=tau_5<=44**.
+
+
+## Exact cap L1 stability and outside-16 spectral improvement (2026-10-29)
+
+**[PROVED EXACTLY — algebra/4D polynomial; Type-E use conditional on retained inputs]** The existing capped Q-frame floor L=8790283/317520 now has a quantitative L1 stability refinement: if A<=B=383/504, delta is the L1 distance of the sorted twenty midpoint energies to their capped filling vector at total A, and V is full projected-frame variance, then
+
+    Q>=L+(57/20)(B-A)+delta^2/40+V/2.
+
+The 16+4 midpoint split adds the exact penalty x(A-3/4-x) when 3/4<=A<=B and 0<=x<=A-3/4. Separately, the 16 isolated projected vectors under the retained raw projective-safety and energy hypotheses satisfy **lambda_min(S)>9/160**, improving the earlier >1/18 certificate. The corresponding 184-safe Walsh squared-slack bound strengthens to **H_184>(9/320)(A+A_C)** when A>0. The new 9/160 certificate is a strict positive rational 4D Gegenbauer/Schur-convex comparison.
+
+See [proof](research/tau5_typeE_cap_stability_outside16_gap_2026-10-29.md) and [exact Fraction verifier](research/tau5_typeE_cap_stability_outside16_gap_2026-10-29_verify.py). **[OPEN]** No Type-E contradiction or global bound improvement; all previously listed open branches remain open. Global proved range **40<=tau_5<=44**.
