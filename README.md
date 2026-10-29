@@ -254,3 +254,10 @@ The global proved range remains **\(40\le\tau_5\le44\)**. All earlier graph-clas
 [Exact derivation](research/tau5_typeE_residual_center_quantization_2026-10-28.md) · [Rational verifier](research/tau5_typeE_residual_center_quantization_2026-10-28_verify.py).
 
 **[RETAINED, NOT REPROVED]** Type-E mass/harmonic inputs, conditional finite-atlas exclusion s>=209/30, and previous L'(x)>27/56 certificate. **[OPEN]** No Type-E contradiction; Types C/D, generic e>=27, and non-isolated branches remain. Global proved range **40<=tau_5<=44**.
+
+
+## Paired-center/frame joint stability (2026-10-29)
+
+**[NEW EXACT ALGEBRA — CONDITIONAL TYPE E]** Jointly retaining the paired-center quantization bound \(N_0\ge n_2(s)-56B_v+(56/5)B_v^2\) and the *full* directional frame term \((5/8)(h+B_v)^2\) gives a quadratic coercivity inequality \(Q\ge J(x,s)+(29/40)B_v^2\). The exact relaxed critical point satisfies \(D(x_2)=2509/6400\), \(x_2\approx0.0020134422834\), and a rational certificate strengthens the conditional twenty-line correlation floor to **\(Q>283965067/10000000=28.3965067\)**. In the narrow strip \(x_2\le x\le1/250,\ 69/10\le s\le209/30\), a new quantitative stability estimate is \(Q\ge F(x_2,s_0)+(2/3)(x-x_2)+(1/10)(s_0-s)+(29/40)B_v^2\). Retained core caps imply 184-safe-pair floors **>26.54885045** (P1/P3) and **>26.6152567** (P2).
+
+[Proof](research/tau5_typeE_paired_center_joint_stability_2026-10-29.md) · [Exact rational verifier](research/tau5_typeE_paired_center_joint_stability_2026-10-29_verify.py). **[RETAINED, NOT REPROVED]** Upstream mass/harmonic certificates, the conditional signed-Gram-atlas exclusion \(s\ge209/30\), and the old large-\(x\) monotonicity. **[OPEN]** No Type-E contradiction or global improvement; \(40\le\tau_5\le44\).
