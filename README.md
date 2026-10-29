@@ -261,3 +261,17 @@ The global proved range remains **\(40\le\tau_5\le44\)**. All earlier graph-clas
 **[NEW EXACT ALGEBRA — CONDITIONAL TYPE E]** Jointly retaining the paired-center quantization bound \(N_0\ge n_2(s)-56B_v+(56/5)B_v^2\) and the *full* directional frame term \((5/8)(h+B_v)^2\) gives a quadratic coercivity inequality \(Q\ge J(x,s)+(29/40)B_v^2\). The exact relaxed critical point satisfies \(D(x_2)=2509/6400\), \(x_2\approx0.0020134422834\), and a rational certificate strengthens the conditional twenty-line correlation floor to **\(Q>283965067/10000000=28.3965067\)**. In the narrow strip \(x_2\le x\le1/250,\ 69/10\le s\le209/30\), a new quantitative stability estimate is \(Q\ge F(x_2,s_0)+(2/3)(x-x_2)+(1/10)(s_0-s)+(29/40)B_v^2\). Retained core caps imply 184-safe-pair floors **>26.54885045** (P1/P3) and **>26.6152567** (P2).
 
 [Proof](research/tau5_typeE_paired_center_joint_stability_2026-10-29.md) · [Exact rational verifier](research/tau5_typeE_paired_center_joint_stability_2026-10-29_verify.py). **[RETAINED, NOT REPROVED]** Upstream mass/harmonic certificates, the conditional signed-Gram-atlas exclusion \(s\ge209/30\), and the old large-\(x\) monotonicity. **[OPEN]** No Type-E contradiction or global improvement; \(40\le\tau_5\le44\).
+
+
+## Tensor-frame and 13+1+6 center-contact stability (2026-10-29)
+
+**[PROVED EXACTLY — STANDALONE ALGEBRA; CONDITIONAL TYPE-E APPLICATION]** An exact five-dimensional frame-operator decomposition retains the transverse terms \(\|PTv\|^2+\frac12\|PTP-\beta P\|_F^2\). A new sorted capped-simplex identity gives a **linear** penalty for deviation of the twenty paired center-contact energies from the 13-at-\(1/2\), one-residual, six-zero pattern. On the critical strip, the retained harmonic/atlas certificates now imply
+\[
+Q\ge F(x_2,s_0)+\frac23(x-x_2)+\frac1{10}(s_0-s)
++\frac1{160}B_v+\frac{29}{40}B_v^2
++\|PTv\|^2+\frac12\|PTP-\beta P\|_F^2
++\frac1{480}\|\sigma-\sigma_*(s)\|_1.
+\]
+The new **linear** \(B_v\) coefficient and tensor/contact rigidity improve the earlier quadratic-only stability statement, but **do not increase** the conditional scalar floor \(Q>28.3965067\). The upstream mass/harmonic/conditional signed-Gram inputs are retained, not reverified. **[OPEN]** No Type-E contradiction. Global proved range remains \(40\le\tau_5\le44\).
+
+[Proof](research/tau5_typeE_tensor_contact_stability_2026-10-29.md) · [Exact SymPy verifier](research/tau5_typeE_tensor_contact_stability_2026-10-29_verify.py).
