@@ -297,11 +297,12 @@ See [proof](research/tau5_typeE_sharp_local_contact_quantization_2026-10-29.md) 
 
 ## Three-zone center-contact coercivity (2026-10-29)
 
-**[PROVED EXACTLY — standalone; CONDITIONAL Type E]** Partition the twenty paired center contacts into the thirteen near-saturated pairs, one residual pair, and six low-contact pairs. An exact weighted midpoint-mixing inequality retains the residual weight (h=1/2-\rho-\delta/2) and an additional (\rho B_T) penalty on the six low pairs. Combining it with the earlier conditional tensor/harmonic certificates gives, for (\varepsilon=Q-F_*\in[0,1/57600]),
+**[PROVED EXACTLY — standalone; CONDITIONAL Type E]** Partition the twenty paired center contacts into thirteen near-saturated pairs, one residual pair, and six low-contact pairs. An exact weighted midpoint-mixing inequality retains the residual weight $h=1/2-\rho-\delta/2$ and an additional $\rho B_T$ penalty on the six low pairs. Combining it with the earlier conditional tensor/harmonic certificates gives, for $\varepsilon=Q-F_*\in[0,1/57600]$,
 
-[
+$$
 B_v\le \frac{8282195}{307536}\,\varepsilon<27\varepsilon,\qquad
-B_H\le\frac{253500}{43}\varepsilon^2,\qquad B_T<2\varepsilon\quad(\varepsilon>0).
-]
+B_H\le\frac{253500}{43}\varepsilon^2,\qquad
+B_T<2\varepsilon\quad(\varepsilon>0).
+$$
 
-The asymptotic coefficient improves to (limsup B_v/\varepsilon\le480/19), compared with the previous 45 finite-range bound and 480/11 asymptotic coefficient. This improves **stability**, not the scalar Q-floor; the upstream mass/harmonic/conditional signed-Gram certificates were not independently recertified, and **Type E remains open**. [Exact proof](research/tau5_typeE_three_zone_center_coercivity_2026-10-29.md) · [Fraction verifier](research/tau5_typeE_three_zone_center_coercivity_2026-10-29_verify.py). **Global proved range unchanged: 40<=tau_5<=44.**
+The asymptotic coefficient improves to $\limsup B_v/\varepsilon\le480/19$, compared with the previous 45 finite-range bound and 480/11 asymptotic coefficient. This improves **stability**, not the scalar Q-floor; the upstream mass/harmonic/conditional signed-Gram certificates were not independently recertified, and **Type E remains open**. [Exact proof](research/tau5_typeE_three_zone_center_coercivity_2026-10-29.md) · [Fraction verifier](research/tau5_typeE_three_zone_center_coercivity_2026-10-29_verify.py). **Global proved range unchanged: 40<=tau_5<=44.**
