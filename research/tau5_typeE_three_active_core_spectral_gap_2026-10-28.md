@@ -52,9 +52,9 @@ The retained F3 endpoint-charge and signed-triangle result gives |E|<=3. Hence (
 
 where d=sum_E d_ij and d2=sum_E d_ij^2. In particular the old slack epsilon=C-d satisfies
 
-    epsilon >= (1-sqrt(3)/2) C+sum_E q_ij.              (9)
+    epsilon_raw >= (1-sqrt(3)/2) C+sum_E q_ij.          (9)
 
-With the retained uniform F3 matching floor C>9/1000, epsilon>0.00120577136594..., improving the old uniform epsilon>1/4250 by more than fivefold. For P2, the retained C>=17/250 gives epsilon>=0.00911027254265... . These are conditional necessary bounds, not a contradiction.
+With the retained uniform F3 matching floor C>9/1000, epsilon_raw>0.00120577136594... . For P2, the retained C>=17/250 gives epsilon_raw>=0.00911027254265... . The earlier epsilon_neg>1/4250 implies epsilon_raw>1/4250; the new result improves the lower bound on **epsilon_raw**, NOT on the distinct epsilon_neg. These are conditional necessary bounds, not a contradiction.
 
 ## Direct 184-safe Q/Walsh bridge
 
