@@ -387,3 +387,12 @@ where c=sum w_j, p is a top eigenvector of S, P=pp^T. With mu=(tr S+c)/5, S0=mu 
 The 16+4 midpoint split adds the exact penalty x(A-3/4-x) when 3/4<=A<=B and 0<=x<=A-3/4. Separately, the 16 isolated projected vectors under the retained raw projective-safety and energy hypotheses satisfy **lambda_min(S)>9/160**, improving the earlier >1/18 certificate. The corresponding 184-safe Walsh squared-slack bound strengthens to **H_184>(9/320)(A+A_C)** when A>0. The new 9/160 certificate is a strict positive rational 4D Gegenbauer/Schur-convex comparison.
 
 See [proof](research/tau5_typeE_cap_stability_outside16_gap_2026-10-29.md) and [exact Fraction verifier](research/tau5_typeE_cap_stability_outside16_gap_2026-10-29_verify.py). **[OPEN]** No Type-E contradiction or global bound improvement; all previously listed open branches remain open. Global proved range **40<=tau_5<=44**.
+
+
+## Universal 21-line quartic defect improvement (2026-10-29)
+
+**[PROVED EXACTLY — standalone]** For any 21 unit projective representatives in R^5, with s_ij=(u_i.u_j)^2, the normalized positive quartic defect P=sum_{i<j}[s_ij(s_ij-1/4)]_+ satisfies **P>1/61**, improving the earlier exact P>1/64. The proof combines the positive degree-four harmonic kernel, exact convex two-well rounding with a two-branch negative-defect envelope, the Q-Gram Gershgorin bound, and a finite integer-degree/Huber certificate with eight strict rational/surd comparisons. No D5 labeling or generic SDP is required.
+
+**[CONDITIONAL TYPE E]** Under the retained isolated-center 16+4 matching and six raw exceptions, the exact raw-quartic bridge is P_raw > 81/15616-(5/4)A-(9/16)A_C. This is weak at the retained Type-E energy ceiling and **does not** eliminate Type E or improve the strongest conditional A bounds. The normalized quartic P and raw/homogeneous defects must not be conflated.
+
+See [proof](research/tau5_21line_quartic_gap_1over61_2026-10-29.md) and [exact verifier](research/tau5_21line_quartic_gap_1over61_2026-10-29_verify.py). **[OPEN]** Type E, C, D, generic e>=27, and non-isolated branches; global proved range remains 40<=tau_5<=44.
