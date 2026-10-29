@@ -219,6 +219,6 @@ gives `||T_Y-T_X||_op²<=2 epsilon²+(3/10)b²`, where `epsilon=||Y-X||_F` and `
       = ||v_0+v_3+(v_1+v_2)/2||²
         + (1/2-K_12-|c_12|)/2 + Delta > 0,
 
-where v_i=(m_i,w_i), K_ij=v_i.v_j and Delta is the sum of the six positive deep-contact slacks. Hence the four hub-leaf mixed terms have squared sum **>1/64**, without any D5 labeling or SDP. A standalone P2 midpoint floor C>1/128 follows but is weaker than the retained C>=17/250.
+where v_i=(m_i,w_i), K_ij=v_i.v_j and Delta is the sum of the six positive deep-contact slacks. Hence the four hub-leaf mixed terms have squared sum **>1/64**, without any D5 labeling or SDP. For the all-singleton matching, the six signed mixed terms have squared sum **>1/6**. Consequently **every F3 perfect matching, including the mass-selected one**, has a graph-switched six-pair Walsh squared-energy sum **>1/64**. A standalone P2 midpoint floor C>1/128 follows but is weaker than the retained C>=17/250.
 
 **[OPEN]** The same-sign mixed terms here cannot be identified with the earlier active-sign q_ij; a quantitative transfer to Delsarte nondeep slack or the 184-safe-pair Q bound is still needed. No Type-E elimination. [Full derivation](research/tau5_typeE_F3_double_matching_Walsh_SOS_2026-10-28.md) · [exact verifier](research/tau5_typeE_F3_double_matching_Walsh_SOS_2026-10-28_verify.py). **Global proved range remains 40<=tau_5<=44.**
