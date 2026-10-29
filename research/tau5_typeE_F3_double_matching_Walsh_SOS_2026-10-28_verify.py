@@ -23,7 +23,15 @@ for P in M:
         cross.append((i,j,si,sj));count[i][j]+=1;count[j][i]+=1
     assert len(cross)==6
     pattern=sorted(count[i][j] for i in range(4) for j in range(i+1,4))
-    if pattern==[1]*6: continue
+    if pattern==[1]*6:
+        etas=[e for e in product((-1,1),repeat=4)
+              if all(si*sj==e[i]*e[j] for i,j,si,sj in cross)]
+        assert len(etas)==2
+        eta=etas[0]
+        signs={tuple(sorted((i,j))):si//eta[i] for i,j,si,sj in cross}
+        assert len(signs)==6 and all(si//eta[i]==sj//eta[j] for i,j,si,sj in cross)
+        all_singleton_patterns.append(signs)
+        continue
     assert pattern==[0,1,1,1,1,2]
     h=next((i,j) for i in range(4) for j in range(i+1,4) if count[i][j]==2)
     l=next((i,j) for i in range(4) for j in range(i+1,4) if count[i][j]==0)
@@ -47,6 +55,14 @@ k={(i,j):symbols(f'k{i}{j}') for i in range(4) for j in range(i+1,4)}
 c={(i,j):symbols(f'c{i}{j}') for i in range(4) for j in range(i+1,4)}
 def K(i,j): return 1 if i==j else k[tuple(sorted((i,j)))]
 def C(i,j): return c[tuple(sorted((i,j)))]
+assert len(all_singleton_patterns)==1
+for signs in all_singleton_patterns:
+    D=sum(K(i,j)+t*C(i,j) for (i,j),t in signs.items())
+    B0=sum(K(i,j) for i in range(4) for j in range(i+1,4))
+    T0=sum(t*C(i,j) for (i,j),t in signs.items())
+    assert expand(D-B0-T0)==0
+    normsum=4+2*B0
+    assert expand(B0-(normsum-4)/2)==0
 for (h0,h1),(l0,l1),signs in double_patterns:
     D=sum(K(i,j)+t*C(i,j) for (i,j),ts in signs.items() for t in ts)
     Bp=2*K(h0,h1)+sum(K(i,j) for i in (h0,h1) for j in (l0,l1))
@@ -64,4 +80,4 @@ assert expand(-T-Rational(1,4)-q/2-H2-rho/2-Delta)==0
 t=symbols('t',positive=True)
 assert simplify((t*t/(32*(t+3))).diff(t)-t*(t+6)/(32*(t+3)**2))==0
 assert (t*t/(32*(t+3))).subs(t,1)==Rational(1,128)
-print('PASS: 3 F3 matchings; 2 double patterns; formal SOS; energy corollary')
+print('PASS: all 3 matchings, uniform Walsh square floor, double-pattern SOS')
