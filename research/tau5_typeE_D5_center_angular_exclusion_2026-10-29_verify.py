@@ -40,6 +40,7 @@ gap=F(3,5)-U
 assert gap==F(354233594839339286756640083873782082234484437099,
               79208984971046447753906250000000000000000000000000)
 assert gap>0
+assert 2*(theta-theta**3/6)**2-F(1,80)==F(9587387,35156250000)
 print('PASS: exact trigonometric/radical bounds and derivative margins')
 print('PASS: strict terminal gap:',gap)
 print('CONDITIONAL THEOREM: maximum projective D5 angular error > 2/25 radians')
