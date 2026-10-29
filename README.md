@@ -275,3 +275,12 @@ Q\ge F(x_2,s_0)+\frac23(x-x_2)+\frac1{10}(s_0-s)
 The new **linear** \(B_v\) coefficient and tensor/contact rigidity improve the earlier quadratic-only stability statement, but **do not increase** the conditional scalar floor \(Q>28.3965067\). The upstream mass/harmonic/conditional signed-Gram inputs are retained, not reverified. **[OPEN]** No Type-E contradiction. Global proved range remains \(40\le\tau_5\le44\).
 
 [Proof](research/tau5_typeE_tensor_contact_stability_2026-10-29.md) · [Exact SymPy verifier](research/tau5_typeE_tensor_contact_stability_2026-10-29_verify.py).
+
+
+## Sharp local center-contact quantization (2026-10-29)
+
+**[PROVED EXACTLY — standalone capped-simplex theorem]** For the sorted 20 center-contact energies \`y_i in [0,1/2]\`, with sum \`s=13/2+rho\` and \`1/4<=rho<1/2\`, let \`delta\` be their L1 distance to the sorted \`13 x 1/2, rho, 6 x 0\` pattern. The concavity gap satisfies the **sharp local quadratic bound** \`gap >= (1-2rho)*delta-delta^2\`, with equality for every \`0<=delta<=1/2-rho\` in an explicit two-coordinate transfer family.
+
+**[CONDITIONAL TYPE-E STABILITY]** On the retained critical rectangle \`69/10<=s<=209/30\`, the prior tensor-contact stability penalty \`delta/480\` improves to \`max(delta/480, delta/240-delta^2/16)\`. If \`epsilon=Q-F_*<1/14400\`, then \`delta<=1/30-sqrt(1/900-16epsilon)=240epsilon+O(epsilon^2)\`, improving the old first-order \`480epsilon\` control by a factor of two. The conditional numerical Q-floor does **not** change. This relies on previously retained upstream harmonic/mass/atlas certificates; **no Type-E exclusion**.
+
+See [proof](research/tau5_typeE_sharp_local_contact_quantization_2026-10-29.md) and [exact checker](research/tau5_typeE_sharp_local_contact_quantization_2026-10-29_verify.py). **Global proved range remains 40<=tau_5<=44.**
