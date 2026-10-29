@@ -222,3 +222,26 @@ gives `||T_Y-T_X||_op²<=2 epsilon²+(3/10)b²`, where `epsilon=||Y-X||_F` and `
 where v_i=(m_i,w_i), K_ij=v_i.v_j and Delta is the sum of the six positive deep-contact slacks. Hence the four hub-leaf mixed terms have squared sum **>1/64**, without any D5 labeling or SDP. For the all-singleton matching, the six signed mixed terms have squared sum **>1/6**. Consequently **every F3 perfect matching, including the mass-selected one**, has a graph-switched six-pair Walsh squared-energy sum **>1/64**. A standalone P2 midpoint floor C>1/128 follows but is weaker than the retained C>=17/250.
 
 **[OPEN]** The same-sign mixed terms here cannot be identified with the earlier active-sign q_ij; a quantitative transfer to Delsarte nondeep slack or the 184-safe-pair Q bound is still needed. No Type-E elimination. [Full derivation](research/tau5_typeE_F3_double_matching_Walsh_SOS_2026-10-28.md) · [exact verifier](research/tau5_typeE_F3_double_matching_Walsh_SOS_2026-10-28_verify.py). **Global proved range remains 40<=tau_5<=44.**
+
+
+## Sharp F3 double-matching stress and deep-edge Q cap (2026-10-28)
+
+**[PROVED EXACTLY — STANDALONE F3 CORE]** Both double-pattern F3 matchings have sharp midpoint-energy infimum
+\(C>1-\sqrt{\sqrt3-3/4}=0.0090152334324824\ldots\).
+An explicit rank-five PSD stress, rank-three boundary witness, unique equality Gram, strict 3D perturbation and quantitative spectral-gap identity are given in
+[the proof](research/tau5_typeE_F3_double_matching_exact_sharp_2026-10-28.md)
+and [the exact SymPy verifier](research/tau5_typeE_F3_double_matching_exact_sharp_2026-10-28_verify.py).
+Together with the prior sharp all-singleton bound, this completes the **sharp matching-uniform local F3 energy floor**.
+Conditional on the retained at-most-three-active core theorem, the uniform raw-excess slack improves to \(>0.00120781225890586\).
+
+**[PROVED EXACTLY — USING RETAINED TYPE-E ENERGY CEILING]** Every selected deep edge has \(a_i=\|m_i\|^2<1/4\).
+The sharp convex envelope for \(\sum a_i^2\) improves the universal twenty-line Q-frame squared-correlation floor from
+\(17456771/635040\) to **\(8790283/317520=27.6841868228773\ldots\)**, a gain of \(131/672\).
+An exact six-exception decomposition gives a label-free 184-safe squared-correlation floor
+\(64520136179/2520473760\), with additional nonnegative variance/defect terms.
+See [the derivation](research/tau5_typeE_deep_edge_cap_Q_floor_2026-10-28.md)
+and [exact rational verifier](research/tau5_typeE_deep_edge_cap_Q_floor_2026-10-28_verify.py).
+This universal scalar floor is weaker than separately retained center-sensitive conditional estimates.
+
+**[OPEN]** Neither result eliminates Type E or proves \(\tau_5=40\).
+The global proved range remains **\(40\le\tau_5\le44\)**. All earlier graph-classification qualifications and unresolved branches remain.
