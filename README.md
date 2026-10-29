@@ -209,3 +209,16 @@ gives `||T_Y-T_X||_op²<=2 epsilon²+(3/10)b²`, where `epsilon=||Y-X||_F` and `
 **[PROVED EXACTLY — standalone D5 algebra and finite combinatorics]** Every 16-line D5 subset contains at least one Q-kernel relation on exactly eight root lines; every 17-line subset contains at least three. The shortest relations are either alternating four-cycles (15 patterns) or positive triangle-plus-complementary-edge tight frames (10 patterns). Crucially, 240 of the 4,845 sixteen-line subsets have **no** four-cycle but retain a positive eight-line relation. The full 20-line Q-Gram has positive eigenvalues 3/2 (fourfold) and 1 (tenfold), with an explicit minimum-norm right inverse.
 
 **[CONDITIONAL TYPE-E APPLICATION]** If the 16 isolated projected edges admit a rigorously justified D5 labeling, the positive eight-line relation yields an exact squared-correlation identity on 28 pairings, all contained in the 184 **safe** Walsh blocks. This bypasses the six exceptional F3-core pairings but does **not** yet yield an upper-bound contradiction or eliminate Type E. Upstream geometric rounding and alignment certificates were not independently recertified. [Derivation](research/tau5_D5_sparse8_Q_incidence_2026-10-28.md) · [exact verifier](research/tau5_D5_sparse8_Q_incidence_2026-10-28_verify.py). **Global proved range remains 40<=tau_5<=44.**
+
+
+## F3 double-pattern five-block Walsh/SOS obstruction (2026-10-28)
+
+**[PROVED EXACTLY — under the Type-E F3 deep-edge and endpoint hypotheses]** Both double-pattern perfect matchings of the ten-edge F3 graph force a strict signed Walsh-mixing inequality. After switching and relabeling the four matching pairs as hubs 0,3 and leaves 1,2, write c_ij=m_i.w_j+w_i.m_j and T=c_01-c_02-c_31+c_32. The six deep contacts and the missing leaf-leaf safe pairing give an **exact nonnegative-remainder identity**
+
+    -T-1/4-|c_12|/2
+      = ||v_0+v_3+(v_1+v_2)/2||²
+        + (1/2-K_12-|c_12|)/2 + Delta > 0,
+
+where v_i=(m_i,w_i), K_ij=v_i.v_j and Delta is the sum of the six positive deep-contact slacks. Hence the four hub-leaf mixed terms have squared sum **>1/64**, without any D5 labeling or SDP. A standalone P2 midpoint floor C>1/128 follows but is weaker than the retained C>=17/250.
+
+**[OPEN]** The same-sign mixed terms here cannot be identified with the earlier active-sign q_ij; a quantitative transfer to Delsarte nondeep slack or the 184-safe-pair Q bound is still needed. No Type-E elimination. [Full derivation](research/tau5_typeE_F3_double_matching_Walsh_SOS_2026-10-28.md) · [exact verifier](research/tau5_typeE_F3_double_matching_Walsh_SOS_2026-10-28_verify.py). **Global proved range remains 40<=tau_5<=44.**
