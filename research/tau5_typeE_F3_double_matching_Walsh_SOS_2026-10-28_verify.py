@@ -13,6 +13,7 @@ def matchings(V):
                 yield ((a,b),)+P
 M=list(matchings(tuple(range(8))))
 assert len(M)==3
+double_patterns=[]
 for P in M:
     idx={v:(i,1 if k==0 else -1) for i,p in enumerate(P) for k,v in enumerate(p)}
     cross=[]; count=[[0]*4 for _ in range(4)]
@@ -41,10 +42,16 @@ for P in M:
     assert sorted(signs[tuple(sorted(h))])==[-1,1]
     assert [signs[tuple(sorted((i,j)))][0]
             for i,j in ((h[0],l[0]),(h[0],l[1]),(h[1],l[0]),(h[1],l[1]))]==[1,-1,-1,1]
+    double_patterns.append((h,l,signs))
 k={(i,j):symbols(f'k{i}{j}') for i in range(4) for j in range(i+1,4)}
 c={(i,j):symbols(f'c{i}{j}') for i in range(4) for j in range(i+1,4)}
 def K(i,j): return 1 if i==j else k[tuple(sorted((i,j)))]
 def C(i,j): return c[tuple(sorted((i,j)))]
+for (h0,h1),(l0,l1),signs in double_patterns:
+    D=sum(K(i,j)+t*C(i,j) for (i,j),ts in signs.items() for t in ts)
+    Bp=2*K(h0,h1)+sum(K(i,j) for i in (h0,h1) for j in (l0,l1))
+    Tp=C(h0,l0)-C(h0,l1)-C(h1,l0)+C(h1,l1)
+    assert expand(D-Bp-Tp)==0
 B=2*K(0,3)+K(0,1)+K(0,2)+K(3,1)+K(3,2)
 T=C(0,1)-C(0,2)-C(3,1)+C(3,2)
 R=3+B
