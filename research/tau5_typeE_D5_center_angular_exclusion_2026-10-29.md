@@ -62,6 +62,23 @@ They dominate \(X_\theta(0)\) and \(X_\theta(1/4)\), using \(\cos\theta\le C\), 
 \]
 Equations (1)–(3) would force \(3/5\le U<3/5\), a contradiction.
 
+## Exact projective Q-matrix distance corollary
+
+For unit \(u\), define the traceless projector \(Q(u)=uu^T-I/5\). Then
+\[
+\|Q(u)-Q(r)\|_F^2=2(1-(u\cdot r)^2)=2\sin^2(\operatorname{angle}_{\rm proj}(u,r)).
+\]
+Since at least one projective angle exceeds \(\theta=2/25\), every rotation \(R\) and line matching \(\pi\) satisfies
+\[
+\boxed{\sum_{i=1}^{20}\|Q(u_i)-RQ(r_{\pi(i)})R^T\|_F^2>\frac1{80}.}
+\]
+The exact rational certificate is
+\[
+2\sin^2(\theta)\ge2(\theta-\theta^3/6)^2
+=\frac1{80}+\frac{9587387}{35156250000}>\frac1{80}.
+\]
+Thus the D5 **Q-template orbit** is quantitatively separated from any candidate under the retained hypotheses. This is not a lower bound on the unaligned global frame variance.
+
 **[VERIFIED EXACTLY]** The companion SymPy/Fraction checker independently expands the 20-root moments and verifies all rational enclosures and the terminal positive fraction. The analytic derivative and angular steps are written above.
 
 **[OPEN]** This is a lower bound on D5 angular deviation, not an upper bound and not an elimination of Type E. A future D5-rounding argument must prove an upper error at most \(2/25\) to create a contradiction. Types C, D, generic \(e\ge27\), and non-isolated branches remain open. Sparse \(e=23,24\) classifications still require \(\delta(G)\ge1\).
