@@ -284,3 +284,12 @@ The new **linear** \(B_v\) coefficient and tensor/contact rigidity improve the e
 **[CONDITIONAL TYPE-E STABILITY]** On the retained critical rectangle `69/10<=s<=209/30`, the prior tensor-contact stability penalty `delta/480` improves to `max(delta/480, delta/240-delta^2/16)`. If `epsilon=Q-F_*<1/14400`, then `delta<=1/30-sqrt(1/900-16epsilon)=240epsilon+O(epsilon^2)`, improving the old first-order `480epsilon` control by a factor of two. The conditional numerical Q-floor does **not** change. This relies on previously retained upstream harmonic/mass/atlas certificates; **no Type-E exclusion**.
 
 See [proof](research/tau5_typeE_sharp_local_contact_quantization_2026-10-29.md) and [exact checker](research/tau5_typeE_sharp_local_contact_quantization_2026-10-29_verify.py). **Global proved range remains 40<=tau_5<=44.**
+
+
+## Paired-center midpoint concentration (2026-10-29)
+
+**[PROVED EXACTLY — standalone lemma]** For the twenty paired center contacts, let B=sum_i(v.m_i)^2 and delta be the L1 distance of their sorted paired contact energies from the 13+1+6 capped-simplex pattern. If delta<=1/30 and B<=1/16, the first thirteen nearly saturated pairs carry at most (15/172)delta^2 of midpoint-direction energy. The harmonic remainder gains the positive term max(0,B-(15/172)delta^2)/60.
+
+**[CONDITIONAL TYPE-E CONSEQUENCE]** On the retained critical rectangle, for epsilon=Q-F_* with 0<=epsilon<1/14400, this gives B<45epsilon (previously B<=160epsilon). The conditional scalar Q floor remains Q>28.3965067; no Type-E exclusion. The upstream mass/harmonic/signed-Gram/derivative certificates are retained, not independently recertified. **Global proved range remains 40<=tau_5<=44.**
+
+[Proof](research/tau5_typeE_center_quantization_midpoint_mixing_2026-10-29.md) · [Exact rational verifier](research/tau5_typeE_center_quantization_midpoint_mixing_2026-10-29_verify.py).
