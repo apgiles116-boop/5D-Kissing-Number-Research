@@ -410,3 +410,14 @@ See [proof](research/tau5_21line_quartic_gap_1over61_2026-10-29.md) and [exact v
 **[PROVED EXACTLY — standalone D5 algebra; CONDITIONAL Type E]** The existing unweighted D5 Q-Gram spectrum `(3/2)^4,1^10,0^6` extends to arbitrary radial weights `w_i=1-a_i>=3/4`: all 14 positive weighted eigenvalues lie in `[9/16,3/2]`, and the six-dimensional kernel is the inverse-weighted span of the global relation and five explicit four-cycle relations. For exact D5-aligned directions, `Q=30-3A+J_a/4` and `V=U-A^2/5+J_a/2`, with `J_a` the midpoint-energy products on the 120 nonorthogonal D5 line pairs. At the cap `A=383/504` and concentrated energy pattern, `V>=11447/158760`, `Q>=4657/168`, both sharp in the aligned template. A robust angular-error and capped-energy stability inequality, plus a quantitative six-kernel perturbation bound, are proved in [the note](research/tau5_D5_weighted_Q_spectrum_and_cap_gap_2026-10-29.md) and checked by [the exact verifier](research/tau5_D5_weighted_Q_spectrum_and_cap_gap_2026-10-29_verify.py).
 
 **[OPEN]** No D5 alignment has been certified in the residual low-center Type-E branch; this is not an improvement over the stronger retained conditional center-sensitive Q-floor and does not eliminate Type E. Global proved range remains **40<=tau_5<=44**.
+
+
+## 64 isolated-core safe-Walsh / frame bridge (2026-10-29)
+
+**[PROVED EXACTLY — standalone, under two-sided safe endpoint blocks]** For the 16+4 Type-E edge split, with core midpoint energy y, core fourth energy U_C, total A, and projected frame variance V, the 64 isolated-core safe-block square-slack H64 satisfies
+
+    H64 >= y*(1-A/5+y-sqrt(4V/5)) - U_C.
+
+For y>0 this yields an exact *quadratic* frame-variance penalty V >= (5/(4*y*y))*[y*(1-A/5+y)-U_C-H64]_+². It is label-free and does not assume D5 alignment. The capped midpoint-energy L1 stability coefficient also improves from 1/20 to 5/64, with an additional local linear stability regime near A=383/504. These are conditional Type-E tools, **not a contradiction**, and do not replace the stronger 2026-10-28 conditional mass/harmonic bounds. See [proof](research/tau5_typeE_64cross_Walsh_frame_bridge_2026-10-29.md) and [exact verifier](research/tau5_typeE_64cross_Walsh_frame_bridge_2026-10-29_verify.py).
+
+**OPEN:** obtain a sufficiently strong upper bound on H64 or H184 to activate the quadratic penalty. The global proved range remains **40<=tau_5<=44**.
