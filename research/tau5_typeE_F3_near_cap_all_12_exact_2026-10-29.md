@@ -41,7 +41,7 @@ Every coordinate is rational and `||u(t)||=1` identically. The verifier checks a
 
 **[PROVED EXACTLY]** The twelve finite rational configurations. In particular, an F3-only upper bound `U_core <= U* - c` valid for all `A_core<=A*` cannot have `c >= 1/600000 ≈ 0.000001666667`. A smaller F3-only penalty remains possible.
 
-**[NOT PROVED]** No extension to the 32 endpoints of `16K2` or to an isolated center. The examples need not satisfy the 184 safe Walsh blocks, the global Q-frame inequality, harmonic/mass constraints, or the Type-E matching-selection theorem. They do not establish sharpness of the cap envelope for a full Type-E code.
+**[NOT PROVED]** No extension to the 32 endpoints of `16K2` or to an isolated center. The examples need not satisfy the 184 safe Walsh blocks, the global Q-frame inequality, harmonic/mass constraints, or the Type-E matching-selection theorem. They do not establish sharpness of the cap envelope for a full Type-E code. In particular, these examples have core energy near 0.759918 with no energy assigned to the sixteen isolated edges; they do not satisfy the additional conditional critical-strip requirement x>=x2≈0.002013 for the isolated-edge midpoint sum. Thus the 99.999% local closeness is not a bound on the global Type-E fourth-moment deficit in that strip.
 
 **[NEXT]** Use these twelve exact witnesses as adversarial inputs for any proposed F3-only concentration argument, and target a genuinely global 184-block/frame incompatibility. The conditional center-critical and 13+1+6 estimates still require independent recertification of upstream certificates.
 
