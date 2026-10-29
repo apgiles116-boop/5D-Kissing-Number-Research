@@ -245,3 +245,12 @@ This universal scalar floor is weaker than separately retained center-sensitive 
 
 **[OPEN]** Neither result eliminates Type E or proves \(\tau_5=40\).
 The global proved range remains **\(40\le\tau_5\le44\)**. All earlier graph-classification qualifications and unresolved branches remain.
+
+
+## Residual Type-E center quantization Q-floor (2026-10-28)
+
+**[NEW EXACT ALGEBRA — CONDITIONAL TYPE E]** Retaining the 40 isolated-center nondeep contact quantization penalty in the mass/harmonic resource eliminates the minimizer of the previous residual-center Q relaxation. A three-region rational monotonicity certificate strengthens the projected squared-correlation floor from 28.395623511729... to **Q > 709911/25000 = 28.39644**. Under the separately retained six-core caps, the 184-safe-pair floors become **>26.54878375** (P1/P3) and **>26.61519** (P2). An independent exact paired-center identity additionally couples the center quantization penalty to the midpoint-direction energy B_v, suggesting a future two-variable KKT improvement.
+
+[Exact derivation](research/tau5_typeE_residual_center_quantization_2026-10-28.md) · [Rational verifier](research/tau5_typeE_residual_center_quantization_2026-10-28_verify.py).
+
+**[RETAINED, NOT REPROVED]** Type-E mass/harmonic inputs, conditional finite-atlas exclusion s>=209/30, and previous L'(x)>27/56 certificate. **[OPEN]** No Type-E contradiction; Types C/D, generic e>=27, and non-isolated branches remain. Global proved range **40<=tau_5<=44**.
