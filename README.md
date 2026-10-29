@@ -320,3 +320,16 @@ B_v <= 2epsilon/(19/480+sqrt((19/480)^2+(29/10)epsilon)).
 ```
 
 At the endpoint `epsilon=1/57600`, the nonlinear upper bound gives `B_v/epsilon<=25.06341`, improving the previous finite-range coefficient `27`. The proof is exact rational algebra; **the Type-E application retains earlier harmonic, signed-Gram, and critical-rectangle certificates without re-auditing them**. No positive epsilon gap and no Type-E elimination. [Proof](research/tau5_typeE_finite_range_optimal_linear_B_2026-10-29.md) · [Exact verifier](research/tau5_typeE_finite_range_optimal_linear_B_2026-10-29_verify.py). Global proved range remains `40<=tau_5<=44`.
+
+
+## Exact F3 double-pattern leaf-concentration obstruction (2026-10-29)
+
+**[PROVED EXACTLY — STANDALONE F3]** For double-pattern matching P1=02|14|36|57, with leaf B=14 and the other pairs A=02,C=36,D=57, put a_i=||m_i||² and R=sqrt(a_A+a_C+a_D). An exact four-contact Gram identity and a two-deep/two-safe Walsh inequality give
+
+\[
+(2+2R)\sqrt{a_B}+\sqrt{7R}+\frac32 R\ge\frac12.
+\]
+
+Thus **a_B<=1/100 implies a_A+a_C+a_D>1/8100**. By F3 matching automorphisms the same holds for the other leaf and the equivalent double-pattern matching P3. In the weak-contact boundary system, if the other three midpoint vectors vanish, **a_B>=1/12**; a rank-three exact equality witness establishes sharpness for that *weak* system. With strict deep edges the other three midpoints cannot all vanish, by an exact frustration identity.
+
+This rules out **one incidence subcase** of the a_i<1/4 fourth-moment cap-envelope extremizers (the residual 5/504 placed on a core leaf with the other three core energies zero). It **does not** exclude hub-cap patterns, improve the global Q floor, or eliminate Type E. [Proof](research/tau5_typeE_F3_leaf_concentration_obstruction_2026-10-29.md) · [exact SymPy checker](research/tau5_typeE_F3_leaf_concentration_obstruction_2026-10-29_verify.py). All prior mass/harmonic/atlas inputs remain retained, not independently recertified. **Global range unchanged: 40<=tau_5<=44.**
