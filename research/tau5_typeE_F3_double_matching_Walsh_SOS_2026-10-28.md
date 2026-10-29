@@ -31,3 +31,14 @@ A standalone (but weaker than retained P2) midpoint-energy corollary is C=sum||m
 **[VERIFIED]** Exact enumeration checks both double-pattern F3 matchings, sign switching, the checkerboard pattern, and the formal SOS identity. **[RETAINED, NOT REPROVED]** M(F3)<=89, matching M(P)>=S/2-28/3, A<=383/504, and the Musin/Boyvalenkov zero-midpoint exclusion. **[OPEN]** Convert (1)-(3) into an upper-bound contradiction using the full endpoint/Delsarte nondeep slack; Types C, D, generic e>=27 and non-isolated branches remain open.
 
 Verifier: research/tau5_typeE_F3_double_matching_Walsh_SOS_2026-10-28_verify.py.
+
+
+## Matching-uniform F3 Walsh-energy theorem [PROVED EXACTLY]
+
+The all-singleton matching 04|17|23|56 also admits a switch w_i=eta_i z_i for which each of its six cross-deep endpoint products is K_ij+t_ij c_ij with t_ij in {+1,-1}. Their sum D_1 is strictly less than -3. But sum_{i<j}K_ij=(||sum_i v_i||²-4)/2>=-2, hence T_1=sum t_ij c_ij<-1. By Cauchy-Schwarz, sum_{i<j}c_ij²>T_1²/6>1/6.
+
+Together with the double-pattern bound >1/64, this proves **for every F3 perfect matching**, including the matching selected by the retained mass theorem,
+
+    sum_{1<=i<j<=4}(m_i.w_j+w_i.m_j)² > 1/64,          (4)
+
+where w_i=eta_i z_i is the appropriate sign switch for that matching. This is a matching-uniform **same-sign switched Walsh-energy** floor; it is not automatically a lower bound on the earlier active-sign q_ij variables. It requires no D5 labeling, Q-frame certificate, or new SDP.
