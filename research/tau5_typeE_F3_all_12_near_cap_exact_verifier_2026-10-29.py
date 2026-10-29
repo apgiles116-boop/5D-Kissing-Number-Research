@@ -15,6 +15,7 @@ P={"P1":[(0,2),(1,4),(3,6),(5,7)],
    "P2":[(0,4),(1,7),(2,3),(5,6)],
    "P3":[(0,5),(1,4),(2,7),(3,6)]}
 assert len(W)==12
+Ustar=F(3,16)+F(5,504)**2
 for name,pairs in P.items():
     for small in range(4):
         key=f"{name}_{small}"
@@ -39,13 +40,13 @@ for name,pairs in P.items():
                 slacks.extend([F(1,2)-d,d+F(1,2)])
         assert min(slacks)>0,(key,"endpoint constraint")
         a=[(1+dot(i,j))/2 for i,j in pairs]
-        assert all(F(1249,5000)<a[i]<F(1,4) for i in range(4) if i!=small)
-        assert F(99,10000)<a[small]<F(1,100)
+        assert all(F(124999,500000)<a[i]<F(1,4) for i in range(4) if i!=small)
+        assert F(992,100000)<a[small]<F(993,100000)
         A=sum(a)
         U=sum(q*q for q in a)
-        assert F(759,1000)<A<F(383,504)
-        assert U>F(4686,25000)
+        assert F(7599,10000)<A<F(383,504)
+        assert U>Ustar-F(1,600000)
         print(key,"PASS")
 Ustar=F(3,16)+F(5,504)**2
-assert F(4686,25000)/Ustar>F(999,1000)
-print("PASS: 12 strict exact-deep-graph F3 witnesses; U > 99.9% of Ustar")
+assert (Ustar-F(1,600000))/Ustar>F(99999,100000)
+print("PASS: 12 strict exact-deep-graph F3 witnesses; U > 99.999% of Ustar")
