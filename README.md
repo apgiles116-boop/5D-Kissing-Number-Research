@@ -306,3 +306,17 @@ B_T<2\varepsilon\quad(\varepsilon>0).
 $$
 
 The asymptotic coefficient improves to $\limsup B_v/\varepsilon\le480/19$, compared with the previous 45 finite-range bound and 480/11 asymptotic coefficient. This improves **stability**, not the scalar Q-floor; the upstream mass/harmonic/conditional signed-Gram certificates were not independently recertified, and **Type E remains open**. [Exact proof](research/tau5_typeE_three_zone_center_coercivity_2026-10-29.md) · [Fraction verifier](research/tau5_typeE_three_zone_center_coercivity_2026-10-29_verify.py). **Global proved range unchanged: 40<=tau_5<=44.**
+
+
+## Finite-range optimal linear midpoint-direction coercivity (2026-10-29)
+
+**[PROVED EXACT ALGEBRA; CONDITIONAL TYPE-E CONSEQUENCE]** A sharper combination of the exact three-zone center-contact inequality and the previously retained tensor/harmonic inequality upgrades the coefficient `480/19` from an asymptotic limsup to a **uniform finite-range bound**. For `0<=epsilon=Q-F_*<=1/57600`, write `B_v=sum_i(v.m_i)^2`, `delta` for the L1 center-contact distribution deviation, `V_tensor` for the two nonnegative frame anisotropy terms, and `V_4=2(sum p_i^4-B_v^2/20)>=0`. Then
+
+```
+epsilon >= (19/480)B_v+(29/40)B_v^2
+           +(553/247680)delta+V_tensor+V_4.
+B_v <= (480/19)epsilon,
+B_v <= 2epsilon/(19/480+sqrt((19/480)^2+(29/10)epsilon)).
+```
+
+At the endpoint `epsilon=1/57600`, the nonlinear upper bound gives `B_v/epsilon<=25.06341`, improving the previous finite-range coefficient `27`. The proof is exact rational algebra; **the Type-E application retains earlier harmonic, signed-Gram, and critical-rectangle certificates without re-auditing them**. No positive epsilon gap and no Type-E elimination. [Proof](research/tau5_typeE_finite_range_optimal_linear_B_2026-10-29.md) · [Exact verifier](research/tau5_typeE_finite_range_optimal_linear_B_2026-10-29_verify.py). Global proved range remains `40<=tau_5<=44`.
