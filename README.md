@@ -351,3 +351,17 @@ This rules out **one incidence subcase** of the a_i<1/4 fourth-moment cap-envelo
 The global squared-correlation sum gains the positive term `V/2`. In the radial case `eta=0`, the variance gap is `[5k/(5-k)](A/5-x)_+²`, **regardless of the four core directions**. At the illustrative limiting parameters `A=383/504,x=1/250`, this gives an extra Q penalty of at least 0.013687 (k=1) or 0.036499 (k=2). An exact robust example: `A>=1/2,x<=1/250,eta<=1/100` implies `V>=10621081/3125000000>0.00339`.
 
 **[CONDITIONAL Type E]** No D5 alignment is proved in the residual low-center branch, so these gains cannot yet be inserted into the unconditional Type-E floor. This is a quantitative target for geometric rounding, not a Type-E elimination. [Proof](research/tau5_D5_sixteen_complement_frame_gap_2026-10-29.md) · [exact verifier](research/tau5_D5_sixteen_complement_frame_gap_2026-10-29_verify.py). **Global proved range remains 40<=tau_5<=44.**
+
+
+## Label-free rank-four frame completion theorem (2026-10-29)
+
+**[PROVED EXACTLY — standalone linear algebra; necessary for the retained Type-E 16+4 decomposition]** Let S=sum of the sixteen isolated projected rank-one matrices z_i z_i^T, C=sum of the four F3 projected rank-one matrices, A=sum ||m_i||^2, x=sum_I ||m_i||^2, mu=4-A/5, and V=||S+C-mu I||_F^2. Because C is PSD of rank at most four, if s1>=...>=s5 are the eigenvalues of S, an **exact optimal** label-free lower bound is V>=Phi(S,4-A+x), where Phi is the water-filling completion formula. In particular,
+
+    V >= (5/4)*(lambda_max(S)-(4-A/5))^2.
+
+Hence the twenty-vector projected squared-correlation sum satisfies
+
+    Q >= 30-3A+A^2/10-(1/2)sum a_i^2
+         +(5/8)*(lambda_max(S)-(4-A/5))^2.
+
+No D5 labeling, rounding, or core-direction assumption is needed. The coefficient 5/4 is sharp for abstract rank-four PSD completions; the full water-filling formula can be strictly stronger. **[OPEN]** No uniform positive spectral-pinning gap has been established from the 184 safe Walsh blocks, so this is not a Type-E elimination or improved scalar Q floor. [Proof](research/tau5_typeE_label_free_rank4_frame_completion_2026-10-29.md) · [exact verifier](research/tau5_typeE_label_free_rank4_frame_completion_2026-10-29_verify.py). Earlier upstream mass/harmonic/atlas certificates are retained, not independently recertified. **Global proved range unchanged: 40<=tau_5<=44.**
