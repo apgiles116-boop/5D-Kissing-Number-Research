@@ -33,7 +33,7 @@ Let k=T²(T+1/2)/(2sqrt(r)), d=c/(4r²). With four core variables x_i=sqrt(a_i),
 
     R=k*(1+3/(1+sqrt(r)))-5d/2+sqrt(4k²+d²/4).
 
-Here R>0 on A<=1/86, hence yR<=AR. Combining the 184 safe blocks, six core pairs, and twenty center pairs proves
+Here R>0 on A<=1/86: k>=1/8 and 0<=d<=1/(16r0²), while sqrt(4k²+d²/4)>=2k, so R>=3k-5d/2>=3/8-5/(32r0²)>0 (r0=85/86). Hence yR<=AR. Combining the 184 safe blocks, six core pairs, and twenty center pairs proves
 
     P <= A*[4/(5r²)+1/(16r²)+R]
          + A*sqrt(6)/(5r²)*sqrt(P).                   (3)
