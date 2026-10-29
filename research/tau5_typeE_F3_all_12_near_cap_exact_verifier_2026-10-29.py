@@ -47,6 +47,5 @@ for name,pairs in P.items():
         assert F(7599,10000)<A<F(383,504)
         assert U>Ustar-F(1,600000)
         print(key,"PASS")
-Ustar=F(3,16)+F(5,504)**2
 assert (Ustar-F(1,600000))/Ustar>F(99999,100000)
 print("PASS: 12 strict exact-deep-graph F3 witnesses; U > 99.999% of Ustar")
