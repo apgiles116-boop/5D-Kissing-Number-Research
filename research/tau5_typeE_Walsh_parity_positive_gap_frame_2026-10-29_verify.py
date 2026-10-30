@@ -94,6 +94,13 @@ assert U <= A/4
 assert F(1)-F(383,504)/5 == F(2137,2520)
 assert F(3)-F(383,504) == F(1129,504)
 
+
+# Exact capped-simplex endpoint used in the second-order corollary.
+B = F(383, 504)
+gB = F(3, 16)+(B-F(3, 4))**2
+assert gB == F(47653, 254016)
+assert B-gB == F(145379, 254016)
+
 print("PASS: 1449 safe rational Walsh boxes, 85 sharpness instances,")
 print("      F3 parity counts", safe_counts, "and exact frame identity.")
 print("      Frame witness: A=", A, "S4=", S4, "W=", W)
