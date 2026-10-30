@@ -463,3 +463,10 @@ The normalized Q-frame variance also satisfies \(\|\sum_i(u_iu_i^T-I/5)\|_F^2\ge
 **[CONDITIONAL Type-E consequences]** With the retained center-harmonic \(q=s-36/5<-983/5000\) and historical \(A\le383/504\), this yields **\(d>1/46\)**. With the stronger retained \(A<567/1000\), **\(d>1/37\)**. With the *additional, not independently recertified* signed-Gram-atlas exclusion \(s\ge209/30\), **\(d>1/34\)** and normalized Q variance **\(>966289/7200000\)**. All three rational thresholds were verified exactly; this supersedes the earlier \(1/150\) D5 support-fibre radius as a separation statement. It is **not** a Type-E elimination, since an incompatible tight-frame proximity upper bound remains missing.
 
 [Full proof](research/tau5_typeE_tight_frame_center_separation_2026-10-30.md) · [Exact rational verifier](research/tau5_typeE_tight_frame_center_separation_2026-10-30_verify.py). **Global proved range remains \(40\le\tau_5\le44\)**.
+
+
+## Sharp safe Walsh profile and 114-block penalty (2026-10-30)
+
+**[PROVED EXACTLY — universal four-contact algebra]** For a fully safe selected-edge pairing, let d=|z_i.z_j|, T=(m_i.m_j)^2+(z_i.m_j)^2+(m_i.z_j)^2, and s=1/4-(T+d^2). The sharp local profile is T<=1/4-d+3d^2 for d<=1/4 and T<=3(1/2-d)^2 for d>=1/4. It implies dist(d,{0,1/4,1/2})<=2s and, when d>=3/8, T<=(3/4)s. Sharpness is for the abstract four-contact cube, not for global Type-E Gram feasibility.
+
+**[PROVED EXACTLY — conditional on retained Type-E incidence and frame identities]** The 114 safe meeting-support blocks contribute a new nonnegative penalty Phi(d)=d(1-4d) for d<=1/4 and Phi(d)=(2d-1/2)(1-2d) otherwise, giving T70+E_Q/4+M_extra/28 >= A-U+V_edge/2+sum_R114 Phi(d). No D5 geometric alignment or six-exception/six-Q-mode identification is assumed. **[OPEN]** No incompatible upper bound; Type E remains open. See [proof](research/tau5_typeE_sharp_safe_Walsh_profile_2026-10-30.md) and [exact verifier](research/tau5_typeE_sharp_safe_Walsh_profile_2026-10-30_verify.py). Global proved range remains 40<=tau_5<=44.
