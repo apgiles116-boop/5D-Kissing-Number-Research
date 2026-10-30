@@ -449,3 +449,17 @@ See [proof](research/tau5_typeE_D5_center_angular_exclusion_2026-10-29.md) and [
 **[ADDITIONAL CONDITIONAL COROLLARY]** If the separate, previously retained center-harmonic certificate \(A\le0.5669250570031576\) is accepted, the angle exceeds **27/200=0.135 radians** and Q-orbit squared distance exceeds **9/250**. This stronger cap was not independently re-audited in the present note. **[OPEN]** No Type-E elimination or upper bound on D5 distance; Types C,D, generic \(e\ge27\), and non-isolated branches remain unresolved. Global proved range unchanged: **40<=tau_5<=44**.
 
 [Full proof](research/tau5_typeE_D5_shifted_fourth_moment_angle_2026-10-29.md) · [exact verifier](research/tau5_typeE_D5_shifted_fourth_moment_angle_2026-10-29_verify.py).
+
+
+## Label-free tight-frame separation (2026-10-30)
+
+**[PROVED EXACTLY — standalone]** For the twenty normalized Type-E projected directions \(u_i=z_i/\sqrt{1-a_i}\), isolated center \(v\), center-contact second moment \(s\), and total midpoint energy \(A\), the isolated-center constraints give \(\sum_i(v\cdot u_i)^2\le L=s/2+A/3\). For **every** twenty-vector unit-norm tight frame \(f_i\) in \(\mathbb R^5\), not merely a D5 support-plane model, the maximal rank-one-projector distance satisfies
+\[
+d=\max_i\|u_iu_i^T-f_if_i^T\|_F
+\ge\frac{\sqrt{10-L/2}-\sqrt{2L}}5\quad(L<4).
+\]
+The normalized Q-frame variance also satisfies \(\|\sum_i(u_iu_i^T-I/5)\|_F^2\ge(5/4)(4-L)^2\).
+
+**[CONDITIONAL Type-E consequences]** With the retained center-harmonic \(q=s-36/5<-983/5000\) and historical \(A\le383/504\), this yields **\(d>1/46\)**. With the stronger retained \(A<567/1000\), **\(d>1/37\)**. With the *additional, not independently recertified* signed-Gram-atlas exclusion \(s\ge209/30\), **\(d>1/34\)** and normalized Q variance **\(>966289/7200000\)**. All three rational thresholds were verified exactly; this supersedes the earlier \(1/150\) D5 support-fibre radius as a separation statement. It is **not** a Type-E elimination, since an incompatible tight-frame proximity upper bound remains missing.
+
+[Full proof](research/tau5_typeE_tight_frame_center_separation_2026-10-30.md) · [Exact rational verifier](research/tau5_typeE_tight_frame_center_separation_2026-10-30_verify.py). **Global proved range remains \(40\le\tau_5\le44\)**.
