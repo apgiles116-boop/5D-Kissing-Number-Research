@@ -101,6 +101,17 @@ gB = F(3, 16)+(B-F(3, 4))**2
 assert gB == F(47653, 254016)
 assert B-gB == F(145379, 254016)
 
+
+# Exact projected-Q and full-four-channel compensation identities.
+Z = [[sum((z[i][p]*z[i][r] for i in range(n)), F(0))
+      for r in range(5)] for p in range(5)]
+V = sum((Z[p][r]-(F(20)-A)/5*(1 if p == r else 0))**2
+        for p in range(5) for r in range(5))
+Q = sum((dot(z[i], z[j])**2
+         for i in range(n) for j in range(i+1, n)), F(0))
+assert Q == F(30)-3*A+A*A/10-U/2+V/2
+assert S4-Q == 4*A-A*A/10-U/2+(W-V)/2
+
 print("PASS: 1449 safe rational Walsh boxes, 85 sharpness instances,")
 print("      F3 parity counts", safe_counts, "and exact frame identity.")
 print("      Frame witness: A=", A, "S4=", S4, "W=", W)
