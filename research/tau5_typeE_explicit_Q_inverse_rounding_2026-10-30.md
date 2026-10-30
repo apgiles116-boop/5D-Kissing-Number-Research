@@ -54,3 +54,27 @@ For `rho>1`, the same conclusion is immediate.
 **[OPEN]** This positive residual floor is far too small to contradict `A<=383/504`. It does not imply a positive lower bound on `C+V` alone: `O` may be nonzero. A sharp Walsh/energy upper bound on this combined residual is still missing. The six exceptional pairings have **not** been identified with the six Q-kernel relations.
 
 **[RETAINED]** Global `40<=tau_5<=44`; `M(F3)<=89`; selected-edge mass `>=2137/6`; `A<=383/504`; Types C, D, generic e>=27 and non-isolated branches open. Sparse e=23/24 graph classification requires `delta(G)>=1`.
+
+
+## Exact sanity check: the global squared-correlation mass does not imply D5 proximity
+
+**[PROVED EXACTLY — counterexample to a tempting inference, NOT to Type E]**
+Let `v=(1,1,1,1,1)/sqrt(5)`, and let `H_0=I` and
+`H_k=I-2q_k q_k^T/(q_k·q_k)` for
+`q_1=(1,2,3,4,-10)`, `q_2=(2,3,4,5,-14)`,
+`q_3=(3,4,5,6,-18)`. Take the 20 unit directions
+`u_{kj}=H_k e_j` for `k=0,1,2,3` and `j=1,...,5`.
+Each `H_k` is rational orthogonal and fixes `v`, so
+`sum_i u_i u_i^T=4I`,
+`sum_{i<j}(u_i·u_j)^2=30`, and
+`|v·u_i|^2=1/5<=1/3` for every i.
+Exact rational comparison verifies that all 20 projective lines are distinct.
+Nevertheless only 154 of the 190 line pairs have `|u_i·u_j|<=1/2`;
+the other 36 violate that threshold.
+
+Thus **even exact equality with the D5 total squared-correlation mass 30,
+together with a center satisfying the normalized contact cap, does not force
+D5 alignment**. This is not an admissible Type-E example, precisely because
+the 184-safe/six-exception Walsh incidence fails. It explains why the inverse
+theorem must retain local cycle and within-support information rather than
+rely on the global frame floor alone.
