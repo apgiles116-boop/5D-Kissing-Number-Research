@@ -101,6 +101,14 @@ Subtracting it from (5) gives the **exact four-channel compensation law**
 
 This is a direct translation of the Q/frame information into midpoint and mixed Walsh energy, without assigning any of the six core exceptions to the six D5 Q-kernel relations.
 
+### Capped-midpoint second-order stability
+
+The previously certified capped-simplex majorization lemma gives, for the sorted midpoint energies, `g(A)-U >= (5/64)*delta^2`, where `b(A)` fills as many entries as possible to `1/4`, `g(A)=sum b_i(A)^2`, and `delta=||a_sorted-b(A)||_1`. Combining it with the new exact identity (5) yields
+
+    S4 >= 30+A-g(A)+(5/64)*delta^2+W/2.              (6a)
+
+This is an **exact second-order Walsh-energy stability inequality** conditional only on the retained capped-simplex lemma; it has no D5 alignment assumption. At the cap `A=383/504`, `g(A)=47653/254016`, so `S4>=30+145379/254016+(5/64)*delta^2+W/2`. The midpoint concentration and total-endpoint-frame variance penalties are independent and nonnegative. It remains an energy lower bound, not a Type-E exclusion.
+
 ## 4. Explicit improvement of the retained safe-mixing SOS inequality
 
 For the 184 fully safe pairings set
