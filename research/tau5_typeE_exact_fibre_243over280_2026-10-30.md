@@ -99,4 +99,4 @@ hence equality in the \(5/8\) inequality. **This is not claimed to satisfy isola
 
 Retain \(M(F_3)\le89\), \(M(P)\ge S/2-28/3\), twenty-edge mass \(\ge2137/6\), \(A\le383/504\), the Musin/Boyvalenkov zero-midpoint boundary exclusion, and **global proved \(40\le\tau_5\le44\)**. Types C, D, generic \(e\ge27\), and non-isolated branches remain open; sparse \(e=23,24\) classification requires \(\delta(G)\ge1\).
 
-Verifier: \`research/tau5_typeE_exact_fibre_243over280_verify.py\`.
+Verifier: `research/tau5_typeE_exact_fibre_243over280_verify.py`.
