@@ -11,7 +11,7 @@ For 20 **unit** directions `u_{pq}^+,u_{pq}^-` labeled by the ten edges `pq` of 
 `rho^2=2C+V/10`, `delta=sqrt(3)(2 sqrt(O)+5rho+rho^2)`, and `h=rho+22delta`.
 
 **Inverse theorem.** If `h<1/10`, there is an orthonormal basis `b_1,...,b_5` and, on each support `pq`, an orthonormal pair `f_pq^+,f_pq^-` spanning `span(b_p,b_q)`, with
-`max_i ||u_i u_i^T-f_i f_i^T||_F <5h`.
+`max_i ||u_i u_i^T-f_i f_i^T||_F <=5h`.
 This rounds to the **full ten-angle support-plane fibre**, not necessarily the rigid D5 roots.
 
 ## Proof
@@ -32,14 +32,14 @@ Choose unit columns `r_p` for `R_p`, and form the 5-by-5 matrix `T=[r_1 ... r_5]
 so `T` is invertible. Its orthogonal polar factor `W` obeys
 `||T-W||_F<=||T^TT-I||_F=||TT^T-I||_F<=2sqrt(5)delta`.
 Let `P_p=b_p b_p^T` for the columns of `W`. The unit-projector inequality `||rr^T-bb^T||_F<=2||r-b||` yields
-`||B_p-P_p||_F< (2+4sqrt(5))delta<11delta`.
+`||B_p-P_p||_F<= (2+4sqrt(5))delta<=11delta`.
 Therefore
 `||S_pq-(P_p+P_q)||_F<=rho+22delta=h`.
 
 Fix a support, abbreviate `S=uu^T+vv^T` and `P=P_p+P_q`. With `t=u·v`, the eigenvalues of `S` are `1+|t|,1-|t|,0,0,0`; Hoffman-Wielandt gives `sqrt(2)|t|<=h`. If `Pi` is the projector onto `span(u,v)`, then `||Pi-S||_F=sqrt(2)|t|<=h` and `||Pi-P||_F<=2h`.
 
 Gram-Schmidt produces `G=[u,(v-tu)/sqrt(1-t^2)]` with `||v-G_2||<=h`. Put `Z=PG`, `L=G^T(I-P)G`. Then `L>=0` and `tr L=||Pi-P||_F^2/2<=2h^2<1`. The two-column polar factor `H=Z(Z^TZ)^(-1/2)` lies in `range(P)` and is orthonormal. Its singular-value estimate gives
-`||G-Z||_F<=sqrt(2)h`, `||Z-H||_F<=tr L<=2h^2`, so `||G-H||_F<2h`. Hence `||u-H_1||<2h`, `||v-H_2||<3h`. Since `||xx^T-yy^T||_F<=sqrt(2)||x-y||` for unit vectors, the projective distance is less than `3sqrt(2)h<5h`. QED.
+`||G-Z||_F<=sqrt(2)h`, `||Z-H||_F<=tr L<=2h^2`, so `||G-H||_F<=2h`. Hence `||u-H_1||<=2h`, `||v-H_2||<=3h`. Since `||xx^T-yy^T||_F<=sqrt(2)||x-y||` for unit vectors, the projective distance is at most `3sqrt(2)h<=5h`. QED.
 
 ## Type-E corollary
 
