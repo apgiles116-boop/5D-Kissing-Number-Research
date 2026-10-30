@@ -70,3 +70,21 @@ assert rho2>0 and defect>0
 print("PASS: K5 reconstruction, normalized Q residual identity, rational constants")
 print("PASS: exact D5, ten-angle soft mode, and non-fibre rational perturbation")
 print("Non-fibre O,C,V:",O,C,V)
+
+
+# Exact non-rigidity example: four rational orthonormal bases fixing one center.
+qs=[[1,2,3,4,-10],[2,3,4,5,-14],[3,4,5,6,-18]]
+Hs=[I]
+for q in qs:
+    q=Matrix(q)
+    assert sum(q)==0
+    Hs.append(I-2*q*q.T/(q.dot(q)))
+assert all(H.T*H==I for H in Hs)
+frames=[H[:,j] for H in Hs for j in range(5)]
+assert sum((u*u.T for u in frames),zeros(5,5))==4*I
+pairs=[abs(frames[i].dot(frames[j])) for i in range(20) for j in range(i+1,20)]
+assert all(t!=1 for t in pairs)
+assert sum(t*t for t in pairs)==30
+assert sum(bool(t<=F(1,2)) for t in pairs)==154
+assert all(sum(u)==1 for u in frames)
+print("PASS: distinct rational-frame lines, mass 30, center cap 1/5, 154 safe pairs")
