@@ -123,6 +123,32 @@ Indeed sum_{c<d}(z_c·z_d)^2=2-A_C+A_C^2/4-U_C/2+V_z/2, whereas it is at most 3/
 
 In particular D_C=0 implies A_C>1/2. Equality A_C=1/2 would require two a_c=1/4, two a_c=0, and all six |z_c·z_d|=1/2. The Gram determinant for a triple of projected squared lengths (3/4,1,1) and these correlations is 1/16+eta/4, eta=+1 or -1, hence either 5/16 or -3/16, never zero. This is impossible for three planar vectors.
 
+## Theorem D (exact twenty-line Q / twenty-one-line frame bridge)
+
+In the twenty-deep-pair setting, let Z_20=sum_{i=1}^{20} z_i z_i^T, V_20=||Z_20-(20-A)I/5||_F^2, and T_21=x_0x_0^T+sum_{i=1}^{20}u_i u_i^T, V_21=||T_21-21I/5||_F^2. Define the PSD normalization correction
+
+C=sum_i (a_i/(1-a_i))z_i z_i^T, with tr(C)=A.
+
+Then the following matrix identity is **exact**:
+
+T_21-21I/5 = [Z_20-(20-A)I/5] +[x_0x_0^T-I/5]+[C-AI/5].  (10)
+
+The middle term has Frobenius norm sqrt(4/5). Since C is PSD with trace A,
+
+||C-AI/5||_F^2=tr(C^2)-A^2/5<=4A^2/5.
+
+The reverse triangle inequality and Theorem A give the second-order alternative
+
+**P >= (5/24)V_21 >= (5/24)[sqrt(4/5)(1-A)-sqrt(V_20)]_+^2.**  (11)
+
+This bound is D5-label-free. It becomes informative when the twenty projected lines form a nearly tight frame and midpoint energy is small. It may be vacuous for large V_20.
+
+Writing U=sum_i a_i^2 and S_safe, S_core for the 184 safe and six core squared-correlation sums, the retained global Q identity gives
+
+V_20=2(S_safe+S_core)-60+6A-A^2/5+U.                         (12)
+
+Equations (11)-(12) directly connect the six-exception squared-correlation language to the quantitative 21-line integrality obstruction. They do not yet provide a contradiction, because the center-to-edge correlations and normalization defects still need control.
+
 ## Ledger
 
 **PROVED EXACTLY:** Theorems A-C, with explicit rational and algebraic certificates. Companion Python/SymPy verification checks polynomial identities, margins, and rational samples; it does not certify Type-E feasibility.
