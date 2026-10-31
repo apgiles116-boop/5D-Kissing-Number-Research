@@ -109,7 +109,7 @@ The center defects cannot be discarded without an additional proof. If all 210 r
 
 ## Theorem C (coplanar core mass/defect/variance bridge)
 
-Suppose the four Type-E core projected vectors lie in a plane. Write A_C=sum_C a_c, U_C=sum_C a_c^2, and V_z=||sum_C z_c z_c^T-(4-A_C)P_plane/2||_F^2. For the six core raw defects d_cd=(|z_c·z_d|-1/2)_+, let D_C=sum d_cd and
+Suppose the four Type-E core projected vectors lie in a plane, and retain the certified Type-E raw defect cap D_C <= 1780062775/4032758016 < 1/2. Write A_C=sum_C a_c, U_C=sum_C a_c^2, and V_z=||sum_C z_c z_c^T-(4-A_C)P_plane/2||_F^2. For the six core raw defects d_cd=(|z_c·z_d|-1/2)_+, let D_C=sum d_cd and
 
 Phi(d)=d^2 for 0<=d<=1/4;
 Phi(d)=1/16+(d-1/4)^2 for 1/4<=d<=1/2.
