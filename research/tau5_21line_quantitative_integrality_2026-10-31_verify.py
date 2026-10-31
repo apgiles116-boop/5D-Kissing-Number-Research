@@ -59,6 +59,20 @@ for sign in [-1,1]:
       [s.Rational(1,2),sign*s.Rational(1,2),1]])
     assert G.det()==s.Rational(1,16)+sign*s.Rational(1,4) and G.det()!=0
 
+# Exact twenty-to-twenty-one frame identity, tested in a two-to-three analogue.
+from sympy import Matrix, eye
+zvec=[Matrix([s.Rational(3,5),s.Rational(4,5),0,0,0]),
+      Matrix([0,s.Rational(5,13),s.Rational(12,13),0,0])]
+a_vals=[s.Rational(1,4),s.Rational(1,9)]
+zscaled=[s.sqrt(1-a_vals[i])*zvec[i] for i in range(2)]
+x0=Matrix([1,0,0,0,0])
+Z=sum((z*z.T for z in zscaled),Matrix.zeros(5))
+CC=sum((a_vals[i]/(1-a_vals[i])*zscaled[i]*zscaled[i].T for i in range(2)),Matrix.zeros(5))
+AA=sum(a_vals)
+TT=x0*x0.T+sum((zscaled[i]*zscaled[i].T/(1-a_vals[i]) for i in range(2)),Matrix.zeros(5))
+assert s.simplify(TT-s.Rational(3,5)*eye(5)-(Z-(2-AA)*eye(5)/5+x0*x0.T-eye(5)/5+CC-AA*eye(5)/5))==Matrix.zeros(5)
+assert s.simplify(s.trace(CC)-AA)==0
+
 print("PASS: exact Gegenbauer identity, rational gap, normalization, rounding, core determinant.")
 print("h(v*) =",h)
 print("P(sample) =",float(PP))
