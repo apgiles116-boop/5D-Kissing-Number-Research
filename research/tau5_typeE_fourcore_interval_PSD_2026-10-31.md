@@ -18,12 +18,12 @@ A separate coarser 500-grid verifies <99/50 on 7,665 boxes. The proof is algebra
 
 **[PROVED CONDITIONALLY — Type E]** With the retained exact midpoint and defect caps, this improves the previous Q6<1989/1000 by 1/100. The upstream Type-E caps are not re-audited in this note. No D5 alignment or full Q-rank is assumed.
 
-**[PROVED EXACTLY — global frame/capped-simplex]** For 20 projected vectors in R^5 with ||z_i||^2=1-a_i, 0<=a_i<=1/4 and A=sum a_i<=T,
+**[REUSED PROVED EXACTLY — global frame/capped-simplex, already established 2026-10-28]** For 20 projected vectors in R^5 with ||z_i||^2=1-a_i, 0<=a_i<=1/4 and A=sum a_i<=T,
 
     Q_all=sum_(i<j)(z_i.z_j)^2 >= 8790283/317520
        = 27.684186822877...
 
-This incorporates the already-known capped-simplex bound on U=sum a_i^2 into the baseline global frame floor, strengthening the older 17456771/635040 by 131/672 without a center-variance hypothesis.
+This is the previously established 2026-10-28 capped-simplex floor, reused here to combine consistently with the new Q6 bound. It improves the original loose 17456771/635040 by 131/672, but is **not** a new theorem of this run. Stronger conditional center-sensitive Q floors are retained separately and are not superseded by this baseline.
 
 **[PROVED CONDITIONALLY — Type E]**
 
