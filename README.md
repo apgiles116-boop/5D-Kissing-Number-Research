@@ -470,3 +470,12 @@ The normalized Q-frame variance also satisfies \(\|\sum_i(u_iu_i^T-I/5)\|_F^2\ge
 **[PROVED EXACTLY — universal four-contact algebra]** For a fully safe selected-edge pairing, let d=|z_i.z_j|, T=(m_i.m_j)^2+(z_i.m_j)^2+(m_i.z_j)^2, and s=1/4-(T+d^2). The sharp local profile is T<=1/4-d+3d^2 for d<=1/4 and T<=3(1/2-d)^2 for d>=1/4. It implies dist(d,{0,1/4,1/2})<=2s and, when d>=3/8, T<=(3/4)s. Sharpness is for the abstract four-contact cube, not for global Type-E Gram feasibility.
 
 **[PROVED EXACTLY — conditional on retained Type-E incidence and frame identities]** The 114 safe meeting-support blocks contribute a new nonnegative penalty Phi(d)=d(1-4d) for d<=1/4 and Phi(d)=(2d-1/2)(1-2d) otherwise, giving T70+E_Q/4+M_extra/28 >= A-U+V_edge/2+sum_R114 Phi(d). No D5 geometric alignment or six-exception/six-Q-mode identification is assumed. **[OPEN]** No incompatible upper bound; Type E remains open. See [proof](research/tau5_typeE_sharp_safe_Walsh_profile_2026-10-30.md) and [exact verifier](research/tau5_typeE_sharp_safe_Walsh_profile_2026-10-30_verify.py). Global proved range remains 40<=tau_5<=44.
+
+
+## Sixteen-isolated Q tomography (2026-10-30)
+
+**[PROVED EXACTLY — finite D5 algebra]** The 16 D5 projective roots remaining after removing four positive star roots have traceless-projector Gram rank 14, nullity 2 and smallest positive eigenvalue `(31-sqrt(481))/40 > 9/40`. The full D5 six-dimensional Q-kernel splits into **four explicit core-reconstruction relations and two isolated K4-cycle relations**.
+
+**[PROVED EXACTLY — universal, conditional on isolated Q-rank 14]** On the full-rank branch, the six exceptional core-core projected squared correlations are exactly determined by safe isolated-isolated and core-isolated correlations via `K_CC=K_CI K_II^+ K_IC`. A 14-root D5 basis has Gram determinant `1/1280`, yielding a finite polynomial Schur-complement formulation. Four safe-only local SOS constraints are exact and D5-sharp. **[CONDITIONAL]** A common D5 labeling with `x<=1/250` and `E2<=1/5` guarantees full isolated rank; neither hypothesis is proved for arbitrary Type E.
+
+See [proof](research/tau5_typeE_D5_16Q_core_tomography_2026-10-30.md) and [exact verifier](research/tau5_typeE_D5_16Q_core_tomography_2026-10-30_verify.py). **[OPEN]** Rank-deficient branch, full Type E, Types C,D, generic e>=27, and non-isolated branches. Sparse e=23/24 classification still assumes delta(G)>=1. **Global proved range unchanged: 40<=tau_5<=44.**
