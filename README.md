@@ -655,3 +655,12 @@ satisfies **E>1/64**, and the linear coherence excess
 [Proof](research/tau5_21line_quartic_one64_2026-11-01.md) · [exact verifier](research/tau5_21line_quartic_one64_2026-11-01_verify.py).
 
 **[CONDITIONAL TYPE E]** The retained normalized-21-line transfer now requires `1/64<(320/81)A+(49/54)A_C+2D_raw`, which is not yet contradictory. This is **not** a Type-E elimination. Types C/D, generic e>=27 and non-isolated branches remain open; sparse e=23/e=24 classification still requires delta(G)>=1. Preserve M(F3)<=89, M(P)>=S/2-28/3, A<=383/504 and Musin/Boyvalenkov. **Global proved range unchanged: 40<=tau_5<=44.**
+
+
+## Type E 16-line mass-sensitive spectral leakage (2026-11-01)
+
+**[PROVED EXACTLY — under explicit geometric assumptions; conditional Type-E application]** Using the stronger isolated midpoint mass x<11/400 from the retained isolated-center harmonic/F3 broom certificates, a new weighted-harmonic upper envelope exploits total mass rather than a loose pairwise midpoint cap. For the 16 isolated projected vectors, every 3-plane W has perpendicular squared-energy **>59/50**, and every 4-plane W has perpendicular squared-energy **>429/1000**. Thus the isolated frame operator obeys lambda_4+lambda_5>1.18 and lambda_5>0.429. This improves the preceding 531/500 and 73/200 bounds without D5 labeling or core coplanarity. See [exact derivation](research/tau5_typeE_16line_mass_sensitive_leakage_2026-11-01.md) and [rational checker](research/tau5_typeE_16line_mass_sensitive_leakage_2026-11-01_verify.py).
+
+**[AUDIT CORRECTION]** The existing universal 21-line quartic bound P>1/58 (2026-10-29) is stronger than the subsequently reported P>1/64; do not regress to 1/64 as the best known internal certificate.
+
+**[OPEN]** No Type-E exclusion. C, D, generic e>=27 and non-isolated branches remain open; sparse e=23/24 classifications still assume delta(G)>=1. Global proved range **40<=tau_5<=44**.
