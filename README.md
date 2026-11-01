@@ -643,3 +643,15 @@ The exact identity is `R=1/10+4A-A^2/10-U/2-q/4+||T||_F^2/8-V_z/2`; the upper bo
 **[PROVED EXACTLY — conditional on retained Type-E Q-anisotropy]** For any rotated, signed and relabeled D5 template v_i and Type-E projected vectors z_i, the squared Euclidean template distance D=sum_i ||z_i-v_i||^2 satisfies D>9/800. The general exact stability inequality is V_z+A^2/5 <= (4 sqrt(D)+D)^2. The six-mode D5 residual is >949/100000. These are quantitative non-D5 separation results, **not** a Type-E exclusion. Kernel transport is conditional on independently establishing a D5 support labeling and Q-Gram operator-norm closeness, neither of which is currently proved. [Proof](research/tau5_d5_Q_spectral_gap_2026-11-01.md) · [exact verifier](research/tau5_d5_Q_spectral_gap_2026-11-01_verify.py).
 
 **[OPEN]** Type E, C global/boundary, D, generic e>=27 and non-isolated branches. Sparse e=23/24 classification assumes delta(G)>=1. Preserve M(F3)<=89, M(P)>=S/2-28/3 and Musin/Boyvalenkov. Global proved range **40<=tau_5<=44**.
+
+
+## Improved 21-line quartic defect via exact rounded-degree rigidity (2026-11-01)
+
+**[PROVED EXACTLY — standalone]** For every 21 unit vectors in R^5, the positive quartic defect
+`E=sum_{i<j}[ (u_i.u_j)^2((u_i.u_j)^2-1/4) ]_+`
+satisfies **E>1/64**, and the linear coherence excess
+`sum_{i<j}(|u_i.u_j|-1/2)_+>1/96`. This supersedes the earlier 27/2000 and 9/1000 bounds. The proof combines the positive degree-2/4 harmonic identity, quartic rounding, an exact e=134 rounded-edge count, the resulting frame-variance bound t<27/1000, and an integer degree-discrepancy contradiction. All strict comparisons are rationally verified.
+
+[Proof](research/tau5_21line_quartic_one64_2026-11-01.md) · [exact verifier](research/tau5_21line_quartic_one64_2026-11-01_verify.py).
+
+**[CONDITIONAL TYPE E]** The retained normalized-21-line transfer now requires `1/64<(320/81)A+(49/54)A_C+2D_raw`, which is not yet contradictory. This is **not** a Type-E elimination. Types C/D, generic e>=27 and non-isolated branches remain open; sparse e=23/e=24 classification still requires delta(G)>=1. Preserve M(F3)<=89, M(P)>=S/2-28/3, A<=383/504 and Musin/Boyvalenkov. **Global proved range unchanged: 40<=tau_5<=44.**
