@@ -606,3 +606,7 @@ See [exact proof](research/tau5_F3_alternative_matching_fourier_SOS_2026-11-01.m
 ## Quantitative 21-line parity obstruction (2026-11-01)
 
 **[PROVED EXACTLY — standalone]** For any 21 unit vectors in R^5, the positive quartic defect E = sum_{i<j} ( (u_i.u_j)^4 - (u_i.u_j)^2/4 )_+ satisfies **E>1/341**. The proof combines the degree-4 positive Gegenbauer polynomial, rounded contact degrees, handshake parity, and a trace-free nuclear-norm inequality. This independently quantifies the classical antipodal 21-line integrality obstruction; it does **not** prove tau_5=40. **[CONDITIONAL TYPE E]** The normalized 20 projected directions plus isolated center satisfy 1/341 < E <= (320/81)A+(49/54)A_C+2D_raw, which is not yet contradictory. See [proof](research/tau5_21line_parity_quartic_2026-11-01.md) and [exact verifier](research/tau5_21line_parity_quartic_2026-11-01_verify.py). Global proved range remains 40<=tau_5<=44.
+
+## 2026-11-01 — stronger quantitative 21-line integrality stability
+
+**[PROVED EXACTLY — standalone]** A refined rounded-contact edge-count and frame-variance argument improves the quartic defect floor for any 21 unit vectors in R^5 from E>1/341 to **E>27/2000**, and the linear coherence excess from >2/1023 to **>9/1000**. Proof and exact rational verifier: [research note](research/tau5_21line_edgecount_stability_2026-11-01.md), [verifier](research/tau5_21line_edgecount_stability_2026-11-01_verify.py). **[CONDITIONAL TYPE E]** The six-exception transfer strengthens but does not eliminate Type E. Global proved range remains 40≤τ₅≤44.
