@@ -575,3 +575,14 @@ In the **coplanar four-core** Type-E branch, combine the retained isolated sixte
 **[PROVED EXACTLY — additionally conditional on coplanarity, isolated-frame lambda_min(S_I)>73/200, and retained harmonic mass cap]** The fully safe 16-by-4 squared-correlation matrix satisfies **sigma_2(D)>73/40000=0.001825** and squared 2-by-2 minor sum **>3341024655409/40960000000000000000 (~8.1568e-8)**, improving the previous label-free minor floor by **40/7**. A separate standalone theorem extends the sharp quadratic-lift inequality sigma_2(B)^2>=c^2/n from two dimensions to every ambient dimension d>=2; it does **not** by itself remove coplanarity from the tomography transfer.
 
 [Exact proof](research/tau5_typeE_nonplanar_core_Q_gap_2026-11-01.md) · [rational verifier](research/tau5_typeE_nonplanar_core_Q_gap_2026-11-01_verify.py). **[OPEN]** No Type-E exclusion or incompatible upper certificate; Types C, D, generic e>=27, and non-isolated branches remain open. Sparse e=23/24 classification still assumes delta(G)>=1. Global proved range **40<=tau_5<=44**.
+
+
+## Sharp F3 canonical-matching spectral midpoint floor (2026-11-01)
+
+**[PROVED EXACTLY — standalone eight-unit-vector theorem; Type-E application conditional on the F3 graph]** The four degree-three F3 vertices form a C4 and the four degree-two vertices form two opposite K2 edges after deleting the unique all-singleton matching 04|23|17|56. A D4-averaged 8-by-8 Gram, three Fourier PSD blocks, and an exact weighted AM-GM supporting hyperplane prove that the canonical matching midpoint energy satisfies
+
+    C_can > 2-(sqrt(6)+sqrt(2))/2 = 0.06814834742186... > 681/10000.
+
+The constant is the **sharp infimum** even with all ten F3 edges strictly deep and the other 18 endpoint contacts safe, witnessed by a rank-three Fourier Gram family. The theorem requires only the six nonmatching deep contacts; no numerical SDP or D5 labeling. It improves the earlier unconditional all-singleton C>1/96 and the separately conditional C>33/500 for **this canonical matching**. Crucially, the F3 mass theorem may select one of the other two perfect matchings: **no matching-transfer theorem has been proved**, and Type E remains open.
+
+[Proof and sharp witness](research/tau5_F3_canonical_matching_spectral_floor_2026-11-01.md) · [Exact verifier](research/tau5_F3_canonical_matching_spectral_floor_2026-11-01_verify.py). Types C,D, generic e>=27 and non-isolated branches remain open; sparse e=23/e=24 classification still requires delta(G)>=1. **Global proved range unchanged: 40<=tau_5<=44.**
