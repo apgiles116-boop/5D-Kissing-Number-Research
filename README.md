@@ -532,3 +532,17 @@ See [the exact proof](research/tau5_typeE_16line_weighted_harmonic_leakage_2026-
 **[PROVED EXACTLY, CONDITIONALLY]** In the previously specified rank-13/two-ray/four-ambiguous-coplanar-core branch, the missing-ray energies satisfy \(XY>2079/62500\), the safe squared-minor sum is \(>350101521/512000000000000\), and \(\sigma_2(D)>18711\sqrt2/64000000\). These supersede the earlier conditional \(XY>33/1250\), minor, and singular-value estimates. [Proof](research/tau5_typeE_16line_refined_leakage_2026-11-01.md) · [Exact verifier](research/tau5_typeE_16line_refined_leakage_2026-11-01_verify.py).
 
 **[OPEN]** No Type-E exclusion: an F3-incidence-sensitive upper bound on safe minors or \(\sigma_2(D)\) remains necessary. Preserve the stronger broom \(M(F_3)\le89\), matching \(M(P)\ge S/2-28/3\), midpoint \(A\le383/504\), six-core defect bounds, and Musin/Boyvalenkov boundary exclusion. Types C, D, generic \(e\ge27\), and non-isolated branches remain open. Sparse \(e=23/24\) classification remains conditional on \(\delta(G)\ge1\). **Global proved range remains \(40\le\tau_5\le44\).**
+
+
+## Stronger Type-E isolated sixteen-line spectral gap (2026-11-01)
+
+**[PROVED EXACTLY, CONDITIONAL ON RETAINED ISOLATED-CENTER HARMONIC AND F3 BROOM CERTIFICATES]** The isolated-center harmonic slack >=2595/256 together with M(F3)<=89 forces the **sixteen isolated selected-edge midpoint mass x<11/400**. Reapplying the exact weighted positive-harmonic sixteen-line argument with this small *isolated* mass (rather than the much larger total midpoint cap) gives, for S_I=sum_I z_i z_i^T,
+
+    lambda_4(S_I)+lambda_5(S_I)>531/500=1.062,
+    lambda_5(S_I)>73/200=0.365.
+
+These supersede the previous cap-only >4/5 and >11/250. The exact contradiction margins are 1042276961532727/491520000000000000 (three-plane) and 843766658257/209715200000000 (four-plane).
+
+**[ADDITIONALLY CONDITIONAL on the retained rank-13/two-ray/ambiguous coplanar-core hypotheses]** Missing-ray energies obey XY>50881/200000; the safe squared-minor sum is >209698969041/5242880000000000 and sigma_2(D)>457929sqrt(2)/204800000 (~0.00316216). These strengthen the previous conditional minor and singular-value floors by ~58.5x and ~7.65x. Neither the rank/two-ray hypotheses nor a Type-E contradiction is proved by this step.
+
+[Full proof](research/tau5_typeE_small_isolated_mass_harmonic_spectral_gap_2026-11-01.md) · [Exact verifier](research/tau5_typeE_small_isolated_mass_harmonic_spectral_gap_2026-11-01_verify.py). **[OPEN]** An F3-incidence-sensitive *upper* bound on safe minors or sigma_2(D) is still missing; Types C/D, generic e>=27 and non-isolated branches remain open. Sparse e=23/24 classification still requires delta(G)>=1. Global proved range **40<=tau_5<=44**.
