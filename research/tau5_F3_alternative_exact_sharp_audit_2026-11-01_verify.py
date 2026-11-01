@@ -87,8 +87,23 @@ assert sp.expand(C-(p*p+3-t*t)/2)==0
 L=2-4*la-4*lb-alpha/2+beta/2+gamma/2
 assert sp.simplify((C-L-gamma*F/(4*d))/K+
        (t*t-3)/(2*t*(t-2)*(p*t+2*p-1)))==0
-# Strict approach: the -- determinant grows linearly with delta;
-# q,eta perturbations are O(delta^2).
+# Strict approach: the -+ block remains rank one, -- becomes rank two.
+delta=sp.symbols("delta",positive=True)
+td=t-delta; qq=1-delta**2; eta=delta**2; ep=(1-qq**2)/2
+xd3=-1+p*p/2; xd4=-sp.Rational(1,2)-ep; xd5=(1-p*p)/2+ep
+xd0=-sp.Rational(1,2); xd2=(td*td-2)/2; xd7=(1-td*td)/2
+rpp=0; rpm=p; rmp=qq*td; rmm=p+qq*td-2-4*eta
+assert sp.simplify((rpp-rpm-rmp+rmm)/4+sp.Rational(1,2)+eta)==0
+AAmp=1-xd3+xd4-xd5; BBmp=1-xd0+xd2-xd7
+assert sp.simplify(AAmp-qq**2)==0
+assert sp.simplify(BBmp-td**2)==0
+assert sp.simplify(AAmp*BBmp-rmp**2)==0
+AAmm=1-xd3-xd4+xd5; BBmm=1-xd0-xd2+xd7
+assert sp.simplify(AAmm-(A+1-qq**2))==0
+assert sp.simplify(BBmm-(3-td**2))==0
+Dmm=sp.expand(AAmm*BBmm-rmm**2)
+assert sp.simplify(Dmm.subs(delta,0)-F)==0
+assert sp.simplify(sp.diff(Dmm,delta).subs(delta,0)-(2*t*A-2*d))==0
 assert 2*Q(1728,1000)*(3-Q(71,1000)**2)-2*Q(203,1000)>0
 # Old October 28 witness: nonedge correlations 16 and 34 are -1/2-2v.
 k=sp.symbols("k",positive=True)
