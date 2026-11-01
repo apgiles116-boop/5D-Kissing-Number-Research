@@ -601,3 +601,8 @@ See [exact proof](research/tau5_F3_alternative_matching_fourier_SOS_2026-11-01.m
 [Proof and rational rank-four witness](research/tau5_F3_alternative_nearsharp_2026-11-01.md) · [Exact SymPy verifier](research/tau5_F3_alternative_nearsharp_2026-11-01_verify.py).
 
 **[OPEN]** This does **not** eliminate Type E or force A>383/504. Preserve broom M(F3)<=89, matching M(P)>=S/2-28/3, all midpoint/harmonic/Q-frame results with their original conditions, and Musin/Boyvalenkov boundary exclusion. Types C,D, generic e>=27, and non-isolated branches remain open. Sparse e=23/e=24 classification requires delta(G)>=1. **Global proved range remains 40<=tau_5<=44.**
+
+
+## Quantitative 21-line parity obstruction (2026-11-01)
+
+**[PROVED EXACTLY — standalone]** For any 21 unit vectors in R^5, the positive quartic defect E = sum_{i<j} ( (u_i.u_j)^4 - (u_i.u_j)^2/4 )_+ satisfies **E>1/341**. The proof combines the degree-4 positive Gegenbauer polynomial, rounded contact degrees, handshake parity, and a trace-free nuclear-norm inequality. This independently quantifies the classical antipodal 21-line integrality obstruction; it does **not** prove tau_5=40. **[CONDITIONAL TYPE E]** The normalized 20 projected directions plus isolated center satisfy 1/341 < E <= (320/81)A+(49/54)A_C+2D_raw, which is not yet contradictory. See [proof](research/tau5_21line_parity_quartic_2026-11-01.md) and [exact verifier](research/tau5_21line_parity_quartic_2026-11-01_verify.py). Global proved range remains 40<=tau_5<=44.
