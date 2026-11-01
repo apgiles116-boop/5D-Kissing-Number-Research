@@ -63,19 +63,20 @@ def q(r,s,lam,sign):
 
 Aplus,Bplus,_ = forms(1,1)
 certificate = (
-    Rational(1,198)*q(-1,-1,10,1)
-    +Rational(10,99)*q(-1,1,Rational(1,2),-1)
-    +Rational(50,99)*q(1,-1,Rational(1,10),-1)
-    +Rational(5,99)*q(1,1,1,1)
-    +Rational(109,198)*Aplus
-    +Rational(43,99)*Bplus
-    +Rational(4,99)*(x[0]+Rational(1,2))
-    +Rational(4,99)*(x[7]+1)
-    +Rational(19,99)*(-Rational(1,2)-x[4])
-    +Rational(40,99)*(-Rational(1,2)-x[6])
+    Rational(1,496)*q(-1,-1,16,1)
+    +Rational(2,31)*q(-1,1,Rational(1,2),-1)
+    +Rational(121,248)*q(1,-1,Rational(1,16),-1)
+    +Rational(7,496)*q(1,-1,Rational(1,8),-1)
+    +Rational(1,31)*q(1,1,1,1)
+    +Rational(33,62)*Aplus
+    +Rational(29831,63488)*Bplus
+    +Rational(889,31744)*(x[0]+Rational(1,2))
+    +Rational(1,8)*(-Rational(1,2)-x[4])
+    +Rational(8,31)*(-Rational(1,2)-x[6])
 )
 C = 2+x[3]+x[7]
-assert simplify(expand(certificate-(C-Rational(1,198)))) == 0
+assert simplify(expand(certificate-(C-Rational(505,63488)))) == 0
+assert Rational(505,63488)-Rational(1,128) == Rational(9,63488)
 
 # Automorphism exchanging the two alternative perfect matchings.
 swap = (0,1,5,6,4,2,3,7)
@@ -84,6 +85,6 @@ assert {tuple(sorted((swap[a],swap[b]))) for a,b in M} == {tuple(sorted(e)) for 
 
 print('PASS: all 3 F3 perfect matchings and both alternative orbits')
 print('PASS: Klein-four averaging and 10 pair-orbit definitions')
-print('PASS: exact rational Fourier SOS identity C - 1/198')
+print('PASS: exact rational Fourier SOS identity C - 505/63488 > 1/128')
 print('PASS: strict positivity from four deep-edge orbit x4 and x6')
 print('PROOF STATUS: exact 8-endpoint lemma; Type E application conditional on retained graph')
