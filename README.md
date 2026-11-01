@@ -486,3 +486,20 @@ See [proof](research/tau5_typeE_D5_16Q_core_tomography_2026-10-30.md) and [exact
 **[PROVED EXACTLY — universal, using the previously proved P>1/58 theorem]** The 2026-10-29 quartic certificate **P>1/58** is stronger than the later 2026-10-31 P>3/196 certificate; the latter must not replace it. For raw coherence defect D, the exact scalar superadditivity inequality **P<=D(1+D)(D+1/2)^2** gives **D>sqrt((1+sqrt(61/29))/8)-1/2=0.05343551507997...>1/19**. This supersedes the much weaker raw D>1/98 bound.
 
 **[CONDITIONAL Type E]** With the retained center/Walsh normalization, **D_C+(18sqrt(3)-53/2)A>(3/4)rho+(3/4)K_safe**, where rho is the new raw-defect constant and (3/4)rho=0.04007663630998... . This is not a Type-E contradiction. [Exact derivation](research/tau5_21line_superadditive_raw_defect_2026-10-31.md) · [verifier](research/tau5_21line_superadditive_raw_defect_2026-10-31_verify.py). **Global proved range unchanged: 40<=tau_5<=44.**
+
+
+## Type-E coplanar four-core raw-defect gap (2026-10-31)
+
+**[PROVED EXACTLY — conditional only on four coplanar projected core lines]** Put \(\theta=\arccos(2/3)\), \(A_C=\sum_{c\in C}\|m_c\|^2\), and \(D_C=\sum_{c<d\in C}(|z_c\cdot z_d|-1/2)_+\). The four planar core lines with individual midpoint masses \(a_c\le1/4\) satisfy the exact mass-sensitive inequality
+\[
+D_C\ge 1-\frac{\pi}{4\theta}+\left(\frac{\pi}{3\theta}-1\right)(1-A_C).
+\]
+In particular, using the retained Type-E cap \(A_C\le383/504\),
+\[
+\boxed{D_C\ge\frac{383}{504}-\frac{257\pi}{1512\theta}> \frac18.}
+\]
+Without the total cap, the universal planar four-line bound \(D_C\ge1/9\) is sharp. The strict \(>1/8\) corollary has an exact rational trigonometric certificate, not merely a decimal check.
+
+**[STRATEGIC CONSEQUENCE]** The normalized 21-line raw-defect lower bound \(D_{\rm norm}>0.0534355\) is automatically satisfied by these four coplanar core lines alone, since \(D_{\rm norm}\ge D_C>1/8\). To exclude this branch, pursue a signed-F3/safe-Walsh *upper* bound on \(D_C\), rather than relying solely on modest improvements to the universal 21-line lower bound.
+
+[Complete proof](research/tau5_typeE_coplanar_fourline_defect_gap_2026-10-31.md) · [exact verifier](research/tau5_typeE_coplanar_fourline_defect_gap_2026-10-31_verify.py). **[OPEN]** Type E, Types C and D, generic \(e\ge27\), and non-isolated branches remain open. Sparse \(e=23/24\) classification still requires \(\delta(G)\ge1\). **Global proved range remains \(40\le\tau_5\le44\).**
