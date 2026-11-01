@@ -503,3 +503,14 @@ Without the total cap, the universal planar four-line bound \(D_C\ge1/9\) is sha
 **[STRATEGIC CONSEQUENCE]** The normalized 21-line raw-defect lower bound \(D_{\rm norm}>0.0534355\) is automatically satisfied by these four coplanar core lines alone, since \(D_{\rm norm}\ge D_C>1/8\). To exclude this branch, pursue a signed-F3/safe-Walsh *upper* bound on \(D_C\), rather than relying solely on modest improvements to the universal 21-line lower bound.
 
 [Complete proof](research/tau5_typeE_coplanar_fourline_defect_gap_2026-10-31.md) · [exact verifier](research/tau5_typeE_coplanar_fourline_defect_gap_2026-10-31_verify.py). **[OPEN]** Type E, Types C and D, generic \(e\ge27\), and non-isolated branches remain open. Sparse \(e=23/24\) classification still requires \(\delta(G)\ge1\). **Global proved range remains \(40\le\tau_5\le44\).**
+
+
+## Coplanar Type-E four-core Q-minor spectral certificate (2026-11-01)
+
+**[PROVED EXACTLY — conditional on four coplanar projected core lines and retained raw six-core defect cap]** At most one of the six core projective pairs can have angular separation <=5/18 radians. For any three planar core vectors, their 5D traceless-Q Gram satisfies the exact factorization
+
+    det(K_T)=(6/5)*product_{i<j in T}(||z_i||^2||z_j||^2-(z_i.z_j)^2).
+
+At least two of the four Q triple minors exceed the exact rational d0=(6/5)(3/4)^6(9595/34992)^6>9/100000. Thus the four-core Q-Gram has **rank exactly three**, and its smallest positive eigenvalue is **>7/100000**, without any D5 labeling or isolated-Q rank assumption. A complementary cyclic angular argument proves **D_C>=1/2-(8-4sqrt(3))A_C**, so the retained raw defect cap forces **A_C>1/19** in this coplanar branch. The new bound complements, rather than supersedes, the stronger 2026-10-31 large-energy angular certificate.
+
+[Complete proof](research/tau5_typeE_coplanar_Qminor_gap_2026-11-01.md) · [Exact SymPy verifier](research/tau5_typeE_coplanar_Qminor_gap_2026-11-01_verify.py). **[OPEN]** These are necessary conditions only; Type E is not eliminated. Types C,D, generic e>=27, and non-isolated branches remain open; sparse e=23/24 classification retains delta(G)>=1. **Global proved range: 40<=tau_5<=44.**
