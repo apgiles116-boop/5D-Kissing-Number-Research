@@ -479,3 +479,10 @@ The normalized Q-frame variance also satisfies \(\|\sum_i(u_iu_i^T-I/5)\|_F^2\ge
 **[PROVED EXACTLY — universal, conditional on isolated Q-rank 14]** On the full-rank branch, the six exceptional core-core projected squared correlations are exactly determined by safe isolated-isolated and core-isolated correlations via `K_CC=K_CI K_II^+ K_IC`. A 14-root D5 basis has Gram determinant `1/1280`, yielding a finite polynomial Schur-complement formulation. Four safe-only local SOS constraints are exact and D5-sharp. **[CONDITIONAL]** A common D5 labeling with `x<=1/250` and `E2<=1/5` guarantees full isolated rank; neither hypothesis is proved for arbitrary Type E.
 
 See [proof](research/tau5_typeE_D5_16Q_core_tomography_2026-10-30.md) and [exact verifier](research/tau5_typeE_D5_16Q_core_tomography_2026-10-30_verify.py). **[OPEN]** Rank-deficient branch, full Type E, Types C,D, generic e>=27, and non-isolated branches. Sparse e=23/24 classification still assumes delta(G)>=1. **Global proved range unchanged: 40<=tau_5<=44.**
+
+
+## 21-line raw-defect superadditivity and proof-ledger correction (2026-10-31)
+
+**[PROVED EXACTLY — universal, using the previously proved P>1/58 theorem]** The 2026-10-29 quartic certificate **P>1/58** is stronger than the later 2026-10-31 P>3/196 certificate; the latter must not replace it. For raw coherence defect D, the exact scalar superadditivity inequality **P<=D(1+D)(D+1/2)^2** gives **D>sqrt((1+sqrt(61/29))/8)-1/2=0.05343551507997...>1/19**. This supersedes the much weaker raw D>1/98 bound.
+
+**[CONDITIONAL Type E]** With the retained center/Walsh normalization, **D_C+(18sqrt(3)-53/2)A>(3/4)rho+(3/4)K_safe**, where rho is the new raw-defect constant and (3/4)rho=0.04007663630998... . This is not a Type-E contradiction. [Exact derivation](research/tau5_21line_superadditive_raw_defect_2026-10-31.md) · [verifier](research/tau5_21line_superadditive_raw_defect_2026-10-31_verify.py). **Global proved range unchanged: 40<=tau_5<=44.**
