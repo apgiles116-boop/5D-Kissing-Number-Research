@@ -94,6 +94,8 @@ assert 2*Q(1728,1000)*(3-Q(71,1000)**2)-2*Q(203,1000)>0
 k=sp.symbols("k",positive=True)
 v_old=k*k*(3-k*k)/(4*(1-k**4))
 assert sp.factor(v_old-k*k*(3-k*k)/(4*(1-k**4)))==0
+assert Q(1732051,10**6)**2>3
+assert Q(9253813,10**9)*(1-Q(1732051,10**6)/2)>Q(12397,10**7)
 print("PASS: exact algebraic root and 0.009253813<C*<0.009253814")
 print("PASS: Fourier PSD primal, dual coefficient identity, complementary slackness")
 print("AUDIT: October 28 alleged sharp witness violates safe nonedges 16 and 34")
