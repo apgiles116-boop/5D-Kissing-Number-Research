@@ -1,3 +1,5 @@
+> **ERRATUM (2026-11-01 — exact audit):** The 2026-10-28 **sharpness** claim below is invalid for the full two-sided-safe F3 graph. In the alleged equality/strict witness, the nonedges 16 and 34 have correlations G_16=G_34=-1/2-2v<-1/2, introducing two additional deep edges. The PSD stress remains a valid **weaker lower bound** C>0.009015233..., but the rank-three witness does **not** prove sharpness for the stated F3 graph. The corrected **exact sharp** alternative-matching infimum is C*=0.0092538130462245...; proof, dual certificate and verifier: [2026-11-01 corrected theorem](tau5_F3_alternative_exact_sharp_audit_2026-11-01.md). All assertions of full-graph sharpness or strict feasibility below are historical and superseded.
+
 # Exact sharp F3 double-matching midpoint energy and rigidity (2026-10-28)
 
 **[PROVED EXACTLY — STANDALONE F3 CORE]** For the graph with deep edges
