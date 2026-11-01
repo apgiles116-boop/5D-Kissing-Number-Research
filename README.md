@@ -619,3 +619,18 @@ See [exact proof](research/tau5_F3_alternative_matching_fourier_SOS_2026-11-01.m
 **[IMPORTANT AUDIT CORRECTION]** The older October 28 claim that 0.009015233432... was sharp is **false for the full F3 graph**: its purported witness has **nonedge** correlations G_16=G_34=-1/2-2v<-1/2, violating two-sided safety. The old stress inequality remains a valid weaker lower bound, but its sharpness/strict-feasibility claims are withdrawn; the original note now carries an erratum. [Corrected proof](research/tau5_F3_alternative_exact_sharp_audit_2026-11-01.md) · [exact verifier](research/tau5_F3_alternative_exact_sharp_audit_2026-11-01_verify.py).
 
 **[CONDITIONAL TYPE E]** Under the separately retained at-most-three-active core estimate d_core<=sqrt(3)*A_C/2, the local slack improves to A_C-d_core>(1-sqrt(3)/2)*C*=0.0012397758663...>12397/10000000 (historical value 0.001207812... superseded). The mass-selected F3 matching has A_C>C*, but this is compatible with the retained energy cap and **does not eliminate Type E**. Types C, D, generic e>=27 and non-isolated branches remain open; sparse e=23/24 classification still assumes delta(G)>=1. Retain M(F3)<=89, M(P)>=S/2-28/3 and Musin/Boyvalenkov. **Global proved range remains 40<=tau_5<=44.**
+
+
+## Type E: mixed-Walsh budget and F3 matching incidence (2026-11-01)
+
+**[PROVED EXACTLY — conditional on retained Type-E harmonic/scalar certificates]** The total nonprojective Walsh energy across all 190 distinguished-edge pairings satisfies
+
+`R=sum_{i<j}[(m_i.m_j)^2+(m_i.z_j)^2+(z_i.m_j)^2]<111/40=2.775.`
+
+The exact identity is `R=1/10+4A-A^2/10-U/2-q/4+||T||_F^2/8-V_z/2`; the upper bound uses the retained harmonic slack envelope, center-to-Q anisotropy, and core-mass Cauchy inequality. This is not a Type-E exclusion.
+
+**[PROVED EXACTLY — graph/Walsh algebra]** F3 has three perfect matchings. For the canonical matching the six inter-edge deep-contact multiplicities are `1,1,1,1,1,1`; for either alternative they are `0,1,1,1,1,2`. Thus an **alternative mass-selected matching** has 185 safe pairings and at most five exceptional core pairings. The unique double-deep block forces the two matching midpoints to have negative inner product. Safe Walsh blocks satisfy `max(|m_i.m_j|,|z_i.z_j|)+max(|m_i.z_j|,|z_i.m_j|)<=1/2`.
+
+**[PROVED EXACTLY — conditional on alternative matching and retained Q/defect ceilings]** At least **43 of 185** safe pairings have `|z_i.z_j|>1/3`, and on each of them both cross-midpoint coefficients have magnitude below `1/6`. In the canonical case retain the previously proved **42 of 184** bound; do not silently upgrade the unconditional result. [Proof](research/tau5_typeE_mixed_Walsh_incidence_2026-11-01.md) · [exact verifier](research/tau5_typeE_mixed_Walsh_incidence_2026-11-01_verify.py).
+
+**[OPEN]** Type E, Type C global/boundary, Type D, generic e>=27, and non-isolated branches. Sparse e=23/24 classification still assumes delta(G)>=1. Retain M(F3)<=89, M(P)>=S/2-28/3, and Musin/Boyvalenkov. Global proved range **40<=tau_5<=44**.
