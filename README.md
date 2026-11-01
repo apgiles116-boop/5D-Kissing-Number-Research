@@ -224,9 +224,9 @@ where v_i=(m_i,w_i), K_ij=v_i.v_j and Delta is the sum of the six positive deep-
 **[OPEN]** The same-sign mixed terms here cannot be identified with the earlier active-sign q_ij; a quantitative transfer to Delsarte nondeep slack or the 184-safe-pair Q bound is still needed. No Type-E elimination. [Full derivation](research/tau5_typeE_F3_double_matching_Walsh_SOS_2026-10-28.md) · [exact verifier](research/tau5_typeE_F3_double_matching_Walsh_SOS_2026-10-28_verify.py). **Global proved range remains 40<=tau_5<=44.**
 
 
-## Sharp F3 double-matching stress and deep-edge Q cap (2026-10-28)
+## Historical F3 double-matching stress (sharpness claim corrected 2026-11-01) and deep-edge Q cap (2026-10-28)
 
-**[PROVED EXACTLY — STANDALONE F3 CORE]** Both double-pattern F3 matchings have sharp midpoint-energy infimum
+**[PROVED EXACTLY — STANDALONE F3 CORE]** The 2026-10-28 note claimed both double-pattern F3 matchings have sharp midpoint-energy infimum
 \(C>1-\sqrt{\sqrt3-3/4}=0.0090152334324824\ldots\).
 An explicit rank-five PSD stress, rank-three boundary witness, unique equality Gram, strict 3D perturbation and quantitative spectral-gap identity are given in
 [the proof](research/tau5_typeE_F3_double_matching_exact_sharp_2026-10-28.md)
@@ -610,3 +610,12 @@ See [exact proof](research/tau5_F3_alternative_matching_fourier_SOS_2026-11-01.m
 ## 2026-11-01 — stronger quantitative 21-line integrality stability
 
 **[PROVED EXACTLY — standalone]** A refined rounded-contact edge-count and frame-variance argument improves the quartic defect floor for any 21 unit vectors in R^5 from E>1/341 to **E>27/2000**, and the linear coherence excess from >2/1023 to **>9/1000**. Proof and exact rational verifier: [research note](research/tau5_21line_edgecount_stability_2026-11-01.md), [verifier](research/tau5_21line_edgecount_stability_2026-11-01_verify.py). **[CONDITIONAL TYPE E]** The six-exception transfer strengthens but does not eliminate Type E. Global proved range remains 40≤τ₅≤44.
+
+
+## Exact F3 alternative matching optimum and October 28 audit correction (2026-11-01)
+
+**[PROVED EXACTLY — standalone F3]** The two alternative perfect matchings of the ten-edge F3 graph, with **both sides** of every nonedge constraint enforced, have the exact algebraic sharp midpoint-energy infimum **C*=0.0092538130462245022...**, strictly above the previous near-sharp rational lower 0.0092537629647. A degree-six isolating polynomial, rank-three boundary primal, positive-semidefinite Fourier dual, and strict rank-five approaching family prove optimality without numerical SDP. With the stronger canonical-matching theorem, this is the sharp **all-matchings** F3 energy floor.
+
+**[IMPORTANT AUDIT CORRECTION]** The older October 28 claim that 0.009015233432... was sharp is **false for the full F3 graph**: its purported witness has **nonedge** correlations G_16=G_34=-1/2-2v<-1/2, violating two-sided safety. The old stress inequality remains a valid weaker lower bound, but its sharpness/strict-feasibility claims are withdrawn; the original note now carries an erratum. [Corrected proof](research/tau5_F3_alternative_exact_sharp_audit_2026-11-01.md) · [exact verifier](research/tau5_F3_alternative_exact_sharp_audit_2026-11-01_verify.py).
+
+**[CONDITIONAL TYPE E]** The mass-selected F3 matching has A_C>C*, but this is compatible with the retained energy cap and **does not eliminate Type E**. Types C, D, generic e>=27 and non-isolated branches remain open; sparse e=23/24 classification still assumes delta(G)>=1. Retain M(F3)<=89, M(P)>=S/2-28/3 and Musin/Boyvalenkov. **Global proved range remains 40<=tau_5<=44.**
