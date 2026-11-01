@@ -546,3 +546,12 @@ These supersede the previous cap-only >4/5 and >11/250. The exact contradiction 
 **[ADDITIONALLY CONDITIONAL on the retained rank-13/two-ray/ambiguous coplanar-core hypotheses]** Missing-ray energies obey XY>50881/200000; the safe squared-minor sum is >209698969041/5242880000000000 and sigma_2(D)>457929sqrt(2)/204800000 (~0.00316216). These strengthen the previous conditional minor and singular-value floors by ~58.5x and ~7.65x. Neither the rank/two-ray hypotheses nor a Type-E contradiction is proved by this step.
 
 [Full proof](research/tau5_typeE_small_isolated_mass_harmonic_spectral_gap_2026-11-01.md) · [Exact verifier](research/tau5_typeE_small_isolated_mass_harmonic_spectral_gap_2026-11-01_verify.py). **[OPEN]** An F3-incidence-sensitive *upper* bound on safe minors or sigma_2(D) is still missing; Types C/D, generic e>=27 and non-isolated branches remain open. Sparse e=23/24 classification still requires delta(G)>=1. Global proved range **40<=tau_5<=44**.
+
+
+## Label-free coplanar-core Type-E tomography (2026-11-01)
+
+**[PROVED EXACTLY — standalone quadratic-lift lemma; CONDITIONAL Type-E application]** For any n vectors w_i in R^2 with sum w_i w_i^T >= c I_2, the n-by-3 quadratic-lift matrix B of w_i w_i^T satisfies **sigma_2(B)^2 >= c^2/(4n)**. The proof uses a positive-semidefinite top eigenmatrix and a two-dimensional double-angle variance inequality.
+
+In the **coplanar four-core** Type-E branch, combine the retained isolated sixteen-line frame bound lambda_min(S_I)>73/200 and the coplanar four-core Q-Gram bound lambda_3(K_C)>7/100000. The safe 16-by-4 squared-correlation matrix D_ic=(z_i.z_c)^2 then has **rank at least two**, **sigma_2(D)>(73/1600)sqrt(7/100000)>3/8000**, and total squared 2-by-2 minors **>1789089183/655360000000000000 (~2.73e-9)**. Crucially, this needs **no isolated-Q rank-13 hypothesis, no two-ray factorization, no D5 labeling, and no four-ambiguous-completion hypothesis**. It does still assume core coplanarity and the two upstream spectral certificates. The earlier, numerically stronger tomography bounds retain their additional hypotheses and are not superseded.
+
+[Exact proof](research/tau5_typeE_coplanar_label_free_tomography_2026-11-01.md) · [Fraction/SymPy verifier](research/tau5_typeE_coplanar_label_free_tomography_2026-11-01_verify.py). **[OPEN]** No incompatible upper certificate and no Type-E exclusion; Types C,D, generic e>=27 and non-isolated branches remain open. Sparse e=23/24 classification still requires delta(G)>=1. **Global proved range unchanged: 40<=tau_5<=44.**
