@@ -634,3 +634,12 @@ The exact identity is `R=1/10+4A-A^2/10-U/2-q/4+||T||_F^2/8-V_z/2`; the upper bo
 **[PROVED EXACTLY — conditional on alternative matching and retained Q/defect ceilings]** At least **43 of 185** safe pairings have `|z_i.z_j|>1/3`, and on each of them both cross-midpoint coefficients have magnitude below `1/6`. In the canonical case retain the previously proved **42 of 184** bound; do not silently upgrade the unconditional result. [Proof](research/tau5_typeE_mixed_Walsh_incidence_2026-11-01.md) · [exact verifier](research/tau5_typeE_mixed_Walsh_incidence_2026-11-01_verify.py).
 
 **[OPEN]** Type E, Type C global/boundary, Type D, generic e>=27, and non-isolated branches. Sparse e=23/24 classification still assumes delta(G)>=1. Retain M(F3)<=89, M(P)>=S/2-28/3, and Musin/Boyvalenkov. Global proved range **40<=tau_5<=44**.
+
+
+## D5 Q-Gram spectral gap and six-mode kernel audit (2026-11-01)
+
+**[PROVED EXACTLY — standalone]** The 20-by-20 Q-Gram of the exact D5 20-line template has spectrum 0 (multiplicity 6), 1 (multiplicity 10), and 3/2 (multiplicity 4). The smallest positive eigenvalue is exactly 1. An explicit rational projector onto its kernel yields sharp coercivity dist(c,ker K0)^2 <= c^T K0 c <= (3/2)dist(c,ker K0)^2. **Conceptual correction:** Every Q-Gram of 20 vectors in R5 has nullity at least six, because traceless symmetric 5-by-5 matrices form a 14-dimensional space. The count six alone is not D5-specific and does not identify the six Type-E exceptional pairings.
+
+**[PROVED EXACTLY — conditional on retained Type-E Q-anisotropy]** For any rotated, signed and relabeled D5 template v_i and Type-E projected vectors z_i, the squared Euclidean template distance D=sum_i ||z_i-v_i||^2 satisfies D>9/800. The general exact stability inequality is V_z+A^2/5 <= (4 sqrt(D)+D)^2. The six-mode D5 residual is >949/100000. These are quantitative non-D5 separation results, **not** a Type-E exclusion. Kernel transport is conditional on independently establishing a D5 support labeling and Q-Gram operator-norm closeness, neither of which is currently proved. [Proof](research/tau5_d5_Q_spectral_gap_2026-11-01.md) · [exact verifier](research/tau5_d5_Q_spectral_gap_2026-11-01_verify.py).
+
+**[OPEN]** Type E, C global/boundary, D, generic e>=27 and non-isolated branches. Sparse e=23/24 classification assumes delta(G)>=1. Preserve M(F3)<=89, M(P)>=S/2-28/3 and Musin/Boyvalenkov. Global proved range **40<=tau_5<=44**.
