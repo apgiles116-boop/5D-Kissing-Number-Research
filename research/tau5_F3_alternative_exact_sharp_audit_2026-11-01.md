@@ -22,7 +22,7 @@ and define
     0.009253813 < Cstar < 0.009253814
     Cstar = 0.0092538130462245022... .
 
-Every strictly feasible configuration has C(P)>Cstar. The boundary optimum has rank-three Gram; strict rank-five configurations approach it. Together with the previously established canonical-matching sharp floor 2-(sqrt(6)+sqrt(2))/2, this is the sharp **all-matchings** F3 energy infimum.
+Every strictly feasible configuration has C(P)>Cstar. The boundary optimum has rank-three Gram; strict rank-four configurations approach it. Together with the previously established canonical-matching sharp floor 2-(sqrt(6)+sqrt(2))/2, this is the sharp **all-matchings** F3 energy infimum.
 
 ## Essential October 28 audit correction
 
@@ -98,7 +98,7 @@ For sufficiently small delta>0, replace t by t_delta=t-delta, set q=1-delta^2, e
     R_++=0, R_+-=p, R_-+=q*t_delta,
     R_--=p+q*t_delta-2-4eta.
 
-Inverse Walsh gives x6=-1/2-eta, so every prescribed deep orbit is now strictly deep; safe orbits remain safe by continuity. Fourier ++ stays zero, +- stays rank-one PSD, -+ has positive determinant t_delta^2(1-q^2), and -- has positive determinant because its first derivative in delta is 2t(3-p^2)-2d>0, while q/eta corrections are O(delta^2). The resulting Gram is PSD rank five and C(delta)->Cstar. The graph automorphism (0,1,2,3,4,5,6,7)->(0,1,5,6,4,2,3,7) exchanges P1 and P2.
+Inverse Walsh gives x6=-1/2-eta, so every prescribed deep orbit is now strictly deep; safe orbits remain safe by continuity. Fourier ++ stays zero, +- stays rank-one PSD, -+ stays rank-one PSD with block [[q^2,q*t_delta],[q*t_delta,t_delta^2]], and -- has positive determinant because its first derivative in delta is 2t(3-p^2)-2d>0, while q/eta corrections are O(delta^2). The resulting Gram is PSD rank four and C(delta)->Cstar. The graph automorphism (0,1,2,3,4,5,6,7)->(0,1,5,6,4,2,3,7) exchanges P1 and P2.
 
 
 ## Conditional Type-E raw-excess consequence
