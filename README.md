@@ -592,3 +592,12 @@ The constant is the **sharp infimum** even with all ten F3 edges strictly deep a
 **[PROVED EXACTLY — standalone F3 incidence lemma]** For each of the two alternative perfect matchings of the ten-edge F3, an explicit Klein-four Fourier-block PSD certificate gives `C(P)=sum ||(u_i+u_j)/2||^2 > 505/63488>1/128`. The prior sharp canonical-matching theorem gives `C(P0)>2-(sqrt(6)+sqrt(2))/2`; hence **every** F3 perfect matching, including the one selected by the retained mass theorem, satisfies `C(P)>505/63488>1/128`. This closes the elementary all-matchings positive-energy transfer gap, **not Type E itself**. The bound is not asserted sharp, and no rank-five realization or global exclusion follows.
 
 See [exact proof](research/tau5_F3_alternative_matching_fourier_SOS_2026-11-01.md) and [SymPy verifier](research/tau5_F3_alternative_matching_fourier_SOS_2026-11-01_verify.py). Preserve the stronger broom bound `M(F3)<=89`, matching bound `M(P)>=S/2-28/3`, midpoint cap `A<=383/504` (plus separately conditional harmonic refinements), and Musin/Boyvalenkov boundary exclusion. **Global proved range unchanged: 40<=tau_5<=44.**
+
+
+## Near-sharp exact F3 alternative-matching floor (2026-11-01)
+
+**[PROVED EXACTLY — standalone eight-vector theorem; conditional Type-E transfer]** A new positive Klein-four Fourier-SOS certificate improves both alternative F3 matching midpoint floors to **C(P)>2035298537/219942800000 = 0.009253762964734468...**, a **16.34% improvement** over 505/63488. Together with the stronger canonical-matching theorem, this holds for **every F3 perfect matching**, including the mass-selected one. A separate exact **rank-four** rational Gram witness realizes **C(P1)=57836333103311793/6250000000000000000 = 0.009253813296529887...** with all ten deep contacts strict and all eighteen other pairs safe. Thus the alternative-matching infimum is bracketed to an absolute width **<5.04e-8**, without claiming sharpness or using numerical SDP as proof.
+
+[Proof and rational rank-four witness](research/tau5_F3_alternative_nearsharp_2026-11-01.md) · [Exact SymPy verifier](research/tau5_F3_alternative_nearsharp_2026-11-01_verify.py).
+
+**[OPEN]** This does **not** eliminate Type E or force A>383/504. Preserve broom M(F3)<=89, matching M(P)>=S/2-28/3, all midpoint/harmonic/Q-frame results with their original conditions, and Musin/Boyvalenkov boundary exclusion. Types C,D, generic e>=27, and non-isolated branches remain open. Sparse e=23/e=24 classification requires delta(G)>=1. **Global proved range remains 40<=tau_5<=44.**
