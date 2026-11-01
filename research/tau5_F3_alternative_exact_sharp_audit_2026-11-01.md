@@ -100,6 +100,16 @@ For sufficiently small delta>0, replace t by t_delta=t-delta, set q=1-delta^2, e
 
 Inverse Walsh gives x6=-1/2-eta, so every prescribed deep orbit is now strictly deep; safe orbits remain safe by continuity. Fourier ++ stays zero, +- stays rank-one PSD, -+ has positive determinant t_delta^2(1-q^2), and -- has positive determinant because its first derivative in delta is 2t(3-p^2)-2d>0, while q/eta corrections are O(delta^2). The resulting Gram is PSD rank five and C(delta)->Cstar. The graph automorphism (0,1,2,3,4,5,6,7)->(0,1,5,6,4,2,3,7) exchanges P1 and P2.
 
+
+## Conditional Type-E raw-excess consequence
+
+**[PROVED EXACTLY — conditional on the retained at-most-three-active F3 estimate]** If the previously retained F3 core estimate d_core <= (sqrt(3)/2)*A_C applies to the mass-selected matching, the exact sharp floor gives
+
+    A_C-d_core > (1-sqrt(3)/2)*Cstar
+                = 0.00123977586632222... > 12397/10000000.
+
+The last strict rational comparison follows from Cstar>9253813/10^9 and sqrt(3)<1732051/10^6. This supersedes the historical 0.001207812... local slack, but does **not** force A>383/504 or yield a global Type-E contradiction. This d_core is the retained *three-active local* quantity, not the global six-exception or homogeneous defect sum.
+
 ## Status
 
 **[PROVED EXACTLY — standalone]** Algebraic optimum, exact PSD dual, boundary primal, strict R5 approximation, rational root/constant brackets. **[AUDIT CORRECTION]** Old 0.00901523 sharpness witness invalid under two-sided safety; its lower inequality remains valid. **[CONDITIONAL TYPE E]** The mass-selected F3 matching has A_C>Cstar; this does not eliminate Type E or force A>383/504. **[OPEN]** Type E, C, D, generic e>=27, non-isolated branches; e=23/24 classification still assumes delta(G)>=1. Retain M(F3)<=89, M(P)>=S/2-28/3, and Musin/Boyvalenkov. Global range 40<=tau_5<=44.
