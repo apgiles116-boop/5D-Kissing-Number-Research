@@ -37,3 +37,14 @@ for d,L,expected in [
     B=F(11,400)+L
     assert H(B,d)-U(B)==expected>0
 print('PASS: exact counterexample, harmonic identities and repaired margins')
+
+# Conditional two-ray recalibration, assuming the separate core wedge factorization.
+c=F(83,200)
+s=F(93,80)
+xy=c*(s-c)
+assert xy==F(24817,80000)
+minors=F(81,131072)*xy**2
+assert minors==F(49886562609,838860800000000)
+sigma_coeff=F(9,1024)*xy
+assert sigma_coeff==F(223353,81920000)
+print('Conditional two-ray constants: PASS')
