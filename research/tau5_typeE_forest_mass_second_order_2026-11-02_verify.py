@@ -62,4 +62,16 @@ assert alt_base==F(268732359705499,10323860520960)
 assert alt_center==F(34467025340211887,1290482565120000)
 assert 39*F(1,4)+146*F(1,9)<alt_base<40*F(1,4)+145*F(1,9)
 assert 44*F(1,4)+141*F(1,9)<alt_center<45*F(1,4)+140*F(1,9)
+# Exact strong-concavity star stability and 81/200 structural threshold.
+t0=(A+F(1,2))/3
+gp=(F(1,2)-t0)*(1+2*f(t0))
+E=star(A,g)-F(81,200)
+assert gp==F(344007719,3456649728)
+assert E==F(853274921689,174215146291200)
+assert E/gp==F(853274921689,17337989037600)
+assert path(A,g)<F(81,200)
+assert A-E/gp>F(71,100)
+assert F(1,4)-E/(2*gp)>F(9,40)
+assert A-F(71,100)==F(629,12600)
+
 print("ALL EXACT FRACTION CHECKS PASSED",classes)
