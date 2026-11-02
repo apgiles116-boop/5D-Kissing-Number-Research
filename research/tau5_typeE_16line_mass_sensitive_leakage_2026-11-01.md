@@ -1,3 +1,5 @@
+> **[AUDIT CORRECTION — 2026-11-01]** The assertion that four two-sided-safe cross-edge endpoint contacts imply |z_i.z_j|<=1/2 is **false** without the extra assumption m_i.m_j>=0. The correct consequence is |z_i.z_j|<=1/2-m_i.m_j<=1/2+sqrt(a_i*a_j). An exact rational counterexample (even with total midpoint mass <11/400) and repaired, unconditional-on-sign spectral bounds are in [the safe-pair audit](tau5_typeE_safe_pair_audit_repaired_leakage_2026-11-01.md). The stronger numerical leakage results below remain standalone lemmas under their extra |z_i.z_j|<=1/2 premise, but **their Type-E applications and downstream two-ray constants are not established from the retained Type-E hypotheses**. Under the retained x<11/400 certificate the corrected Type-E bounds are lambda_4+lambda_5>93/80 and lambda_5>83/200. The global kissing-number range is unchanged.
+
 # Type E: mass-sensitive 16-line leakage (2026-11-01)
 
 **[PROVED EXACTLY — universal geometric lemma with explicit assumptions; Type-E application conditional on retained upstream inputs].** No Type-E exclusion. Global proved range: **40 <= tau_5 <= 44**.
