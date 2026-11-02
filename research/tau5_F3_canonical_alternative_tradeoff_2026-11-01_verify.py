@@ -111,7 +111,7 @@ rl,rh=s.Rational(27143,10**6),s.Rational(27144,10**6)
 sl,sh=s.Rational(39781,10**6),s.Rational(39782,10**6)
 assert D(rl)<s.Rational(1245,256)<D(rh)
 assert D(sl)<s.Rational(41,6)<D(sh)
-assert s.Rational(1,2)+rl+sl>s.Rational(566924,10**6)
+assert s.Rational(1,2)+rl+sl==s.Rational(566924,10**6)
 cap=s.Rational(1,2)+rh+sh
 assert cap==s.Rational(566926,10**6)
 c=lambda x:2-6*x/(2+x*x)
