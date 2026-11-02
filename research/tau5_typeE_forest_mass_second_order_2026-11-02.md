@@ -32,3 +32,28 @@ Only five core pairs can be exceptional, giving Q_core<1.653966910480615. Baseli
 **[VERIFIED EXACT ARITHMETIC]** Companion Fraction checker verifies all 38 triangle-free/C4-free labeled supports, exact star/path comparisons, rational Q transfers, and integer thresholds. No generic SDP, D5 uniqueness or Q-kernel-to-exception identification is used. The earlier invalid endpoint-Perron argument remains WITHDRAWN.
 
 **[OPEN]** No Type-E elimination or proof of tau_5=40. Global proved range stays 40<=tau_5<=44. Types C, D, generic e>=27, and non-isolated branches remain open; e=23/24 classification requires delta(G)>=1. Preserve the exact Type-E star <=70/3, broom M(F3)<=89, matching M(P)>=S/2-28/3, 20-edge mass >=2137/6, and the audited Musin/Boyvalenkov 21-line zero-midpoint exclusion. Next: combine the high-defect mass concentration with the sixteen isolated edges' rank-five Gram and mixed-Walsh constraints.
+
+## Exact strong-concavity stability for the three-defect star
+
+**[PROVED EXACTLY — conditional on canonical F3 singleton/forest hypotheses]** Write the star midpoint masses as center x and leaves y1,y2,y3, with C=x+y1+y2+y3, ybar=(y1+y2+y3)/3, A0=383/504, t0=635/1512, and g(t)=f(t)+f(t)^2. Since g''(t)<=-1/2, strong Jensen and the concave tangent inequality give the exact second-order certificate
+
+    D+S + (1/4)*sum_j(yj-ybar)^2
+        + g'(t0)*(A0-C+2*(1/4-x)) <= 3*g(t0),
+
+where g'(t0)=344007719/3456649728=0.09952056067857... . Thus the scalar budget has explicit nonnegative penalties for unequal leaf masses, unused total mass, and unsaturated central mass.
+
+**[NEW STRUCTURAL THRESHOLD]** If D+S>=81/200=0.405, the support must be K1,3: P4 has D+S<0.4039669105 and supports with at most two edges have D+S<9/32. Define
+
+    E*=3*g(t0)-81/200=853274921689/174215146291200,
+    E*/g'(t0)=853274921689/17337989037600.
+
+The stability certificate forces
+
+    C >= A0-E*/g'(t0) = 0.71070645443877... > 71/100,
+    x >= 1/4-E*/(2*g'(t0)) = 0.22539290975906... > 9/40.
+
+The sixteen isolated selected midpoint masses therefore sum to less than
+
+    A-C < A0-71/100 = 629/12600 = 0.0499206349206... .
+
+This is an exact second-order mass-concentration result, **not** an elimination of Type E. The companion verifier also checks these additional rational comparisons.
