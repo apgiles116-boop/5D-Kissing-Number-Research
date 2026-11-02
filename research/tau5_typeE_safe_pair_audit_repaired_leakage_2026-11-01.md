@@ -96,3 +96,21 @@ Both contradict H_d(B)<=U(B). Ky Fan min-max gives (3).
 **[OPEN]** This does not force A>383/504 or exclude Type E. Preserve star <=70/3, broom M(F3)<=89, matching M(P)>=S/2-28/3, 20-edge mass >=2137/6, global Q-frame correlation floor, and Musin/Boyvalenkov zero-midpoint exclusion. Types C,D, generic e>=27 and non-isolated branches remain open. Sparse e=23/e=24 classification requires delta(G)>=1. Global range 40<=tau_5<=44.
 
 Verifier: research/verify_safe_pair_leakage_2026-11-01.py.
+
+
+## 5. Conditional two-ray recalibration
+
+**[CONDITIONAL — additionally requires separately retained rank-13/two-ray/coplanar-core hypotheses and the core wedge factorization].** For orthonormal missing-plane axes p,q let X=p^T S_I p, Y=q^T S_I q. From (3), X,Y>83/200 and X+Y>93/80. Consequently
+
+    XY=(X-83/200)(Y-83/200)+(83/200)(X+Y)-(83/200)^2
+       > (83/200)(93/80-83/200)=24817/80000.
+
+If the separately assumed core wedge identity sum_(2x2 minors of D)^2 >= (81/131072)X^2Y^2 holds, then
+
+    sum_(2x2 minors of D)^2 > 49886562609/838860800000000.
+
+If also rank(D)=2 and ||D||_F^2<=4, Cauchy-Binet gives
+
+    sigma_2(D)>223353*sqrt(2)/81920000 = 0.0038558208227...
+
+These conditional figures replace, rather than preserve, the unsupported stronger Type-E two-ray constants in earlier notes. No contradiction has been established.
