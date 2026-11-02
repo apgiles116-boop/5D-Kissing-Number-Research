@@ -1,3 +1,7 @@
+> **[WITHDRAWN — PROOF INVALIDATED BY EXACT WALSH AUDIT, 2026-11-02]** The argument below incorrectly equates an individual switched endpoint correlation with the *average* of two opposite endpoint correlations, omitting the mixed terms `p+q`. The claimed Perron obstruction, four-defect exclusion, canonical `D_raw<1/4`, stronger `D_raw<=(sqrt(2)-1)/2`, alternative double-free `D_raw<1/4`, and derived 45/46 safe-pair counts are **UNPROVED AND MUST NOT BE USED**. This is a proof failure, not a demonstrated full F3 counterexample. Retain the independent triangle-free and C4 mass/defect theorems. See [exact correction and replacement lemma](tau5_typeE_Walsh_mixed_audit_2026-11-02.md).
+
+---
+
 # Type E: F3 switched-endpoint Perron obstruction (2026-11-02)
 
 **[PROVED EXACTLY — F3 endpoint theorem]** Canonical positive-defect support has at most 3 edges and raw defect D<1/4. All three F3 matchings have at most 3 positive-defect quotient pairs. **[CONDITIONAL]** Canonical D <= (sqrt(2)-1)/2 uses the retained stronger core midpoint cap C<567/1000. Safe-correlation counts retain the separate Q_total>28.3626 certificate. **[OPEN]** No Type-E exclusion; global 40<=tau_5<=44.
